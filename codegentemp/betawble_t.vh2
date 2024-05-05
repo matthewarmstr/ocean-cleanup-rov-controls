@@ -1,5 +1,5 @@
 -- Project:   C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cyprj
--- Generated: 04/18/2024 16:16:05
+-- Generated: 05/04/2024 22:28:55
 -- PSoC Creator  4.4
 
 ENTITY betawble IS
@@ -9,7 +9,9 @@ ENTITY betawble IS
         finservo(0)_PAD : OUT std_ulogic;
         trashservo(0)_PAD : OUT std_ulogic;
         thrustmotor(0)_PAD : OUT std_ulogic;
-        GreenLight(0)_PAD : OUT std_ulogic);
+        GreenLight(0)_PAD : OUT std_ulogic;
+        UltrasonicTrig(0)_PAD : OUT std_ulogic;
+        UltrasonicEcho(0)_PAD : IN std_ulogic);
     ATTRIBUTE voltage_VBACKUP OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDA_CSD OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_A OF __DEFAULT__ : ENTITY IS 3.3e0;
@@ -51,34 +53,53 @@ ARCHITECTURE __DEFAULT__ OF betawble IS
     SIGNAL GreenLight(0)__PA : bit;
     SIGNAL Net_1 : bit;
     SIGNAL Net_10 : bit;
-    SIGNAL Net_133_ff12 : bit;
-    ATTRIBUTE global_signal OF Net_133_ff12 : SIGNAL IS true;
+    SIGNAL Net_133_ff13 : bit;
+    ATTRIBUTE global_signal OF Net_133_ff13 : SIGNAL IS true;
     SIGNAL Net_134 : bit;
     SIGNAL Net_136 : bit;
     SIGNAL Net_138 : bit;
     SIGNAL Net_139 : bit;
     SIGNAL Net_140 : bit;
     SIGNAL Net_144 : bit;
+    SIGNAL Net_173 : bit;
+    SIGNAL Net_186 : bit;
+    SIGNAL Net_188 : bit;
     SIGNAL Net_19 : bit;
+    SIGNAL Net_190 : bit;
+    SIGNAL Net_191 : bit;
+    SIGNAL Net_195 : bit;
     SIGNAL Net_2 : bit;
     SIGNAL Net_20 : bit;
     SIGNAL Net_21 : bit;
     SIGNAL Net_22 : bit;
     SIGNAL Net_25 : bit;
+    SIGNAL Net_274_ff14 : bit;
+    ATTRIBUTE global_signal OF Net_274_ff14 : SIGNAL IS true;
     SIGNAL Net_3 : bit;
     SIGNAL Net_31 : bit;
     SIGNAL Net_32 : bit;
     SIGNAL Net_33 : bit;
     SIGNAL Net_34 : bit;
-    SIGNAL Net_35_ff13 : bit;
-    ATTRIBUTE global_signal OF Net_35_ff13 : SIGNAL IS true;
+    SIGNAL Net_35_ff15 : bit;
+    ATTRIBUTE global_signal OF Net_35_ff15 : SIGNAL IS true;
     SIGNAL Net_37 : bit;
+    SIGNAL Net_429 : bit;
+    SIGNAL Net_430 : bit;
+    SIGNAL Net_431 : bit;
+    SIGNAL Net_432 : bit;
+    SIGNAL Net_433_ff12 : bit;
+    ATTRIBUTE global_signal OF Net_433_ff12 : SIGNAL IS true;
+    SIGNAL Net_439 : bit;
     SIGNAL Net_51_ff11 : bit;
     ATTRIBUTE global_signal OF Net_51_ff11 : SIGNAL IS true;
     SIGNAL Net_79 : bit;
     SIGNAL Net_82 : bit;
     SIGNAL Net_9 : bit;
+    SIGNAL UltrasonicEcho(0)__PA : bit;
+    SIGNAL UltrasonicTrig(0)__PA : bit;
     SIGNAL \BLE:Net_1\ : bit;
+    SIGNAL \Echo_Counter:Net_1\ : bit;
+    SIGNAL \Echo_Counter:Net_2\ : bit;
     SIGNAL \UART:Net_1172\ : bit;
     SIGNAL \UART:Net_161\ : bit;
     SIGNAL \UART:Net_847_ff0\ : bit;
@@ -126,6 +147,10 @@ ARCHITECTURE __DEFAULT__ OF betawble IS
     ATTRIBUTE Location OF thrustmotor(0) : LABEL IS "P10[6]";
     ATTRIBUTE lib_model OF GreenLight(0) : LABEL IS "iocell11";
     ATTRIBUTE Location OF GreenLight(0) : LABEL IS "P7[1]";
+    ATTRIBUTE lib_model OF UltrasonicTrig(0) : LABEL IS "iocell12";
+    ATTRIBUTE Location OF UltrasonicTrig(0) : LABEL IS "P12[6]";
+    ATTRIBUTE lib_model OF UltrasonicEcho(0) : LABEL IS "iocell13";
+    ATTRIBUTE Location OF UltrasonicEcho(0) : LABEL IS "P12[7]";
     ATTRIBUTE Location OF \BLE:cy_mxs40_ble\ : LABEL IS "F(BLE,0)";
     ATTRIBUTE Location OF \BLE:bless_isr\ : LABEL IS "[IntrContainer=(0)][IntrId=(24)]";
     ATTRIBUTE Location OF \UART:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(46)]";
@@ -133,6 +158,9 @@ ARCHITECTURE __DEFAULT__ OF betawble IS
     ATTRIBUTE Location OF \PWM_fin:TCPWM\ : LABEL IS "F(TCPWM,0)";
     ATTRIBUTE Location OF \PWM_trashgate:TCPWM\ : LABEL IS "F(TCPWM,5)";
     ATTRIBUTE Location OF \PWM_thrustmotor:TCPWM\ : LABEL IS "F(TCPWM,1)";
+    ATTRIBUTE Location OF \PWM_ultrasonic:TCPWM\ : LABEL IS "F(TCPWM,7)";
+    ATTRIBUTE Location OF \Echo_Counter:TCPWM\ : LABEL IS "F(TCPWM,2)";
+    ATTRIBUTE Location OF Echo_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(92)]";
     COMPONENT BLE
         PORT (
             ext_pa_lna_chip_en_out : OUT std_ulogic;
@@ -546,10 +574,13 @@ BEGIN
             lfclk => ClockBlock_LFClk,
             ff_div_0 => open,
             ff_div_11 => Net_51_ff11,
-            ff_div_12 => Net_133_ff12,
-            ff_div_13 => open,
+            ff_div_12 => Net_133_ff13,
+            ff_div_13 => Net_433_ff12,
+            ff_div_14 => open,
+            ff_div_15 => open,
             ff_div_5 => \UART:Net_847_ff0\,
-            ff_div_16 => Net_35_ff13,
+            ff_div_16 => Net_35_ff15,
+            ff_div_18 => Net_274_ff14,
             periclk_App => periclk_App);
 
     SRSS:SRSS;
@@ -1154,6 +1185,117 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
+    UltrasonicTrig:logicalport
+        GENERIC MAP(
+            cy_registers => "",
+            drive_mode => "110",
+            drive_strength => "0",
+            hotswap_needed => "0",
+            i2c_mode => "0",
+            ibuf_enabled => "0",
+            id => "66e79720-a4b0-4409-b66c-f206b488736b",
+            init_dr_st => "1",
+            input_sync => "0",
+            intr_mode => "00",
+            io_voltage => "",
+            max_frequency => "1",
+            oe_conn => "0",
+            oe_sync => "0",
+            output_conn => "1",
+            output_current_cap => "8",
+            output_sync => "0",
+            pin_aliases => "",
+            pin_mode => "B",
+            sio_grp_cnt => 0,
+            slew_rate => "0",
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0);
+
+    UltrasonicTrig(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "UltrasonicTrig",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => UltrasonicTrig(0)__PA,
+            oe => open,
+            pin_input => Net_173,
+            pad_out => UltrasonicTrig(0)_PAD,
+            pad_in => UltrasonicTrig(0)_PAD,
+            in_clock => open,
+            in_clock_en => open,
+            in_reset => open,
+            out_clock => open,
+            out_clock_en => open,
+            out_reset => open);
+
+    UltrasonicEcho:logicalport
+        GENERIC MAP(
+            cy_registers => "",
+            drive_mode => "000",
+            drive_strength => "0",
+            hotswap_needed => "0",
+            i2c_mode => "0",
+            ibuf_enabled => "1",
+            id => "4cca878b-77b5-471d-8aeb-ad6925202455",
+            init_dr_st => "0",
+            input_sync => "0",
+            intr_mode => "00",
+            io_voltage => "",
+            max_frequency => "100",
+            oe_conn => "0",
+            oe_sync => "0",
+            output_conn => "0",
+            output_current_cap => "8",
+            output_sync => "0",
+            pin_aliases => "",
+            pin_mode => "B",
+            sio_grp_cnt => 0,
+            slew_rate => "0",
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0);
+
+    UltrasonicEcho(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "UltrasonicEcho",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => UltrasonicEcho(0)__PA,
+            oe => open,
+            fb => Net_439,
+            pad_in => UltrasonicEcho(0)_PAD,
+            in_clock => open,
+            in_clock_en => open,
+            in_reset => open,
+            out_clock => open,
+            out_clock_en => open,
+            out_reset => open);
+
     \BLE:cy_mxs40_ble\:BLE
         GENERIC MAP(
             cy_registers => "",
@@ -1231,7 +1373,7 @@ BEGIN
             exact_width => 0,
             width => 16)
         PORT MAP(
-            clock => Net_35_ff13,
+            clock => Net_35_ff15,
             capture => '0',
             count => '1',
             reload => '0',
@@ -1250,7 +1392,7 @@ BEGIN
             exact_width => 0,
             width => 16)
         PORT MAP(
-            clock => Net_133_ff12,
+            clock => Net_133_ff13,
             capture => '0',
             count => '1',
             reload => '0',
@@ -1262,5 +1404,52 @@ BEGIN
             line_compl => Net_140,
             line => Net_139,
             interrupt => Net_136);
+
+    \PWM_ultrasonic:TCPWM\:TCPWM
+        GENERIC MAP(
+            cy_registers => "",
+            exact_width => 0,
+            width => 32)
+        PORT MAP(
+            clock => Net_274_ff14,
+            capture => '0',
+            count => '1',
+            reload => '0',
+            stop => '0',
+            start => '0',
+            tr_underflow => Net_195,
+            tr_compare_match => Net_186,
+            tr_overflow => Net_190,
+            line_compl => Net_191,
+            line => Net_173,
+            interrupt => Net_188);
+
+    \Echo_Counter:TCPWM\:TCPWM
+        GENERIC MAP(
+            cy_registers => "",
+            exact_width => 0,
+            width => 16)
+        PORT MAP(
+            clock => Net_433_ff12,
+            capture => Net_439,
+            count => '1',
+            reload => Net_439,
+            stop => Net_439,
+            start => Net_439,
+            tr_underflow => Net_431,
+            tr_compare_match => Net_432,
+            tr_overflow => Net_430,
+            line_compl => \Echo_Counter:Net_1\,
+            line => \Echo_Counter:Net_2\,
+            interrupt => Net_429);
+
+    Echo_IRQ:interrupt
+        GENERIC MAP(
+            cy_registers => "",
+            deepsleep_required => 0,
+            int_type => "10")
+        PORT MAP(
+            interrupt => Net_429,
+            clock => ClockBlock_PeriClk);
 
 END __DEFAULT__;

@@ -11,9 +11,15 @@
 */
 #include "project.h"
 #include "stdio.h"
+#include "sys/time.h"
+
+#define US_IN_SEC 1000000
 
 volatile uint8 inputControlsPtr[1] = {0};
-volatile int transmissionReceived;
+volatile uint8 transmissionReceived = 0;
+volatile uint8 resetControls = 0;
+volatile uint8 echoProcessed = 0;
+volatile uint8 gpsReceived = 0;
 
 uint8 left_bit = 0;
 uint8 right_bit = 0;
@@ -21,15 +27,19 @@ uint8 trash_bit = 0;
 uint8 accelerate_bit = 0;
 uint8 reverse_bit = 0;
 
+cy_stc_ble_conn_handle_t connHandle;
+
 void genericEventHandler(uint32_t event, void *eventParameter) {
     switch(event) {
         case CY_BLE_EVT_STACK_ON:
         case CY_BLE_EVT_GAP_DEVICE_DISCONNECTED: {
+            resetControls = 1;
             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION_0_INDEX);
             break;
         }
         case CY_BLE_EVT_GATT_CONNECT_IND: {
             // Bluetooth connects to phone
+            connHandle = *(cy_stc_ble_conn_handle_t*)eventParameter;
             break;
         }
         case CY_BLE_EVT_GATTS_WRITE_REQ: {
@@ -44,6 +54,19 @@ void genericEventHandler(uint32_t event, void *eventParameter) {
             break;
         }
     }
+}
+
+void echoHandler() {
+    uint32 source = Cy_TCPWM_GetInterruptStatusMasked(Echo_Counter_HW, Echo_Counter_CNT_NUM);
+    Cy_TCPWM_ClearInterrupt(Echo_Counter_HW, Echo_Counter_CNT_NUM, source);
+    NVIC_ClearPendingIRQ(Echo_IRQ_cfg.intrSrc);
+    echoProcessed = 1;
+}
+
+void UART_GPSHandler() {
+    Cy_SCB_ClearRxInterrupt(UART_HW, CY_SCB_RX_INTR_NOT_EMPTY);
+    NVIC_ClearPendingIRQ(UART_SCB_IRQ_cfg.intrSrc);
+    gpsReceived = 1;
 }
 
 void bleInterruptNotify() {
@@ -62,21 +85,58 @@ void ble_startup() {
     Cy_BLE_RegisterAppHostCallback(bleInterruptNotify);
 }
 
+void sendOutboundNotification(uint8 dataToSend) {
+    printf("Notifying of new data %d\n", dataToSend);
+    
+    uint8 data[1] = {0};
+    data[0] = dataToSend;
+    
+    cy_stc_ble_gatt_handle_value_pair_t serviceHandle;
+    cy_stc_ble_gatt_value_t serviceData;
+    
+    serviceData.val = data;
+    serviceData.len = 1;
+    
+    serviceHandle.attrHandle = CY_BLE_DEVICE_INTERFACE_DEVICE_OUTBOUND_CHAR_HANDLE;
+    serviceHandle.value = serviceData;
+    
+    Cy_BLE_GATTS_SendNotification(&connHandle, &serviceHandle);
+}
+
+void updateOutboundLocalCharacteristic(uint8 dataToSend) {   
+    printf("Sending data %d\n", dataToSend);
+    
+    uint8 data[1] = {0};
+    data[0] = dataToSend;
+    
+    cy_stc_ble_gatt_handle_value_pair_t serviceHandle;
+    cy_stc_ble_gatt_value_t serviceData;
+    
+    serviceData.val = data;
+    serviceData.len = 1;
+    
+    serviceHandle.attrHandle = CY_BLE_DEVICE_INTERFACE_DEVICE_OUTBOUND_CHAR_HANDLE;
+    serviceHandle.value = serviceData;
+    
+    Cy_BLE_GATTS_WriteAttributeValueLocal(&serviceHandle);
+}
+
 int main(void)
 {
     __enable_irq(); /* Enable global interrupts. */
     /* Enable CM4.  CY_CORTEX_M4_APPL_ADDR must be updated if CM4 memory layout is changed. */
     Cy_SysEnableCM4(CY_CORTEX_M4_APPL_ADDR); 
   
-    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+    /* Place your initialization/startup code here (e.g. MyInst_Start()) */    
+    //start up for components
+    printf("Starting up components ... \n");
     ble_startup();
     UART_Start();
     setvbuf(stdin,NULL,_IONBF,0);
-    
-    //start up for components
     PWM_fin_Start();
     PWM_trashgate_Start();
     PWM_thrustmotor_Start();
+    PWM_ultrasonic_Start();
     
     int compare_val_fin = 2000; // rudder is straight
     PWM_fin_SetCompare0(compare_val_fin);
@@ -87,13 +147,52 @@ int main(void)
     int compare_val_thrustmotor = 1000; //thrust motor off
     PWM_thrustmotor_SetCompare0(compare_val_thrustmotor);
     
+    int compare_val_ultrasonic = 15; // ultrasonic trigger is 15us wide
+    PWM_ultrasonic_SetCompare0(compare_val_ultrasonic);
+    
     uint8 inputControls = 0;
+    
+    printf("Enabling interrupts ... \n");
+    
+    Cy_SysInt_Init(&Echo_IRQ_cfg, echoHandler);
+    NVIC_EnableIRQ(Echo_IRQ_cfg.intrSrc);
+    
+    Cy_TCPWM_Counter_Init(Echo_Counter_HW, Echo_Counter_CNT_NUM, &Echo_Counter_config);
+    Cy_TCPWM_Counter_Enable(Echo_Counter_HW, Echo_Counter_CNT_NUM);
+    Cy_SysInt_Init(&Echo_IRQ_cfg, echoHandler);
+    NVIC_EnableIRQ(Echo_IRQ_cfg.intrSrc);
+    
+    Cy_SysInt_Init(&UART_SCB_IRQ_cfg, &UART_GPSHandler);
+    NVIC_EnableIRQ(UART_SCB_IRQ_cfg.intrSrc);
     
     for(;;)
     {
         /* Place your application code here. */
         //check if psoc is on w/ LED light
-        Cy_GPIO_Write(GreenLight_PORT, GreenLight_NUM, 0);
+        // Cy_GPIO_Write(GreenLight_PORT, GreenLight_NUM, 0);
+        
+        if (resetControls > 0) {
+            printf("Reset controls\n");
+            inputControls = 0;
+        }
+        
+        if (echoProcessed > 0) {
+            printf("Echo pulse width measured with timer\n");
+            uint16 pulseWidthUS = Cy_TCPWM_Counter_GetCapture(Echo_Counter_HW, Echo_Counter_CNT_NUM);
+            // TO DO: ESTABLISH PSOC --> PHONE COMMUNICATION PROTOCOL FOR MULTI-BYTE TRANSMISSIONS
+            // updateOutboundLocalCharacteristic(pulseWidthUS);
+            sendOutboundNotification(pulseWidthUS);
+            echoProcessed = 0;
+        }
+        
+        if (gpsReceived > 0) {
+            printf("Received new GPS coordinates\n");
+            // unsigned char line[128];
+            // TO DO: ADD MESSAGE PARSING AND TRANSMISSION PROTOCOL FOR LOCATION DATA
+            sendOutboundNotification(0xFF);
+            gpsReceived = 0;
+        }
+        
         if(transmissionReceived > 0) {
             inputControls = getControls();
             printf("User input detected: %d\n", inputControls);

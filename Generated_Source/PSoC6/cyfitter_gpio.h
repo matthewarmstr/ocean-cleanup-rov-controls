@@ -150,4 +150,48 @@
 #define thrustmotor_SLEWRATE CY_GPIO_SLEW_FAST
 #define thrustmotor_THRESHOLD_LEVEL CY_GPIO_VTRIP_CMOS
 
+/* UltrasonicEcho */
+#define UltrasonicEcho_0_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define UltrasonicEcho_0_INBUF_ENABLED 1u
+#define UltrasonicEcho_0_INIT_DRIVESTATE 0u
+#define UltrasonicEcho_0_INIT_MUXSEL 0u
+#define UltrasonicEcho_0_INPUT_SYNC 2u
+#define UltrasonicEcho_0_INTERRUPT_MODE CY_GPIO_INTR_DISABLE
+#define UltrasonicEcho_0_NUM 7u
+#define UltrasonicEcho_0_PORT GPIO_PRT12
+#define UltrasonicEcho_0_SLEWRATE CY_GPIO_SLEW_FAST
+#define UltrasonicEcho_0_THRESHOLD_LEVEL CY_GPIO_VTRIP_CMOS
+#define UltrasonicEcho_DRIVEMODE CY_GPIO_DM_HIGHZ
+#define UltrasonicEcho_INBUF_ENABLED 1u
+#define UltrasonicEcho_INIT_DRIVESTATE 0u
+#define UltrasonicEcho_INIT_MUXSEL 0u
+#define UltrasonicEcho_INPUT_SYNC 2u
+#define UltrasonicEcho_INTERRUPT_MODE CY_GPIO_INTR_DISABLE
+#define UltrasonicEcho_NUM 7u
+#define UltrasonicEcho_PORT GPIO_PRT12
+#define UltrasonicEcho_SLEWRATE CY_GPIO_SLEW_FAST
+#define UltrasonicEcho_THRESHOLD_LEVEL CY_GPIO_VTRIP_CMOS
+
+/* UltrasonicTrig */
+#define UltrasonicTrig_0_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define UltrasonicTrig_0_INBUF_ENABLED 0u
+#define UltrasonicTrig_0_INIT_DRIVESTATE 1u
+#define UltrasonicTrig_0_INIT_MUXSEL 8u
+#define UltrasonicTrig_0_INPUT_SYNC 2u
+#define UltrasonicTrig_0_INTERRUPT_MODE CY_GPIO_INTR_DISABLE
+#define UltrasonicTrig_0_NUM 6u
+#define UltrasonicTrig_0_PORT GPIO_PRT12
+#define UltrasonicTrig_0_SLEWRATE CY_GPIO_SLEW_FAST
+#define UltrasonicTrig_0_THRESHOLD_LEVEL CY_GPIO_VTRIP_CMOS
+#define UltrasonicTrig_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define UltrasonicTrig_INBUF_ENABLED 0u
+#define UltrasonicTrig_INIT_DRIVESTATE 1u
+#define UltrasonicTrig_INIT_MUXSEL 8u
+#define UltrasonicTrig_INPUT_SYNC 2u
+#define UltrasonicTrig_INTERRUPT_MODE CY_GPIO_INTR_DISABLE
+#define UltrasonicTrig_NUM 6u
+#define UltrasonicTrig_PORT GPIO_PRT12
+#define UltrasonicTrig_SLEWRATE CY_GPIO_SLEW_FAST
+#define UltrasonicTrig_THRESHOLD_LEVEL CY_GPIO_VTRIP_CMOS
+
 #endif /* INCLUDED_CYFITTER_GPIO_H */

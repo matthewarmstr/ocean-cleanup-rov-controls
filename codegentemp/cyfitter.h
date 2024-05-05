@@ -41,14 +41,24 @@
 #define Clock_1__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 
 /* Clock_2 */
-#define Clock_2__DIV_IDX 3
-#define Clock_2__DIV_NUM 3
+#define Clock_2__DIV_IDX 5
+#define Clock_2__DIV_NUM 5
 #define Clock_2__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 
 /* Clock_3 */
-#define Clock_3__DIV_IDX 2
-#define Clock_3__DIV_NUM 2
+#define Clock_3__DIV_IDX 3
+#define Clock_3__DIV_NUM 3
 #define Clock_3__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+
+/* Clock_4 */
+#define Clock_4__DIV_IDX 4
+#define Clock_4__DIV_NUM 4
+#define Clock_4__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+
+/* Clock_5 */
+#define Clock_5__DIV_IDX 2
+#define Clock_5__DIV_NUM 2
+#define Clock_5__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 
 /* PWM_fin */
 #define PWM_fin_TCPWM__CNT_HW TCPWM0_CNT0
@@ -56,11 +66,23 @@
 #define PWM_fin_TCPWM__HW TCPWM0
 #define PWM_fin_TCPWM__IDX 0u
 
+/* Echo_Counter */
+#define Echo_Counter_TCPWM__CNT_HW TCPWM0_CNT2
+#define Echo_Counter_TCPWM__CNT_IDX 2u
+#define Echo_Counter_TCPWM__HW TCPWM0
+#define Echo_Counter_TCPWM__IDX 0u
+
 /* PWM_trashgate */
 #define PWM_trashgate_TCPWM__CNT_HW TCPWM0_CNT5
 #define PWM_trashgate_TCPWM__CNT_IDX 5u
 #define PWM_trashgate_TCPWM__HW TCPWM0
 #define PWM_trashgate_TCPWM__IDX 0u
+
+/* PWM_ultrasonic */
+#define PWM_ultrasonic_TCPWM__CNT_HW TCPWM0_CNT7
+#define PWM_ultrasonic_TCPWM__CNT_IDX 7u
+#define PWM_ultrasonic_TCPWM__HW TCPWM0
+#define PWM_ultrasonic_TCPWM__IDX 0u
 
 /* PWM_thrustmotor */
 #define PWM_thrustmotor_TCPWM__CNT_HW TCPWM0_CNT1

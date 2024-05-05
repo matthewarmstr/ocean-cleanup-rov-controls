@@ -1,5 +1,5 @@
 # betawble
-# 2024-04-18 23:15:59Z
+# 2024-05-05 05:28:49Z
 
 dont_use_location SMIF -1 -1 0
 dont_use_location p4usbcell -1 -1 0
@@ -20,6 +20,8 @@ set_io "finservo(0)" iocell 9 6
 set_io "trashservo(0)" iocell 9 2
 set_io "thrustmotor(0)" iocell 10 6
 set_io "GreenLight(0)" iocell 7 1
+set_io "UltrasonicTrig(0)" iocell 12 6
+set_io "UltrasonicEcho(0)" iocell 12 7
 set_location "\BLE:cy_mxs40_ble\" BLE -1 -1 0
 set_location "\BLE:bless_isr\" interrupt -1 -1 24
 set_location "\UART:SCB_IRQ\" interrupt -1 -1 46
@@ -27,3 +29,6 @@ set_location "\UART:SCB\" SCB -1 -1 5
 set_location "\PWM_fin:TCPWM\" TCPWM -1 -1 0
 set_location "\PWM_trashgate:TCPWM\" TCPWM -1 -1 5
 set_location "\PWM_thrustmotor:TCPWM\" TCPWM -1 -1 1
+set_location "\PWM_ultrasonic:TCPWM\" TCPWM -1 -1 7
+set_location "\Echo_Counter:TCPWM\" TCPWM -1 -1 2
+set_location "Echo_IRQ" interrupt -1 -1 92

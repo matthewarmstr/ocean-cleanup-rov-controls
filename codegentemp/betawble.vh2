@@ -2,7 +2,7 @@
 --	Conversion of betawble.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Apr 18 16:15:54 2024
+--	Sat May 04 22:28:45 2024
 --
 
 USE cypress.cypress.all;
@@ -99,6 +99,32 @@ SIGNAL Net_136 : bit;
 SIGNAL tmpFB_0__GreenLight_net_0 : bit;
 SIGNAL tmpIO_0__GreenLight_net_0 : bit;
 TERMINAL tmpSIOVREF__GreenLight_net_0 : bit;
+SIGNAL Net_173 : bit;
+SIGNAL tmpFB_0__UltrasonicTrig_net_0 : bit;
+SIGNAL tmpIO_0__UltrasonicTrig_net_0 : bit;
+TERMINAL tmpSIOVREF__UltrasonicTrig_net_0 : bit;
+SIGNAL Net_439 : bit;
+SIGNAL tmpIO_0__UltrasonicEcho_net_0 : bit;
+TERMINAL tmpSIOVREF__UltrasonicEcho_net_0 : bit;
+SIGNAL Net_274 : bit;
+SIGNAL \PWM_ultrasonic:swap\ : bit;
+SIGNAL \PWM_ultrasonic:count\ : bit;
+SIGNAL \PWM_ultrasonic:reload\ : bit;
+SIGNAL \PWM_ultrasonic:kill\ : bit;
+SIGNAL \PWM_ultrasonic:start\ : bit;
+SIGNAL Net_195 : bit;
+SIGNAL Net_186 : bit;
+SIGNAL Net_190 : bit;
+SIGNAL Net_191 : bit;
+SIGNAL Net_188 : bit;
+SIGNAL Net_433 : bit;
+SIGNAL \Echo_Counter:count\ : bit;
+SIGNAL Net_431 : bit;
+SIGNAL Net_432 : bit;
+SIGNAL Net_430 : bit;
+SIGNAL \Echo_Counter:Net_1\ : bit;
+SIGNAL \Echo_Counter:Net_2\ : bit;
+SIGNAL Net_429 : bit;
 BEGIN
 
 one <=  ('1') ;
@@ -427,5 +453,126 @@ GreenLight:cy_mxs40_gpio_v1_0
 		io=>(tmpIO_0__GreenLight_net_0),
 		annotation=>(open),
 		siovref=>(tmpSIOVREF__GreenLight_net_0));
+UltrasonicTrig:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"66e79720-a4b0-4409-b66c-f206b488736b",
+		drive_mode=>"6",
+		ibuf_enabled=>"0",
+		init_dr_st=>"1",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"1",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"1",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"O",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>Net_173,
+		fb=>(tmpFB_0__UltrasonicTrig_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__UltrasonicTrig_net_0),
+		annotation=>(open),
+		siovref=>(tmpSIOVREF__UltrasonicTrig_net_0));
+UltrasonicEcho:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"4cca878b-77b5-471d-8aeb-ad6925202455",
+		drive_mode=>"0",
+		ibuf_enabled=>"1",
+		init_dr_st=>"0",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"0",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"I",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>Net_439,
+		analog=>(open),
+		io=>(tmpIO_0__UltrasonicEcho_net_0),
+		annotation=>(open),
+		siovref=>(tmpSIOVREF__UltrasonicEcho_net_0));
+\PWM_ultrasonic:TCPWM\:cy_mxs40_tcpwm_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>32,
+		exact_width=>'0')
+	PORT MAP(clock=>Net_274,
+		capture=>zero,
+		count=>one,
+		reload=>zero,
+		stop=>zero,
+		start=>zero,
+		tr_underflow=>Net_195,
+		tr_compare_match=>Net_186,
+		tr_overflow=>Net_190,
+		line_compl=>Net_191,
+		line=>Net_173,
+		interrupt=>Net_188);
+Clock_4:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"42770531-99ff-4a0a-b90c-1172358af424",
+		source_clock_id=>"2FB4EC85-8328-4C5A-9ED9-8B63060178EB",
+		divisor=>0,
+		period=>"1000000000",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>Net_274,
+		dig_domain_out=>open);
+\Echo_Counter:TCPWM\:cy_mxs40_tcpwm_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>16,
+		exact_width=>'0')
+	PORT MAP(clock=>Net_433,
+		capture=>Net_439,
+		count=>one,
+		reload=>Net_439,
+		stop=>Net_439,
+		start=>Net_439,
+		tr_underflow=>Net_431,
+		tr_compare_match=>Net_432,
+		tr_overflow=>Net_430,
+		line_compl=>\Echo_Counter:Net_1\,
+		line=>\Echo_Counter:Net_2\,
+		interrupt=>Net_429);
+Clock_5:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"2f9c967f-ff8a-4341-80ac-4da4ddcf873d",
+		source_clock_id=>"2FB4EC85-8328-4C5A-9ED9-8B63060178EB",
+		divisor=>0,
+		period=>"1000000000",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>Net_433,
+		dig_domain_out=>open);
+Echo_IRQ:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"10")
+	PORT MAP(int_signal=>Net_429);
 
 END R_T_L;

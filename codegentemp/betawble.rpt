@@ -1,4 +1,4 @@
-Loading plugins phase: Elapsed time ==> 0s.283ms
+Loading plugins phase: Elapsed time ==> 0s.121ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cyprj -d CYBLE-416045-02 -s C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
@@ -7,10 +7,10 @@ ADD: fit.M0067: information: Clock Information: (The WCO is enabled. Chip startu
 
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.852ms
+Elaboration phase: Elapsed time ==> 1s.582ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.063ms
+HDL generation phase: Elapsed time ==> 0s.034ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -44,7 +44,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\armst
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Thu Apr 18 16:15:53 2024
+Sat May 04 22:28:44 2024
 
 
 ======================================================================
@@ -54,7 +54,7 @@ Options  :    -yv2 -q10 betawble.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Thu Apr 18 16:15:53 2024
+Sat May 04 22:28:44 2024
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -86,7 +86,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\armst
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Thu Apr 18 16:15:54 2024
+Sat May 04 22:28:45 2024
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -113,7 +113,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\armst
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Thu Apr 18 16:15:54 2024
+Sat May 04 22:28:45 2024
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -166,6 +166,12 @@ Aliasing \PWM_thrustmotor:count\ to one
 Aliasing \PWM_thrustmotor:reload\ to zero
 Aliasing \PWM_thrustmotor:kill\ to zero
 Aliasing \PWM_thrustmotor:start\ to zero
+Aliasing \PWM_ultrasonic:swap\ to zero
+Aliasing \PWM_ultrasonic:count\ to one
+Aliasing \PWM_ultrasonic:reload\ to zero
+Aliasing \PWM_ultrasonic:kill\ to zero
+Aliasing \PWM_ultrasonic:start\ to zero
+Aliasing \Echo_Counter:count\ to one
 Removing Lhs of wire \UART:clock_wire\[8] = \UART:Net_847\[7]
 Removing Lhs of wire \UART:rx_wire\[22] = \UART:Net_1172\[19]
 Removing Lhs of wire \UART:cts_wire\[23] = zero[18]
@@ -184,9 +190,15 @@ Removing Lhs of wire \PWM_thrustmotor:count\[90] = one[12]
 Removing Lhs of wire \PWM_thrustmotor:reload\[91] = zero[18]
 Removing Lhs of wire \PWM_thrustmotor:kill\[92] = zero[18]
 Removing Lhs of wire \PWM_thrustmotor:start\[93] = zero[18]
+Removing Lhs of wire \PWM_ultrasonic:swap\[115] = zero[18]
+Removing Lhs of wire \PWM_ultrasonic:count\[116] = one[12]
+Removing Lhs of wire \PWM_ultrasonic:reload\[117] = zero[18]
+Removing Lhs of wire \PWM_ultrasonic:kill\[118] = zero[18]
+Removing Lhs of wire \PWM_ultrasonic:start\[119] = zero[18]
+Removing Lhs of wire \Echo_Counter:count\[128] = one[12]
 
 ------------------------------------------------------
-Aliased 0 equations, 18 wires.
+Aliased 0 equations, 24 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -210,14 +222,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cyprj" -dcpsoc3 betawble.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.569ms
+Warp synthesis phase: Elapsed time ==> 0s.627ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Thursday, 18 April 2024 16:15:54
+cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Saturday, 04 May 2024 22:28:45
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cyprj -d CYBLE-416045-02 betawble.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.234ms
+Design parsing phase: Elapsed time ==> 0s.246ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -227,8 +239,10 @@ Done removing unused cells.
 <CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
     Fixed Function Clock 0: Automatic-assigning  clock 'UART_SCBCLK'. Signal=\UART:Net_847_ff0\
     Fixed Function Clock 11: Automatic-assigning  clock 'Clock_1'. Signal=Net_51_ff11
-    Fixed Function Clock 12: Automatic-assigning  clock 'Clock_3'. Signal=Net_133_ff12
-    Fixed Function Clock 13: Automatic-assigning  clock 'Clock_2'. Signal=Net_35_ff13
+    Fixed Function Clock 12: Automatic-assigning  clock 'Clock_5'. Signal=Net_433_ff12
+    Fixed Function Clock 13: Automatic-assigning  clock 'Clock_3'. Signal=Net_133_ff13
+    Fixed Function Clock 14: Automatic-assigning  clock 'Clock_4'. Signal=Net_274_ff14
+    Fixed Function Clock 15: Automatic-assigning  clock 'Clock_2'. Signal=Net_35_ff15
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
 </CYPRESSTAG>
@@ -690,6 +704,86 @@ Design Equations
         Properties:
         {
         }
+
+    Pin : Name = UltrasonicTrig(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: AUTO
+            Out Sync Option: NOSYNC
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: CMOS_OUT
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: INP_DIS_HI_Z
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => UltrasonicTrig(0)__PA ,
+            pin_input => Net_173 ,
+            pad => UltrasonicTrig(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = UltrasonicEcho(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: INP_DIS_HI_Z
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL
+            Initial Value: 0
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => UltrasonicEcho(0)__PA ,
+            fb => Net_439 ,
+            pad => UltrasonicEcho(0)_PAD );
+        Properties:
+        {
+        }
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
     </CYPRESSTAG>
@@ -732,6 +826,16 @@ Design Equations
             deepsleep_required = 0
             int_type = "10"
         }
+
+    interrupt: Name =Echo_IRQ
+        PORT MAP (
+            interrupt => Net_429 );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
+            int_type = "10"
+        }
     </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Technology mapping summary" expanded>
@@ -744,9 +848,9 @@ Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
 Digital Clocks                :    0 :    8 :    8 :  0.00 %
 Crypto Accelerator            :    0 :    1 :    1 :  0.00 %
-Interrupts [CM0+]             :    6 :   26 :   32 : 18.75 %
-Interrupts [CM4]              :    1 :  146 :  147 :  0.68 %
-IO                            :   11 :   25 :   36 : 30.56 %
+Interrupts [CM0+]             :    8 :   24 :   32 : 25.00 %
+Interrupts [CM4]              :    0 :  147 :  147 :  0.00 %
+IO                            :   13 :   23 :   36 : 36.11 %
 Interprocessor Communication  :    0 :   16 :   16 :  0.00 %
 MCWDT                         :    0 :    2 :    2 :  0.00 %
 CapSense                      :    0 :    1 :    1 :  0.00 %
@@ -759,7 +863,7 @@ SCB                           :    1 :    8 :    9 : 11.11 %
 DMA Channels                  :    0 :   32 :   32 :  0.00 %
 LCD                           :    0 :    1 :    1 :  0.00 %
 SmartIO                       :    0 :    2 :    2 :  0.00 %
-TCPWM                         :    3 :   29 :   32 :  9.38 %
+TCPWM                         :    5 :   27 :   32 : 15.63 %
 UDB                           :      :      :      :        
   Macrocells                  :    0 :   96 :   96 :  0.00 %
   Unique P-terms              :    0 :  192 :  192 :  0.00 %
@@ -775,8 +879,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.203ms
-Tech Mapping phase: Elapsed time ==> 0s.329ms
+Technology Mapping: Elapsed time ==> 0s.142ms
+Tech Mapping phase: Elapsed time ==> 0s.189ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -795,6 +899,8 @@ finservo(0)                         : [IOP=(9)][IoId=(6)]
 trashservo(0)                       : [IOP=(9)][IoId=(2)]                
 thrustmotor(0)                      : [IOP=(10)][IoId=(6)]               
 GreenLight(0)                       : [IOP=(7)][IoId=(1)]                
+UltrasonicTrig(0)                   : [IOP=(12)][IoId=(6)]               
+UltrasonicEcho(0)                   : [IOP=(12)][IoId=(7)]               
 ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
 SRSS                                : SRSS_[FFB(SRSS,0)]                 
 CPUSS                               : CPUSS_[FFB(CPUSS,0)]               
@@ -803,17 +909,19 @@ CPUSS                               : CPUSS_[FFB(CPUSS,0)]
 \PWM_fin:TCPWM\                     : TCPWM_[FFB(TCPWM,0)]               
 \PWM_trashgate:TCPWM\               : TCPWM_[FFB(TCPWM,5)]               
 \PWM_thrustmotor:TCPWM\             : TCPWM_[FFB(TCPWM,1)]               
+\PWM_ultrasonic:TCPWM\              : TCPWM_[FFB(TCPWM,7)]               
+\Echo_Counter:TCPWM\                : TCPWM_[FFB(TCPWM,2)]               
 
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.1422509s
+Elapsed time ==> 0.0801676s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.658ms
+Analog Placement phase: Elapsed time ==> 0s.531ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0200745 secs
+Route success=True, Iterations=1 Elapsed=0.0016569 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.015ms
 </CYPRESSTAG>
@@ -842,7 +950,7 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.046ms
+Analog Code Generation phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
@@ -854,14 +962,14 @@ I2076: Total run-time: 0.3 sec.
 <CYPRESSTAG name="PLD Packing Summary">
 No PLDs were packed.
 </CYPRESSTAG>
-PLD Packing: Elapsed time ==> 0s.015ms
+PLD Packing: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Partitioning">
 <CYPRESSTAG name="Initial Partitioning Summary">
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.046ms
+Partitioning: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -905,6 +1013,16 @@ Intr container @ [IntrContainer=(0)]:
     interrupt: Name =\UART:SCB_IRQ\
         PORT MAP (
             interrupt => \UART:intr_wire\ );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(92)] 
+    interrupt: Name =Echo_IRQ
+        PORT MAP (
+            interrupt => Net_429 );
         Properties:
         {
             cy_registers = ""
@@ -1363,6 +1481,88 @@ Pin : Name = thrustmotor(0)
     }
 
 Port 12 contains the following IO cells:
+[IoId=6]: 
+Pin : Name = UltrasonicTrig(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: AUTO
+        Out Sync Option: NOSYNC
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: CMOS_OUT
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: INP_DIS_HI_Z
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => UltrasonicTrig(0)__PA ,
+        pin_input => Net_173 ,
+        pad => UltrasonicTrig(0)_PAD );
+    Properties:
+    {
+    }
+
+[IoId=7]: 
+Pin : Name = UltrasonicEcho(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: INP_DIS_HI_Z
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL
+        Initial Value: 0
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => UltrasonicEcho(0)__PA ,
+        fb => Net_439 ,
+        pad => UltrasonicEcho(0)_PAD );
+    Properties:
+    {
+    }
+
 Clock group 0: 
     Clock Block @ F(Clock,0): 
     Clock: Name =ClockBlock
@@ -1386,8 +1586,10 @@ Clock group 0:
             lfclk => ClockBlock_LFClk ,
             ff_div_0 => \UART:Net_847_ff0\ ,
             ff_div_11 => Net_51_ff11 ,
-            ff_div_12 => Net_133_ff12 ,
-            ff_div_13 => Net_35_ff13 );
+            ff_div_12 => Net_433_ff12 ,
+            ff_div_13 => Net_133_ff13 ,
+            ff_div_14 => Net_274_ff14 ,
+            ff_div_15 => Net_35_ff15 );
         Properties:
         {
         }
@@ -1440,7 +1642,7 @@ TCPWM group 0:
     TCPWM @ F(TCPWM,1): 
     TCPWM: Name =\PWM_thrustmotor:TCPWM\
         PORT MAP (
-            clock => Net_133_ff12 ,
+            clock => Net_133_ff13 ,
             capture => zero ,
             count => one ,
             reload => zero ,
@@ -1458,10 +1660,31 @@ TCPWM group 0:
             exact_width = 0
             width = 16
         }
+    TCPWM @ F(TCPWM,2): 
+    TCPWM: Name =\Echo_Counter:TCPWM\
+        PORT MAP (
+            clock => Net_433_ff12 ,
+            capture => Net_439 ,
+            count => one ,
+            reload => Net_439 ,
+            stop => Net_439 ,
+            start => Net_439 ,
+            tr_underflow => Net_431 ,
+            tr_compare_match => Net_432 ,
+            tr_overflow => Net_430 ,
+            line_compl => \Echo_Counter:Net_1\ ,
+            line => \Echo_Counter:Net_2\ ,
+            interrupt => Net_429 );
+        Properties:
+        {
+            cy_registers = ""
+            exact_width = 0
+            width = 16
+        }
     TCPWM @ F(TCPWM,5): 
     TCPWM: Name =\PWM_trashgate:TCPWM\
         PORT MAP (
-            clock => Net_35_ff13 ,
+            clock => Net_35_ff15 ,
             capture => zero ,
             count => one ,
             reload => zero ,
@@ -1478,6 +1701,27 @@ TCPWM group 0:
             cy_registers = ""
             exact_width = 0
             width = 16
+        }
+    TCPWM @ F(TCPWM,7): 
+    TCPWM: Name =\PWM_ultrasonic:TCPWM\
+        PORT MAP (
+            clock => Net_274_ff14 ,
+            capture => zero ,
+            count => one ,
+            reload => zero ,
+            stop => zero ,
+            start => zero ,
+            tr_underflow => Net_195 ,
+            tr_compare_match => Net_186 ,
+            tr_overflow => Net_190 ,
+            line_compl => Net_191 ,
+            line => Net_173 ,
+            interrupt => Net_188 );
+        Properties:
+        {
+            cy_registers = ""
+            exact_width = 0
+            width = 32
         }
 OA group 0: empty
 TEMP group 0: empty
@@ -1560,37 +1804,40 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
      |   6 |     * |      NONE |         CMOS_OUT |                finservo(0) | In(Net_79)
 -----+-----+-------+-----------+------------------+----------------------------+-------------------------
   10 |   6 |     * |      NONE |         CMOS_OUT |             thrustmotor(0) | In(Net_139)
+-----+-----+-------+-----------+------------------+----------------------------+-------------------------
+  12 |   6 |     * |      NONE |         CMOS_OUT |          UltrasonicTrig(0) | In(Net_173)
+     |   7 |     * |      NONE |      HI_Z_ANALOG |          UltrasonicEcho(0) | FB(Net_439)
 ---------------------------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.046ms
-Digital Placement phase: Elapsed time ==> 3s.475ms
+Digital component placer commit/Report: Elapsed time ==> 0s.047ms
+Digital Placement phase: Elapsed time ==> 3s.259ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "betawble_r.vh2" --pcf-path "betawble.pco" --des-name "betawble" --dsf-path "betawble.dsf" --sdc-path "betawble.sdc" --lib-path "betawble_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.649ms
+Digital Routing phase: Elapsed time ==> 0s.581ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.405ms
+Bitstream Generation phase: Elapsed time ==> 0s.299ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.012ms
+Bitstream Verification phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in betawble_timing.html.
-Static timing analysis phase: Elapsed time ==> 5s.008ms
+Static timing analysis phase: Elapsed time ==> 5s.458ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
-Data reporting phase: Elapsed time ==> 0s.010ms
+Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.109ms
+Design database save phase: Elapsed time ==> 0s.078ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 10s.985ms
+cydsfit: Elapsed time ==> 10s.661ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 10s.985ms
-API generation phase: Elapsed time ==> 0s.596ms
-Dependency generation phase: Elapsed time ==> 0s.013ms
-Cleanup phase: Elapsed time ==> 0s.002ms
+Fitter phase: Elapsed time ==> 10s.666ms
+API generation phase: Elapsed time ==> 0s.505ms
+Dependency generation phase: Elapsed time ==> 0s.006ms
+Cleanup phase: Elapsed time ==> 0s.001ms

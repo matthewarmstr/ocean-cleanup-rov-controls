@@ -167,6 +167,10 @@
 #include "Clock_2.h"
 #include "PWM_thrustmotor.h"
 #include "Clock_3.h"
+#include "PWM_ultrasonic.h"
+#include "Clock_4.h"
+#include "Echo_Counter.h"
+#include "Clock_5.h"
 #include "UART_SCBCLK.h"
 
 /*[]*/

@@ -30,6 +30,12 @@
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\PWM_thrustmotor.c" value="SOURCE_C;CortexM0p,CortexM4;;;;PWM_thrustmotor" />
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\PWM_thrustmotor.h" value="HEADER;;;;;PWM_thrustmotor" />
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\Clock_3.h" value="HEADER;;;;;Clock_3" />
+  <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\PWM_ultrasonic.c" value="SOURCE_C;CortexM0p,CortexM4;;;;PWM_ultrasonic" />
+  <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\PWM_ultrasonic.h" value="HEADER;;;;;PWM_ultrasonic" />
+  <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\Clock_4.h" value="HEADER;;;;;Clock_4" />
+  <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\Echo_Counter.c" value="SOURCE_C;CortexM0p,CortexM4;;;;Echo_Counter" />
+  <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\Echo_Counter.h" value="HEADER;;;;;Echo_Counter" />
+  <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\Clock_5.h" value="HEADER;;;;;Clock_5" />
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\UART_SCBCLK.h" value="HEADER;;;;;UART_SCBCLK" />
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\project.h" value="OTHER;;;;;" />
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\cycodeshareimport.ld" value="OTHER;;;;;" />
