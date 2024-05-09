@@ -1,4 +1,4 @@
---------------- Clean Started: 05/04/2024 22:30:09 Project: betawble, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Clean Started: 05/08/2024 19:50:39 Project: betawble, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\startup_psoc6_01_cm0plus.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\main_cm0p.o"
 Deleting file ".\CortexM0p\ARM_GCC_541\Debug\system_psoc6_cm0plus.o"
@@ -179,4 +179,4 @@ Deleting file ".\CortexM4\ARM_GCC_541\Debug\betawble.hex"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\betawble.elf"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\betawble.map"
 Deleting file ".\CortexM4\ARM_GCC_541\Debug\.deps\SOURCE_C__ARM_GCC_GENERIC.P"
---------------- Clean Succeeded: 05/04/2024 22:30:09 ---------------
+--------------- Clean Succeeded: 05/08/2024 19:50:39 ---------------

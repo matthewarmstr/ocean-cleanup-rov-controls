@@ -18,6 +18,7 @@
 volatile uint8 inputControlsPtr[1] = {0};
 volatile uint8 transmissionReceived = 0;
 volatile uint8 resetControls = 0;
+volatile uint16 pulseWidthUS = 0;
 volatile uint8 echoProcessed = 0;
 volatile uint8 gpsReceived = 0;
 
@@ -33,7 +34,7 @@ void genericEventHandler(uint32_t event, void *eventParameter) {
     switch(event) {
         case CY_BLE_EVT_STACK_ON:
         case CY_BLE_EVT_GAP_DEVICE_DISCONNECTED: {
-            resetControls = 1;
+            // resetControls = 1;
             Cy_BLE_GAPP_StartAdvertisement(CY_BLE_ADVERTISING_FAST, CY_BLE_PERIPHERAL_CONFIGURATION_0_INDEX);
             break;
         }
@@ -45,12 +46,11 @@ void genericEventHandler(uint32_t event, void *eventParameter) {
         case CY_BLE_EVT_GATTS_WRITE_REQ: {
             // PSoC receives value from phone
             cy_stc_ble_gatts_write_cmd_req_param_t *writeReqParameter = (cy_stc_ble_gatts_write_cmd_req_param_t *) eventParameter;
-
             if (CY_BLE_DEVICE_INTERFACE_DEVICE_INBOUND_CHAR_HANDLE == writeReqParameter->handleValPair.attrHandle) {
                 inputControlsPtr[0] = writeReqParameter->handleValPair.value.val[0];
-                Cy_BLE_GATTS_WriteRsp(writeReqParameter->connHandle);
                 transmissionReceived = 1;
             }
+            Cy_BLE_GATTS_WriteRsp(writeReqParameter->connHandle);
             break;
         }
     }
@@ -58,16 +58,17 @@ void genericEventHandler(uint32_t event, void *eventParameter) {
 
 void echoHandler() {
     uint32 source = Cy_TCPWM_GetInterruptStatusMasked(Echo_Counter_HW, Echo_Counter_CNT_NUM);
+    pulseWidthUS = Cy_TCPWM_Counter_GetCapture(Echo_Counter_HW, Echo_Counter_CNT_NUM);
     Cy_TCPWM_ClearInterrupt(Echo_Counter_HW, Echo_Counter_CNT_NUM, source);
     NVIC_ClearPendingIRQ(Echo_IRQ_cfg.intrSrc);
     echoProcessed = 1;
 }
 
-void UART_GPSHandler() {
+/*void UART_GPSHandler() {
     Cy_SCB_ClearRxInterrupt(UART_HW, CY_SCB_RX_INTR_NOT_EMPTY);
     NVIC_ClearPendingIRQ(UART_SCB_IRQ_cfg.intrSrc);
     gpsReceived = 1;
-}
+}*/
 
 void bleInterruptNotify() {
     Cy_BLE_ProcessEvents();
@@ -84,41 +85,22 @@ void ble_startup() {
     }
     Cy_BLE_RegisterAppHostCallback(bleInterruptNotify);
 }
-
-void sendOutboundNotification(uint8 dataToSend) {
-    printf("Notifying of new data %d\n", dataToSend);
     
+void updateUltrasonicCharacteristic(uint16 newData) {
     uint8 data[1] = {0};
-    data[0] = dataToSend;
+    data[0] = newData;
     
     cy_stc_ble_gatt_handle_value_pair_t serviceHandle;
     cy_stc_ble_gatt_value_t serviceData;
     
     serviceData.val = data;
-    serviceData.len = 1;
+    serviceData.len = sizeof(newData);
     
-    serviceHandle.attrHandle = CY_BLE_DEVICE_INTERFACE_DEVICE_OUTBOUND_CHAR_HANDLE;
-    serviceHandle.value = serviceData;
-    
-    Cy_BLE_GATTS_SendNotification(&connHandle, &serviceHandle);
-}
-
-void updateOutboundLocalCharacteristic(uint8 dataToSend) {   
-    printf("Sending data %d\n", dataToSend);
-    
-    uint8 data[1] = {0};
-    data[0] = dataToSend;
-    
-    cy_stc_ble_gatt_handle_value_pair_t serviceHandle;
-    cy_stc_ble_gatt_value_t serviceData;
-    
-    serviceData.val = data;
-    serviceData.len = 1;
-    
-    serviceHandle.attrHandle = CY_BLE_DEVICE_INTERFACE_DEVICE_OUTBOUND_CHAR_HANDLE;
+    serviceHandle.attrHandle = CY_BLE_DEVICE_INTERFACE_ULTRASONICPULSE_CHAR_HANDLE;
     serviceHandle.value = serviceData;
     
     Cy_BLE_GATTS_WriteAttributeValueLocal(&serviceHandle);
+    Cy_BLE_GATTS_SendNotification(&connHandle, &serviceHandle);
 }
 
 int main(void)
@@ -129,10 +111,9 @@ int main(void)
   
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */    
     //start up for components
-    printf("Starting up components ... \n");
-    ble_startup();
+    printf("Starting up components ... ");
     UART_Start();
-    setvbuf(stdin,NULL,_IONBF,0);
+    ble_startup();
     PWM_fin_Start();
     PWM_trashgate_Start();
     PWM_thrustmotor_Start();
@@ -152,36 +133,31 @@ int main(void)
     
     uint8 inputControls = 0;
     
-    printf("Enabling interrupts ... \n");
-    
-    Cy_SysInt_Init(&Echo_IRQ_cfg, echoHandler);
-    NVIC_EnableIRQ(Echo_IRQ_cfg.intrSrc);
+    printf("Enabling interrupts ... ");
     
     Cy_TCPWM_Counter_Init(Echo_Counter_HW, Echo_Counter_CNT_NUM, &Echo_Counter_config);
     Cy_TCPWM_Counter_Enable(Echo_Counter_HW, Echo_Counter_CNT_NUM);
     Cy_SysInt_Init(&Echo_IRQ_cfg, echoHandler);
     NVIC_EnableIRQ(Echo_IRQ_cfg.intrSrc);
     
-    Cy_SysInt_Init(&UART_SCB_IRQ_cfg, &UART_GPSHandler);
-    NVIC_EnableIRQ(UART_SCB_IRQ_cfg.intrSrc);
+    // Cy_SysInt_Init(&UART_SCB_IRQ_cfg, &UART_GPSHandler);
+    // NVIC_EnableIRQ(UART_SCB_IRQ_cfg.intrSrc);
     
-    for(;;)
-    {
+    printf("Setup complete\n");
+    
+    while(1) {
         /* Place your application code here. */
         //check if psoc is on w/ LED light
         // Cy_GPIO_Write(GreenLight_PORT, GreenLight_NUM, 0);
         
-        if (resetControls > 0) {
-            printf("Reset controls\n");
+        /*if (resetControls > 0) {
+            // printf("Reset controls\n");
             inputControls = 0;
-        }
+        }*/
         
         if (echoProcessed > 0) {
-            printf("Echo pulse width measured with timer\n");
-            uint16 pulseWidthUS = Cy_TCPWM_Counter_GetCapture(Echo_Counter_HW, Echo_Counter_CNT_NUM);
-            // TO DO: ESTABLISH PSOC --> PHONE COMMUNICATION PROTOCOL FOR MULTI-BYTE TRANSMISSIONS
-            // updateOutboundLocalCharacteristic(pulseWidthUS);
-            sendOutboundNotification(pulseWidthUS);
+            printf("Distance: %x\n", pulseWidthUS / 148);
+            updateUltrasonicCharacteristic(pulseWidthUS);
             echoProcessed = 0;
         }
         
@@ -189,7 +165,7 @@ int main(void)
             printf("Received new GPS coordinates\n");
             // unsigned char line[128];
             // TO DO: ADD MESSAGE PARSING AND TRANSMISSION PROTOCOL FOR LOCATION DATA
-            sendOutboundNotification(0xFF);
+            // updateOutboundCharacteristic(0xFF);
             gpsReceived = 0;
         }
         

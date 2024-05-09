@@ -18,7 +18,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="betawble-000\betawble\Shared Files\stdio_user.h">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="betawble-000\betawble\Shared Files\stdio_user.c">
 <ExpandedNodeIds>
 <v>betawble-000</v>
 <v>betawble-000\betawble</v>
@@ -75,6 +75,16 @@
 <v>betawble-000\betawble\Generated_Source\PSoC6</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
+<v>betawble-000\betawble\CM4 (Core 1)</v>
+<v>betawble-000\betawble\CM4 (Core 1)\ARM GCC Generic</v>
+<v>betawble-000\betawble\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
+<v>betawble-000\betawble\CM4 (Core 1)\ARM IAR Generic</v>
+<v>betawble-000\betawble\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
+<v>betawble-000\betawble\CM4 (Core 1)\ARM MDK Generic</v>
+<v>betawble-000\betawble\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
+<v>betawble-000\betawble\CM4 (Core 1)\Header Files</v>
+<v>betawble-000\betawble\CM4 (Core 1)\Source Files</v>
+<v>betawble-000\betawble\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
 <v>betawble-000\betawble\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
 <v>betawble-000\betawble\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
 <v>betawble-000\betawble\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
@@ -100,16 +110,6 @@
 <v>betawble-000\betawble\Generated_Source\PSoC6\Echo_Counter</v>
 <v>betawble-000\betawble\Generated_Source\PSoC6\Pins and Interrupts</v>
 <v>betawble-000\betawble\Generated_Source\PSoC6\PWM_fin</v>
-<v>betawble-000\betawble\Generated_Source\PSoC6\PWM_thrustmotor</v>
-<v>betawble-000\betawble\Generated_Source\PSoC6\PWM_trashgate</v>
-<v>betawble-000\betawble\Generated_Source\PSoC6\PWM_ultrasonic</v>
-<v>betawble-000\betawble\Generated_Source\PSoC6\UART</v>
-<v>betawble-000\betawble\Generated_Source\PSoC6\UART_SCBCLK</v>
-<v>betawble-000\betawble\Generated_Source\PSoC6\cycodeshareexport.ld</v>
-<v>betawble-000\betawble\Generated_Source\PSoC6\cycodeshareimport.ld</v>
-<v>betawble-000\betawble\Generated_Source\PSoC6\cycodeshareimport.scat</v>
-<v>betawble-000\betawble\Generated_Source\PSoC6\cydevice_trm.h</v>
-<v>betawble-000\betawble\Generated_Source\PSoC6\cydevicegnu_trm.inc</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">

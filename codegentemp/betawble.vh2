@@ -2,7 +2,7 @@
 --	Conversion of betawble.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sat May 04 22:28:45 2024
+--	Wed May 08 19:46:41 2024
 --
 
 USE cypress.cypress.all;
