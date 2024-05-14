@@ -2,7 +2,7 @@
 --	Conversion of betawble.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed May 08 19:46:41 2024
+--	Mon May 13 19:42:18 2024
 --
 
 USE cypress.cypress.all;
@@ -50,7 +50,7 @@ SIGNAL Net_7 : bit;
 SIGNAL Net_6 : bit;
 SIGNAL Net_12 : bit;
 SIGNAL Net_13 : bit;
-SIGNAL Net_5 : bit;
+SIGNAL Net_541 : bit;
 SIGNAL Net_51 : bit;
 SIGNAL \PWM_fin:swap\ : bit;
 SIGNAL \PWM_fin:count\ : bit;
@@ -125,6 +125,36 @@ SIGNAL Net_430 : bit;
 SIGNAL \Echo_Counter:Net_1\ : bit;
 SIGNAL \Echo_Counter:Net_2\ : bit;
 SIGNAL Net_429 : bit;
+SIGNAL \UART_GPS:Net_847\ : bit;
+SIGNAL \UART_GPS:clock_wire\ : bit;
+SIGNAL \UART_GPS:Net_22\ : bit;
+SIGNAL \UART_GPS:Net_23\ : bit;
+SIGNAL \UART_GPS:Net_1172\ : bit;
+SIGNAL \UART_GPS:tmpIO_0__rx_net_0\ : bit;
+TERMINAL \UART_GPS:tmpSIOVREF__rx_net_0\ : bit;
+SIGNAL \UART_GPS:rx_wire\ : bit;
+SIGNAL \UART_GPS:cts_wire\ : bit;
+SIGNAL \UART_GPS:intr_wire\ : bit;
+SIGNAL \UART_GPS:tx_wire\ : bit;
+SIGNAL \UART_GPS:rts_wire\ : bit;
+SIGNAL \UART_GPS:tx_en_wire\ : bit;
+SIGNAL \UART_GPS:Net_145\ : bit;
+SIGNAL \UART_GPS:Net_146\ : bit;
+SIGNAL \UART_GPS:Net_154\ : bit;
+SIGNAL \UART_GPS:Net_155_3\ : bit;
+SIGNAL \UART_GPS:Net_155_2\ : bit;
+SIGNAL \UART_GPS:Net_155_1\ : bit;
+SIGNAL \UART_GPS:Net_155_0\ : bit;
+SIGNAL \UART_GPS:Net_156\ : bit;
+SIGNAL \UART_GPS:Net_157\ : bit;
+SIGNAL Net_548 : bit;
+SIGNAL Net_547 : bit;
+SIGNAL \UART_GPS:Net_161\ : bit;
+SIGNAL Net_562 : bit;
+SIGNAL Net_544 : bit;
+SIGNAL Net_550 : bit;
+SIGNAL Net_551 : bit;
+SIGNAL Net_543 : bit;
 BEGIN
 
 one <=  ('1') ;
@@ -574,5 +604,77 @@ Echo_IRQ:cy_mxs40_isr_v1_0
 		deepsleep_required=>'0',
 		int_type=>"10")
 	PORT MAP(int_signal=>Net_429);
+\UART_GPS:SCBCLK\:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"23f307bb-94bd-4d31-a785-6c607e7c95e7/b68e5b9d-7828-482d-a282-930f990e3b3e",
+		source_clock_id=>"",
+		divisor=>0,
+		period=>"8680555555.55556",
+		is_direct=>'0',
+		is_digital=>'0')
+	PORT MAP(clock_out=>\UART_GPS:Net_847\,
+		dig_domain_out=>open);
+\UART_GPS:rx\:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"23f307bb-94bd-4d31-a785-6c607e7c95e7/b7e8018e-1ef7-49c0-b5a5-61641a03e31c",
+		drive_mode=>"0",
+		ibuf_enabled=>"1",
+		init_dr_st=>"1",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"0",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"I",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>\UART_GPS:Net_1172\,
+		analog=>(open),
+		io=>(\UART_GPS:tmpIO_0__rx_net_0\),
+		annotation=>(open),
+		siovref=>(\UART_GPS:tmpSIOVREF__rx_net_0\));
+\UART_GPS:SCB_IRQ\:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"10")
+	PORT MAP(int_signal=>\UART_GPS:intr_wire\);
+\UART_GPS:SCB\:cy_mxs40_scb_v1_10
+	GENERIC MAP(cy_registers=>"",
+		requires_io_preconfigure=>'0',
+		mode=>2,
+		master=>'0')
+	PORT MAP(clock=>\UART_GPS:Net_847\,
+		uart_rx=>\UART_GPS:Net_1172\,
+		uart_tx=>\UART_GPS:tx_wire\,
+		uart_rts=>\UART_GPS:rts_wire\,
+		uart_cts=>zero,
+		uart_tx_en=>\UART_GPS:tx_en_wire\,
+		i2c_scl=>\UART_GPS:Net_145\,
+		i2c_sda=>\UART_GPS:Net_146\,
+		spi_clk_m=>\UART_GPS:Net_154\,
+		spi_clk_s=>zero,
+		spi_select_m=>(\UART_GPS:Net_155_3\, \UART_GPS:Net_155_2\, \UART_GPS:Net_155_1\, \UART_GPS:Net_155_0\),
+		spi_select_s=>zero,
+		spi_mosi_m=>\UART_GPS:Net_156\,
+		spi_miso_m=>zero,
+		spi_mosi_s=>zero,
+		spi_miso_s=>\UART_GPS:Net_157\,
+		interrupt=>\UART_GPS:intr_wire\,
+		tr_tx_req=>Net_548,
+		tr_rx_req=>Net_547,
+		tr_i2c_scl_filtered=>\UART_GPS:Net_161\);
 
 END R_T_L;

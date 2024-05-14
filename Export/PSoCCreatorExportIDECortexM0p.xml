@@ -49,6 +49,8 @@
           <File BuildType="BUILD" Toolchain="">system_psoc6.h</File>
           <File BuildType="BUILD" Toolchain="">stdio_user.h</File>
           <File BuildType="BUILD" Toolchain="">stdio_user.c</File>
+          <File BuildType="BUILD" Toolchain="">minmea.h</File>
+          <File BuildType="BUILD" Toolchain="">minmea.c</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\Generated_Source\PSoC6">
@@ -93,6 +95,9 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC6\Echo_Counter.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC6\Echo_Counter.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC6\Clock_5.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC6\UART_GPS.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC6\UART_GPS.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC6\UART_GPS_SCBCLK.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\Generated_Source\PSoC6\pdl\cmsis\include">

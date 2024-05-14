@@ -11,7 +11,7 @@
 */
 #include "project.h"
 #include "stdio.h"
-#include "sys/time.h"
+#include "minmea.h"
 
 #define US_IN_SEC 1000000
 
@@ -20,7 +20,11 @@ volatile uint8 transmissionReceived = 0;
 volatile uint8 resetControls = 0;
 volatile uint16 pulseWidthUS = 0;
 volatile uint8 echoProcessed = 0;
-volatile uint8 gpsReceived = 0;
+
+char gpsLineBuff[MINMEA_MAX_SENTENCE_LENGTH];
+uint8 gpsLineBuffSize = 0;
+uint8 gpsBufferIndex = 0;
+uint readingLine = 0;
 
 uint8 left_bit = 0;
 uint8 right_bit = 0;
@@ -60,15 +64,9 @@ void echoHandler() {
     uint32 source = Cy_TCPWM_GetInterruptStatusMasked(Echo_Counter_HW, Echo_Counter_CNT_NUM);
     pulseWidthUS = Cy_TCPWM_Counter_GetCapture(Echo_Counter_HW, Echo_Counter_CNT_NUM);
     Cy_TCPWM_ClearInterrupt(Echo_Counter_HW, Echo_Counter_CNT_NUM, source);
-    NVIC_ClearPendingIRQ(Echo_IRQ_cfg.intrSrc);
     echoProcessed = 1;
+    NVIC_ClearPendingIRQ(Echo_IRQ_cfg.intrSrc);
 }
-
-/*void UART_GPSHandler() {
-    Cy_SCB_ClearRxInterrupt(UART_HW, CY_SCB_RX_INTR_NOT_EMPTY);
-    NVIC_ClearPendingIRQ(UART_SCB_IRQ_cfg.intrSrc);
-    gpsReceived = 1;
-}*/
 
 void bleInterruptNotify() {
     Cy_BLE_ProcessEvents();
@@ -103,6 +101,80 @@ void updateUltrasonicCharacteristic(uint16 newData) {
     Cy_BLE_GATTS_SendNotification(&connHandle, &serviceHandle);
 }
 
+void updateLatitudeCharacteristic(float newData) {
+    uint8 data[1] = {0};
+    data[0] = newData;
+    
+    cy_stc_ble_gatt_handle_value_pair_t serviceHandle;
+    cy_stc_ble_gatt_value_t serviceData;
+    
+    serviceData.val = data;
+    serviceData.len = sizeof(newData);
+    
+    serviceHandle.attrHandle = CY_BLE_DEVICE_INTERFACE_LATITUDE_CHAR_HANDLE;
+    serviceHandle.value = serviceData;
+    
+    Cy_BLE_GATTS_WriteAttributeValueLocal(&serviceHandle);
+    Cy_BLE_GATTS_SendNotification(&connHandle, &serviceHandle);
+}
+
+void updateLongitudeCharacteristic(float newData) {
+    uint8 data[1] = {0};
+    data[0] = newData;
+    
+    cy_stc_ble_gatt_handle_value_pair_t serviceHandle;
+    cy_stc_ble_gatt_value_t serviceData;
+    
+    serviceData.val = data;
+    serviceData.len = sizeof(newData);
+    
+    serviceHandle.attrHandle = CY_BLE_DEVICE_INTERFACE_LONGITUDE_CHAR_HANDLE;
+    serviceHandle.value = serviceData;
+    
+    Cy_BLE_GATTS_WriteAttributeValueLocal(&serviceHandle);
+    Cy_BLE_GATTS_SendNotification(&connHandle, &serviceHandle);
+}
+
+void removeExtraCharsFromLine() {
+    for (int i = gpsBufferIndex; i < MINMEA_MAX_SENTENCE_LENGTH; i++) {
+        gpsLineBuff[i] = '\0';
+    }
+}
+
+void loadGPSInput() {
+    while (Cy_SCB_UART_GetNumInRxFifo(UART_GPS_HW) > 0) {
+        char c = Cy_SCB_UART_Get(UART_GPS_HW);
+        if (c == '$') {
+            gpsLineBuffSize = 0;
+            readingLine = 1;
+        }
+        if (readingLine == 1) {
+            gpsLineBuff[gpsBufferIndex] = c;
+            gpsBufferIndex++;
+            gpsLineBuffSize++;
+        }
+        if (c == '\n') {
+            readingLine = 0;
+            removeExtraCharsFromLine();
+            gpsBufferIndex = 0;
+        }
+    }
+}
+
+void extractAndUpdateGPSCoordinates() {
+    if (readingLine == 1) return;
+    if (minmea_sentence_id(gpsLineBuff, false) == MINMEA_SENTENCE_RMC) {
+        struct minmea_sentence_rmc frame;
+        if (minmea_parse_rmc(&frame, gpsLineBuff)) {
+            float latitude = minmea_tocoord(&frame.latitude);
+            float longitude = minmea_tocoord(&frame.longitude);
+            printf("Coordinates: %f, %f\n", latitude, longitude);
+            updateLatitudeCharacteristic(latitude);
+            updateLongitudeCharacteristic(longitude);
+        }
+    }
+}
+
 int main(void)
 {
     __enable_irq(); /* Enable global interrupts. */
@@ -111,8 +183,9 @@ int main(void)
   
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */    
     //start up for components
-    printf("Starting up components ... ");
+    
     UART_Start();
+    printf("Starting up components ... ");
     ble_startup();
     PWM_fin_Start();
     PWM_trashgate_Start();
@@ -140,8 +213,8 @@ int main(void)
     Cy_SysInt_Init(&Echo_IRQ_cfg, echoHandler);
     NVIC_EnableIRQ(Echo_IRQ_cfg.intrSrc);
     
-    // Cy_SysInt_Init(&UART_SCB_IRQ_cfg, &UART_GPSHandler);
-    // NVIC_EnableIRQ(UART_SCB_IRQ_cfg.intrSrc);
+    Cy_SCB_UART_Init(UART_GPS_HW, &UART_GPS_config, &UART_GPS_context);
+    Cy_SCB_UART_Enable(UART_GPS_HW);
     
     printf("Setup complete\n");
     
@@ -155,20 +228,15 @@ int main(void)
             inputControls = 0;
         }*/
         
+        loadGPSInput();
+        extractAndUpdateGPSCoordinates();
+        
         if (echoProcessed > 0) {
-            printf("Distance: %x\n", pulseWidthUS / 148);
+            printf("Object ahead in: %d cm\n", pulseWidthUS / 58);
             updateUltrasonicCharacteristic(pulseWidthUS);
             echoProcessed = 0;
         }
-        
-        if (gpsReceived > 0) {
-            printf("Received new GPS coordinates\n");
-            // unsigned char line[128];
-            // TO DO: ADD MESSAGE PARSING AND TRANSMISSION PROTOCOL FOR LOCATION DATA
-            // updateOutboundCharacteristic(0xFF);
-            gpsReceived = 0;
-        }
-        
+
         if(transmissionReceived > 0) {
             inputControls = getControls();
             printf("User input detected: %d\n", inputControls);

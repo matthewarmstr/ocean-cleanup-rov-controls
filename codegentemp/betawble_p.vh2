@@ -1,5 +1,5 @@
 -- Project:   betawble
--- Generated: 05/08/2024 19:46:45
+-- Generated: 05/13/2024 19:42:22
 -- PSoC Creator  4.4
 
 ENTITY betawble IS
@@ -11,7 +11,8 @@ ENTITY betawble IS
         thrustmotor(0)_PAD : OUT std_ulogic;
         GreenLight(0)_PAD : OUT std_ulogic;
         UltrasonicTrig(0)_PAD : OUT std_ulogic;
-        UltrasonicEcho(0)_PAD : IN std_ulogic);
+        UltrasonicEcho(0)_PAD : IN std_ulogic;
+        \UART_GPS:rx(0)_PAD\ : IN std_ulogic);
     ATTRIBUTE voltage_VBACKUP OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDA_CSD OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_A OF __DEFAULT__ : ENTITY IS 3.3e0;
@@ -92,6 +93,8 @@ ARCHITECTURE __DEFAULT__ OF betawble IS
     SIGNAL Net_439 : bit;
     SIGNAL Net_51_ff11 : bit;
     ATTRIBUTE global_signal OF Net_51_ff11 : SIGNAL IS true;
+    SIGNAL Net_547 : bit;
+    SIGNAL Net_548 : bit;
     SIGNAL Net_79 : bit;
     SIGNAL Net_82 : bit;
     SIGNAL Net_9 : bit;
@@ -109,6 +112,14 @@ ARCHITECTURE __DEFAULT__ OF betawble IS
     SIGNAL \\\UART:rx(0)\\__PA\ : bit;
     SIGNAL \\\UART:tx(0)\\__PA\ : bit;
     SIGNAL \UART:tx_wire\ : bit;
+    SIGNAL \UART_GPS:Net_1172\ : bit;
+    SIGNAL \UART_GPS:Net_161\ : bit;
+    SIGNAL \UART_GPS:Net_847_ff1\ : bit;
+    ATTRIBUTE global_signal OF \UART_GPS:Net_847_ff1\ : SIGNAL IS true;
+    SIGNAL \UART_GPS:intr_wire\ : bit;
+    SIGNAL \UART_GPS:rts_wire\ : bit;
+    SIGNAL \\\UART_GPS:rx(0)\\__PA\ : bit;
+    SIGNAL \UART_GPS:tx_wire\ : bit;
     SIGNAL __ONE__ : bit;
     ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
     SIGNAL __ZERO__ : bit;
@@ -149,6 +160,8 @@ ARCHITECTURE __DEFAULT__ OF betawble IS
     ATTRIBUTE Location OF UltrasonicTrig(0) : LABEL IS "P12[6]";
     ATTRIBUTE lib_model OF UltrasonicEcho(0) : LABEL IS "iocell13";
     ATTRIBUTE Location OF UltrasonicEcho(0) : LABEL IS "P12[7]";
+    ATTRIBUTE lib_model OF \UART_GPS:rx(0)\ : LABEL IS "iocell14";
+    ATTRIBUTE Location OF \UART_GPS:rx(0)\ : LABEL IS "P10[0]";
     COMPONENT BLE
         PORT (
             ext_pa_lna_chip_en_out : OUT std_ulogic;
@@ -566,6 +579,7 @@ BEGIN
             ff_div_13 => Net_133_ff13,
             ff_div_14 => Net_274_ff14,
             ff_div_15 => Net_35_ff15,
+            ff_div_1 => \UART_GPS:Net_847_ff1\,
             periclk_App => periclk_App);
 
     SRSS:SRSS;
@@ -1281,6 +1295,61 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
+    \UART_GPS:rx\:logicalport
+        GENERIC MAP(
+            cy_registers => "",
+            drive_mode => "000",
+            drive_strength => "0",
+            hotswap_needed => "0",
+            i2c_mode => "0",
+            ibuf_enabled => "1",
+            id => "23f307bb-94bd-4d31-a785-6c607e7c95e7/b7e8018e-1ef7-49c0-b5a5-61641a03e31c",
+            init_dr_st => "1",
+            input_sync => "0",
+            intr_mode => "00",
+            io_voltage => "",
+            max_frequency => "100",
+            oe_conn => "0",
+            oe_sync => "0",
+            output_conn => "0",
+            output_current_cap => "8",
+            output_sync => "0",
+            pin_aliases => "",
+            pin_mode => "B",
+            sio_grp_cnt => 0,
+            slew_rate => "0",
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0);
+
+    \UART_GPS:rx(0)\:iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "\UART_GPS:rx\",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => \\\UART_GPS:rx(0)\\__PA\,
+            oe => open,
+            fb => \UART_GPS:Net_1172\,
+            pad_in => \UART_GPS:rx(0)_PAD\,
+            in_clock => open,
+            in_clock_en => open,
+            in_reset => open,
+            out_clock => open,
+            out_clock_en => open,
+            out_reset => open);
+
     \BLE:cy_mxs40_ble\:BLE
         GENERIC MAP(
             cy_registers => "",
@@ -1436,5 +1505,38 @@ BEGIN
         PORT MAP(
             interrupt => Net_429,
             clock => ClockBlock_PeriClk);
+
+    \UART_GPS:SCB_IRQ\:interrupt
+        GENERIC MAP(
+            cy_registers => "",
+            deepsleep_required => 0,
+            int_type => "10")
+        PORT MAP(
+            interrupt => \UART_GPS:intr_wire\,
+            clock => ClockBlock_PeriClk);
+
+    \UART_GPS:SCB\:SCB
+        GENERIC MAP(
+            cy_registers => "",
+            master => 0,
+            mode => 2,
+            requires_io_preconfigure => 0)
+        PORT MAP(
+            clock => \UART_GPS:Net_847_ff1\,
+            uart_rx => \UART_GPS:Net_1172\,
+            uart_tx => \UART_GPS:tx_wire\,
+            uart_rts => \UART_GPS:rts_wire\,
+            uart_cts => open,
+            spi_clk => open,
+            spi_select_3 => open,
+            spi_select_2 => open,
+            spi_select_1 => open,
+            spi_select_0 => open,
+            spi_mosi => open,
+            spi_miso => open,
+            interrupt => \UART_GPS:intr_wire\,
+            tr_tx_req => Net_548,
+            tr_rx_req => Net_547,
+            tr_i2c_scl_filtered => \UART_GPS:Net_161\);
 
 END __DEFAULT__;

@@ -425,3 +425,22 @@ net \UART:tx_wire\
 	switch ":ioport5:smartio_mux_in1.smartio_mux_in==>:ioport5:pin1.pin_input"
 	term   ":ioport5:pin1.pin_input"
 end \UART:tx_wire\
+net \UART_GPS:Net_1172\
+	term   ":ioport10:pin0.fb"
+	switch ":ioport10:pin0.fb==>:ioport10:smartio_mux_out0.direct_in"
+	switch ":ioport10:smartio_mux_out0.smartio_mux_out==>:ioport10:hsiomIn0.hsiomIn0"
+	switch ":ioport10:hsiomIn0.fixedOut0_ACT_6==>:SCB[1]uart_rx_input_permute.ioport10_fixedOut0_ACT_6"
+	switch ":SCB[1]uart_rx_input_permute.SCB[1]uart_rx==>:SCBcontainer:SCB[1].uart_rx"
+	term   ":SCBcontainer:SCB[1].uart_rx"
+end \UART_GPS:Net_1172\
+net \UART_GPS:Net_847_ff1\
+	term   ":Clockcontainer:Clock[0].ff_div_1"
+	switch ":Clockcontainer:Clock[0].ff_div_1==>:Clockcontainer:ff_permute.ff_div_1"
+	switch ":Clockcontainer:ff_permute.Clock[0]ff_div_1==>:SCBcontainer:SCB[1].clock"
+	term   ":SCBcontainer:SCB[1].clock"
+end \UART_GPS:Net_847_ff1\
+net \UART_GPS:intr_wire\
+	term   ":SCBcontainer:SCB[1].interrupt"
+	switch ":SCBcontainer:SCB[1].interrupt==>:intc_0:interrupt42.interrupt"
+	term   ":intc_0:interrupt42.interrupt"
+end \UART_GPS:intr_wire\

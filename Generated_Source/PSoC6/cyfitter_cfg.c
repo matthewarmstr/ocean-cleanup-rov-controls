@@ -217,6 +217,9 @@ static void ClockInit(void)
 	Cy_SysLib_SetWaitStates(false, 100);
 
 	/* Configure peripheral clock dividers */
+	Cy_SysClk_PeriphAssignDivider(PCLK_SCB1_CLOCK, CY_SYSCLK_DIV_16_BIT, 0u);
+	Cy_SysClk_PeriphSetDivider(CY_SYSCLK_DIV_16_BIT, 0u, 433u);
+	Cy_SysClk_PeriphEnableDivider(CY_SYSCLK_DIV_16_BIT, 0u);
 	Cy_SysClk_PeriphAssignDivider(PCLK_SCB5_CLOCK, CY_SYSCLK_DIV_8_BIT, 0u);
 	Cy_SysClk_PeriphSetDivider(CY_SYSCLK_DIV_8_BIT, 0u, 35u);
 	Cy_SysClk_PeriphEnableDivider(CY_SYSCLK_DIV_8_BIT, 0u);
@@ -712,14 +715,14 @@ void Cy_SystemInit(void)
 	{
 	    const cy_stc_gpio_prt_config_t port10_cfg =
 	    {
-	        .out        = 0x00000040u,
+	        .out        = 0x00000041u,
 	        .intrMask   = 0x00000000u,
 	        .intrCfg    = 0x00000000u,
-	        .cfg        = 0x06000000u,
+	        .cfg        = 0x06000008u,
 	        .cfgIn      = 0x00000000u,
 	        .cfgOut     = 0x00000000u,
 	        .cfgSIO     = 0x00000000u,
-	        .sel0Active = 0x00000000u,
+	        .sel0Active = 0x00000012u,
 	        .sel1Active = 0x00080000u,
 	    };
 	    (void)Cy_GPIO_Port_Init(GPIO_PRT10, &port10_cfg);

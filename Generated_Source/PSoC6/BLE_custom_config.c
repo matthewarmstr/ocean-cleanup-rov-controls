@@ -50,13 +50,23 @@ static const cy_stc_ble_customs_t cy_ble_customs[0x01u] = {
                 }, 
             },
 
-            /* GPSValue characteristic */
+            /* Latitude characteristic */
             {
-                0x0017u, /* Handle of the GPSValue characteristic */ 
+                0x0017u, /* Handle of the Latitude characteristic */ 
                 
                 /* Array of Descriptors handles */
                 {
                     0x0018u, /* Handle of the Client Characteristic Configuration descriptor */ 
+                }, 
+            },
+
+            /* Longitude characteristic */
+            {
+                0x001Au, /* Handle of the Longitude characteristic */ 
+                
+                /* Array of Descriptors handles */
+                {
+                    0x001Bu, /* Handle of the Client Characteristic Configuration descriptor */ 
                 }, 
             },
         }, 

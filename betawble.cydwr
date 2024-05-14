@@ -10,13 +10,17 @@
     </Group>
     <Group key="Interrupt">
       <Data key="11b25d17-2693-4c65-82df-15ed6b338d51" value="Echo_IRQ" />
+      <Data key="23f307bb-94bd-4d31-a785-6c607e7c95e7/9260d369-b684-4310-b925-f618d77b89d7" value="UART_GPS_SCB_IRQ" />
       <Data key="30ef2243-f641-416c-b883-4a6f01d113d8/9260d369-b684-4310-b925-f618d77b89d7" value="UART_SCB_IRQ" />
+      <Data key="44ba482a-b044-49cd-bda4-4d3d0dff26cf" value="UART_GPS_IRQ" />
       <Data key="58896424-1c5a-48df-ad62-746257d13196" value="Echo_IRQ" />
       <Data key="ad1b3fed-e9fb-4cc5-b2d7-15f61559a137/5e509665-5bd3-4115-bbc0-fb65a49def9a" value="BLE_bless_isr" />
+      <Data key="cf0418ab-cd09-466e-a11b-718884ffea46" value="UART_SCB_IRQ" />
     </Group>
     <Group key="Pin">
       <Data key="4cca878b-77b5-471d-8aeb-ad6925202455" value="UltrasonicEcho" />
       <Data key="7f09a144-dc9d-4f8e-b96b-3c80b4ba629e" value="trashservo" />
+      <Data key="23f307bb-94bd-4d31-a785-6c607e7c95e7/b7e8018e-1ef7-49c0-b5a5-61641a03e31c" value="UART_GPS_rx" />
       <Data key="30ef2243-f641-416c-b883-4a6f01d113d8/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f" value="UART_tx" />
       <Data key="30ef2243-f641-416c-b883-4a6f01d113d8/b7e8018e-1ef7-49c0-b5a5-61641a03e31c" value="UART_rx" />
       <Data key="60cfbf7b-c6fe-42d7-b2d4-25956ca64e5e" value="reversethrust" />
@@ -26,7 +30,9 @@
       <Data key="49558736-412a-4ca4-9ea9-9cc4241a2530" value="thrustmotor" />
       <Data key="a5b46b26-da56-46ce-8d6c-bc2656ce349c" value="GreenLight" />
       <Data key="a61270bc-07ec-447d-ac9e-34cfe85c30e9" value="finservo" />
+      <Data key="e7302c05-06b6-4b36-a085-ca27adcd7f07" value="GPS_Rx" />
       <Data key="eccbdb75-48b9-466b-bb37-b435c87ae8fa" value="UltrasonicVcc" />
+      <Data key="fb9cadd7-4ac4-40df-ac38-004c9962b657" value="GPS_Tx" />
     </Group>
   </Group>
   <Group key="Interrupt">
@@ -42,14 +48,38 @@
         <Data key="Vector" value="-1" />
       </Group>
     </Group>
-    <Group key="30ef2243-f641-416c-b883-4a6f01d113d8/9260d369-b684-4310-b925-f618d77b89d7">
+    <Group key="23f307bb-94bd-4d31-a785-6c607e7c95e7/9260d369-b684-4310-b925-f618d77b89d7">
       <Group key="CortexM0p">
-        <Data key="Assigned" value="False" />
-        <Data key="Priority" value="3" />
-        <Data key="Vector" value="8" />
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="Default" />
+        <Data key="Vector" value="10" />
       </Group>
       <Group key="CortexM4">
+        <Data key="Assigned" value="False" />
+        <Data key="Priority" value="Default" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+    <Group key="30ef2243-f641-416c-b883-4a6f01d113d8/9260d369-b684-4310-b925-f618d77b89d7">
+      <Group key="CortexM0p">
         <Data key="Assigned" value="True" />
+        <Data key="Priority" value="3" />
+        <Data key="Vector" value="9" />
+      </Group>
+      <Group key="CortexM4">
+        <Data key="Assigned" value="False" />
+        <Data key="Priority" value="Default" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+    <Group key="44ba482a-b044-49cd-bda4-4d3d0dff26cf">
+      <Group key="CortexM0p">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="Default" />
+        <Data key="Vector" value="10" />
+      </Group>
+      <Group key="CortexM4">
+        <Data key="Assigned" value="False" />
         <Data key="Priority" value="Default" />
         <Data key="Vector" value="-1" />
       </Group>
@@ -71,6 +101,18 @@
         <Data key="Assigned" value="True" />
         <Data key="Priority" value="1" />
         <Data key="Vector" value="3" />
+      </Group>
+      <Group key="CortexM4">
+        <Data key="Assigned" value="False" />
+        <Data key="Priority" value="Default" />
+        <Data key="Vector" value="-1" />
+      </Group>
+    </Group>
+    <Group key="cf0418ab-cd09-466e-a11b-718884ffea46">
+      <Group key="CortexM0p">
+        <Data key="Assigned" value="True" />
+        <Data key="Priority" value="Default" />
+        <Data key="Vector" value="9" />
       </Group>
       <Group key="CortexM4">
         <Data key="Assigned" value="False" />
@@ -699,6 +741,11 @@
         <Data key="Port Format" value="9,2" />
       </Group>
     </Group>
+    <Group key="23f307bb-94bd-4d31-a785-6c607e7c95e7/b7e8018e-1ef7-49c0-b5a5-61641a03e31c">
+      <Group key="0">
+        <Data key="Port Format" value="10,0" />
+      </Group>
+    </Group>
     <Group key="30ef2243-f641-416c-b883-4a6f01d113d8/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f">
       <Group key="0">
         <Data key="Port Format" value="5,1" />
@@ -744,9 +791,19 @@
         <Data key="Port Format" value="9,6" />
       </Group>
     </Group>
+    <Group key="e7302c05-06b6-4b36-a085-ca27adcd7f07">
+      <Group key="0">
+        <Data key="Port Format" value="5,0" />
+      </Group>
+    </Group>
     <Group key="eccbdb75-48b9-466b-bb37-b435c87ae8fa">
       <Group key="0">
         <Data key="Port Format" value="10,2" />
+      </Group>
+    </Group>
+    <Group key="fb9cadd7-4ac4-40df-ac38-004c9962b657">
+      <Group key="0">
+        <Data key="Port Format" value="5,1" />
       </Group>
     </Group>
     <Group key="UnAssigned Pins" />

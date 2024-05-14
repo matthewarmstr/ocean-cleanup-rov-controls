@@ -171,7 +171,9 @@
 #include "Clock_4.h"
 #include "Echo_Counter.h"
 #include "Clock_5.h"
+#include "UART_GPS.h"
 #include "UART_SCBCLK.h"
+#include "UART_GPS_SCBCLK.h"
 
 /*[]*/
 

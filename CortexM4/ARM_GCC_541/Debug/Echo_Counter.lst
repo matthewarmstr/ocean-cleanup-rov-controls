@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
   27:Generated_Source\PSoC6/Echo_Counter.c **** *  associated Echo_Counter_Init() function.
   28:Generated_Source\PSoC6/Echo_Counter.c **** */ 
   29:Generated_Source\PSoC6/Echo_Counter.c **** cy_stc_tcpwm_counter_config_t const Echo_Counter_config =
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 2
 
 
   30:Generated_Source\PSoC6/Echo_Counter.c **** {
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
   43 000a 0221     		movs	r1, #2
   44 000c 0648     		ldr	r0, .L4+8
   45 000e FFF7FEFF 		bl	Cy_TCPWM_Counter_Init
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 3
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 3
 
 
   46              	.LVL0:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
   43:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The TCPWM supports three operating modes:
   44:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * Timer/Counter
   45:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * PWM
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 4
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 4
 
 
   46:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * Quadrature Decoder
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  100:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * an object (for example a rotating axle, or a spinning mouse ball). 
  101:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * A quadrature decoder can also be used for precision measurement of speed, 
  102:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * acceleration, and position of a motor's rotor, or with a rotary switch to 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 5
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 5
 
 
  103:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * determine user input. \n
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  157:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \subsection group_tcpwm_clock Assign Clock Divider
  158:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The clock source must be connected to proper working.
  159:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * Any of the peripheral clock dividers could be used. Use the  
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 6
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 6
 
 
  160:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \ref group_sysclk driver API to do that.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  214:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * </table>
  215:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** */
  216:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 7
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 7
 
 
  217:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** \} group_tcpwm */
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  271:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** ******************************************************************************/
  272:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  273:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** TCPWM driver identifier */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 8
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 8
 
 
  274:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_ID                     (CY_PDL_DRV_ID(0x2DU))
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  328:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /***************************************
  329:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *        Registers Constants
  330:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** ***************************************/
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 9
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 9
 
 
  331:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  385:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  386:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** __STATIC_INLINE void Cy_TCPWM_Enable_Multiple(TCPWM_Type *base, uint32_t counters);
  387:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** __STATIC_INLINE void Cy_TCPWM_Disable_Multiple(TCPWM_Type *base, uint32_t counters);
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 10
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 10
 
 
  388:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** __STATIC_INLINE void Cy_TCPWM_TriggerStart(TCPWM_Type *base, uint32_t counters);
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
   78              		.type	Echo_Counter_config, %object
   79              		.size	Echo_Counter_config, 76
   80              	Echo_Counter_config:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 11
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 11
 
 
   81 0000 50C30000 		.word	50000
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  135 002e 06       		.byte	0x6
  136 002f F0020000 		.4byte	.LASF1
  137 0033 03       		.uleb128 0x3
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 12
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 12
 
 
  138 0034 80020000 		.4byte	.LASF4
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  192 009d 2C       		.byte	0x2c
  193 009e 4C000000 		.4byte	0x4c
  194 00a2 03       		.uleb128 0x3
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 13
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 13
 
 
  195 00a3 1C030000 		.4byte	.LASF14
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  249 010e 62000000 		.4byte	.LASF21
  250 0112 05       		.byte	0x5
  251 0113 29       		.byte	0x29
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 14
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 14
 
 
  252 0114 B4000000 		.4byte	0xb4
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  306 0180 B9000000 		.4byte	0xb9
  307 0184 3C       		.byte	0x3c
  308 0185 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 15
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 15
 
 
  309 0186 03       		.uleb128 0x3
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  363 01f3 05       		.byte	0x5
  364 01f4 40       		.byte	0x40
  365 01f5 B9000000 		.4byte	0xb9
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 16
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 16
 
 
  366 01f9 1C       		.byte	0x1c
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  420 026a 02       		.uleb128 0x2
  421 026b 08       		.byte	0x8
  422 026c 04       		.byte	0x4
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 17
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 17
 
 
  423 026d 14040000 		.4byte	.LASF44
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  477 02dc 1C       		.byte	0x1c
  478 02dd 08       		.uleb128 0x8
  479 02de A3010000 		.4byte	.LASF53
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 18
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 18
 
 
  480 02e2 07       		.byte	0x7
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  534 034e 07       		.byte	0x7
  535 034f 49       		.byte	0x49
  536 0350 A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 19
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 19
 
 
  537 0354 44       		.byte	0x44
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  591 03c9 8D030000 		.4byte	0x38d
  592 03cd 00000000 		.4byte	.LLST0
  593 03d1 15       		.uleb128 0x15
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 20
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 20
 
 
  594 03d2 81030000 		.4byte	0x381
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  648 043f 91       		.byte	0x91
  649 0440 00       		.byte	0
  650              		.section	.debug_abbrev,"",%progbits
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 21
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 21
 
 
  651              	.Ldebug_abbrev0:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  705 0035 00       		.byte	0
  706 0036 05       		.uleb128 0x5
  707 0037 35       		.uleb128 0x35
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 22
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 22
 
 
  708 0038 00       		.byte	0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  762 006e 00       		.byte	0
  763 006f 0A       		.uleb128 0xa
  764 0070 13       		.uleb128 0x13
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 23
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 23
 
 
  765 0071 01       		.byte	0x1
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  819 00a7 13       		.uleb128 0x13
  820 00a8 00       		.byte	0
  821 00a9 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 24
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 24
 
 
  822 00aa 0F       		.uleb128 0xf
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  876 00e0 13       		.uleb128 0x13
  877 00e1 2E       		.uleb128 0x2e
  878 00e2 01       		.byte	0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 25
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 25
 
 
  879 00e3 3F       		.uleb128 0x3f
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  933 011c 13       		.uleb128 0x13
  934 011d 00       		.byte	0
  935 011e 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 26
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 26
 
 
  936 011f 17       		.uleb128 0x17
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  990 0158 3A       		.uleb128 0x3a
  991 0159 0B       		.uleb128 0xb
  992 015a 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 27
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 27
 
 
  993 015b 0B       		.uleb128 0xb
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  1040      5F436F75 
  1040      6E746572 
  1040      5F537461 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 28
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 28
 
 
  1040      727400
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  1066      54524C32 
  1066      00
  1067              	.LASF71:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 29
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 29
 
 
  1068 00ad 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  1087      5400
  1088              	.LASF73:
  1089 01be 433A5C55 		.ascii	"C:\\Users\\armst\\Documents\\PSoC Creator\\Ocean Cl"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 30
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 30
 
 
  1089      73657273 
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  1113              	.LASF30:
  1114 0294 494E5452 		.ascii	"INTR_MASKED\000"
  1114      5F4D4153 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 31
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 31
 
 
  1114      4B454400 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  1139              	.LASF52:
  1140 0336 656E6162 		.ascii	"enableCompareSwap\000"
  1140      6C65436F 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 32
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 32
 
 
  1140      6D706172 
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  1164      5C50536F 
  1165              	.LASF8:
  1166 03ed 6C6F6E67 		.ascii	"long unsigned int\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 33
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 33
 
 
  1166      20756E73 
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 1
  1188      4D756C74 
  1189              	.LASF68:
  1190 04a1 49544D5F 		.ascii	"ITM_RxBuffer\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccLlvBRF.s 			page 34
+ARM GAS  C:\Users\armst\AppData\Local\Temp\cc5IiS4O.s 			page 34
 
 
  1190      52784275 

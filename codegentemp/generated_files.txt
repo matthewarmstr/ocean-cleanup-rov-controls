@@ -36,7 +36,10 @@
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\Echo_Counter.c" value="SOURCE_C;CortexM0p,CortexM4;;;;Echo_Counter" />
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\Echo_Counter.h" value="HEADER;;;;;Echo_Counter" />
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\Clock_5.h" value="HEADER;;;;;Clock_5" />
+  <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\UART_GPS.c" value="SOURCE_C;CortexM0p,CortexM4;;;;UART_GPS" />
+  <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\UART_GPS.h" value="HEADER;;;;;UART_GPS" />
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\UART_SCBCLK.h" value="HEADER;;;;;UART_SCBCLK" />
+  <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\UART_GPS_SCBCLK.h" value="HEADER;;;;;UART_GPS_SCBCLK" />
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\project.h" value="OTHER;;;;;" />
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\cycodeshareimport.ld" value="OTHER;;;;;" />
   <file name="C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\codegentemp\cycodeshareexport.ld" value="OTHER;;;;;" />

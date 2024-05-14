@@ -1,5 +1,5 @@
 # betawble
-# 2024-05-09 02:46:45Z
+# 2024-05-14 02:42:22Z
 
 dont_use_location SMIF -1 -1 0
 dont_use_location p4usbcell -1 -1 0
@@ -20,3 +20,4 @@ set_io "thrustmotor(0)" iocell 10 6
 set_io "GreenLight(0)" iocell 7 1
 set_io "UltrasonicTrig(0)" iocell 12 6
 set_io "UltrasonicEcho(0)" iocell 12 7
+set_io "\UART_GPS:rx(0)\" iocell 10 0

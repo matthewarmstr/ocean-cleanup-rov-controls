@@ -1,4 +1,4 @@
-Loading plugins phase: Elapsed time ==> 0s.142ms
+Loading plugins phase: Elapsed time ==> 0s.123ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cyprj -d CYBLE-416045-02 -s C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
@@ -7,10 +7,10 @@ ADD: fit.M0067: information: Clock Information: (The WCO is enabled. Chip startu
 
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.523ms
+Elaboration phase: Elapsed time ==> 1s.581ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.031ms
+HDL generation phase: Elapsed time ==> 0s.029ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -44,7 +44,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\armst
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Wed May 08 19:46:40 2024
+Mon May 13 19:42:18 2024
 
 
 ======================================================================
@@ -54,7 +54,7 @@ Options  :    -yv2 -q10 betawble.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Wed May 08 19:46:40 2024
+Mon May 13 19:42:18 2024
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -86,7 +86,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\armst
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Wed May 08 19:46:41 2024
+Mon May 13 19:42:18 2024
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -113,7 +113,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\armst
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Wed May 08 19:46:41 2024
+Mon May 13 19:42:18 2024
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -141,10 +141,17 @@ Detecting unused logic.
 	Net_6
 	Net_12
 	Net_13
-	Net_5
+	Net_541
+	\UART_GPS:Net_22\
+	\UART_GPS:Net_23\
+	Net_562
+	Net_544
+	Net_550
+	Net_551
+	Net_543
 
 
-Deleted 7 User equations/components.
+Deleted 14 User equations/components.
 Deleted 0 Synthesized equations/components.
 
 ------------------------------------------------------
@@ -172,6 +179,7 @@ Aliasing \PWM_ultrasonic:reload\ to zero
 Aliasing \PWM_ultrasonic:kill\ to zero
 Aliasing \PWM_ultrasonic:start\ to zero
 Aliasing \Echo_Counter:count\ to one
+Aliasing \UART_GPS:cts_wire\ to zero
 Removing Lhs of wire \UART:clock_wire\[8] = \UART:Net_847\[7]
 Removing Lhs of wire \UART:rx_wire\[22] = \UART:Net_1172\[19]
 Removing Lhs of wire \UART:cts_wire\[23] = zero[18]
@@ -196,9 +204,12 @@ Removing Lhs of wire \PWM_ultrasonic:reload\[117] = zero[18]
 Removing Lhs of wire \PWM_ultrasonic:kill\[118] = zero[18]
 Removing Lhs of wire \PWM_ultrasonic:start\[119] = zero[18]
 Removing Lhs of wire \Echo_Counter:count\[128] = one[12]
+Removing Lhs of wire \UART_GPS:clock_wire\[139] = \UART_GPS:Net_847\[138]
+Removing Lhs of wire \UART_GPS:rx_wire\[146] = \UART_GPS:Net_1172\[143]
+Removing Lhs of wire \UART_GPS:cts_wire\[147] = zero[18]
 
 ------------------------------------------------------
-Aliased 0 equations, 24 wires.
+Aliased 0 equations, 27 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -222,14 +233,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cyprj" -dcpsoc3 betawble.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.631ms
+Warp synthesis phase: Elapsed time ==> 0s.774ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Wednesday, 08 May 2024 19:46:41
+cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Monday, 13 May 2024 19:42:18
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cyprj -d CYBLE-416045-02 betawble.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.250ms
+Design parsing phase: Elapsed time ==> 0s.279ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -243,6 +254,7 @@ Done removing unused cells.
     Fixed Function Clock 13: Automatic-assigning  clock 'Clock_3'. Signal=Net_133_ff13
     Fixed Function Clock 14: Automatic-assigning  clock 'Clock_4'. Signal=Net_274_ff14
     Fixed Function Clock 15: Automatic-assigning  clock 'Clock_2'. Signal=Net_35_ff15
+    Fixed Function Clock 1: Automatic-assigning  clock 'UART_GPS_SCBCLK'. Signal=\UART_GPS:Net_847_ff1\
 <CYPRESSTAG name="UDB Clock/Enable Remapping Results">
 </CYPRESSTAG>
 </CYPRESSTAG>
@@ -784,6 +796,46 @@ Design Equations
         Properties:
         {
         }
+
+    Pin : Name = \UART_GPS:rx(0)\
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: HI_Z_ANALOG
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: INP_DIS_HI_Z
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => \UART_GPS:rx(0)\__PA ,
+            fb => \UART_GPS:Net_1172\ ,
+            pad => \UART_GPS:rx(0)_PAD\ );
+        Properties:
+        {
+        }
     </CYPRESSTAG>
     <CYPRESSTAG name="Macrocell listing" icon="FILE_RPT_EQUATION">
     </CYPRESSTAG>
@@ -836,6 +888,16 @@ Design Equations
             deepsleep_required = 0
             int_type = "10"
         }
+
+    interrupt: Name =\UART_GPS:SCB_IRQ\
+        PORT MAP (
+            interrupt => \UART_GPS:intr_wire\ );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
+            int_type = "10"
+        }
     </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Technology mapping summary" expanded>
@@ -848,9 +910,9 @@ Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
 Digital Clocks                :    0 :    8 :    8 :  0.00 %
 Crypto Accelerator            :    0 :    1 :    1 :  0.00 %
-Interrupts [CM0+]             :    7 :   25 :   32 : 21.88 %
-Interrupts [CM4]              :    1 :  146 :  147 :  0.68 %
-IO                            :   13 :   23 :   36 : 36.11 %
+Interrupts [CM0+]             :    9 :   23 :   32 : 28.13 %
+Interrupts [CM4]              :    0 :  147 :  147 :  0.00 %
+IO                            :   14 :   22 :   36 : 38.89 %
 Interprocessor Communication  :    0 :   16 :   16 :  0.00 %
 MCWDT                         :    0 :    2 :    2 :  0.00 %
 CapSense                      :    0 :    1 :    1 :  0.00 %
@@ -859,7 +921,7 @@ Real Time Clock               :    0 :    1 :    1 :  0.00 %
 Bluetooth Low Energy          :    1 :    0 :    1 : 100.00 %
 I2S                           :    0 :    1 :    1 :  0.00 %
 PDM/PCM                       :    0 :    1 :    1 :  0.00 %
-SCB                           :    1 :    8 :    9 : 11.11 %
+SCB                           :    2 :    7 :    9 : 22.22 %
 DMA Channels                  :    0 :   32 :   32 :  0.00 %
 LCD                           :    0 :    1 :    1 :  0.00 %
 SmartIO                       :    0 :    2 :    2 :  0.00 %
@@ -879,8 +941,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.078ms
-Tech Mapping phase: Elapsed time ==> 0s.109ms
+Technology Mapping: Elapsed time ==> 0s.172ms
+Tech Mapping phase: Elapsed time ==> 0s.203ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -901,11 +963,13 @@ thrustmotor(0)                      : [IOP=(10)][IoId=(6)]
 GreenLight(0)                       : [IOP=(7)][IoId=(1)]                
 UltrasonicTrig(0)                   : [IOP=(12)][IoId=(6)]               
 UltrasonicEcho(0)                   : [IOP=(12)][IoId=(7)]               
+\UART_GPS:rx(0)\                    : [IOP=(10)][IoId=(0)]               
 ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
 SRSS                                : SRSS_[FFB(SRSS,0)]                 
 CPUSS                               : CPUSS_[FFB(CPUSS,0)]               
 \BLE:cy_mxs40_ble\                  : BLE_[FFB(BLE,0)]                   
 \UART:SCB\                          : SCB_[FFB(SCB,5)]                   
+\UART_GPS:SCB\                      : SCB_[FFB(SCB,1)]                   
 \PWM_fin:TCPWM\                     : TCPWM_[FFB(TCPWM,0)]               
 \PWM_trashgate:TCPWM\               : TCPWM_[FFB(TCPWM,5)]               
 \PWM_thrustmotor:TCPWM\             : TCPWM_[FFB(TCPWM,1)]               
@@ -915,13 +979,13 @@ CPUSS                               : CPUSS_[FFB(CPUSS,0)]
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.0934733s
+Elapsed time ==> 0.0901985s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.516ms
+Analog Placement phase: Elapsed time ==> 0s.564ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0013722 secs
+Route success=True, Iterations=1 Elapsed=0.0013799 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
@@ -969,7 +1033,7 @@ PLD Packing: Elapsed time ==> 0s.000ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.008ms
+Partitioning: Elapsed time ==> 0s.010ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -1007,6 +1071,16 @@ Intr container @ [IntrContainer=(0)]:
         {
             cy_registers = ""
             deepsleep_required = 1
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(42)] 
+    interrupt: Name =\UART_GPS:SCB_IRQ\
+        PORT MAP (
+            interrupt => \UART_GPS:intr_wire\ );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
             int_type = "10"
         }
   Intr@ [IntrContainer=(0)][IntrId=(46)] 
@@ -1439,6 +1513,47 @@ Pin : Name = finservo(0)
     }
 
 Port 10 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = \UART_GPS:rx(0)\
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: HI_Z_ANALOG
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: INP_DIS_HI_Z
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => \UART_GPS:rx(0)\__PA ,
+        fb => \UART_GPS:Net_1172\ ,
+        pad => \UART_GPS:rx(0)_PAD\ );
+    Properties:
+    {
+    }
+
 [IoId=6]: 
 Pin : Name = thrustmotor(0)
     Attributes:
@@ -1589,7 +1704,8 @@ Clock group 0:
             ff_div_12 => Net_433_ff12 ,
             ff_div_13 => Net_133_ff13 ,
             ff_div_14 => Net_274_ff14 ,
-            ff_div_15 => Net_35_ff15 );
+            ff_div_15 => Net_35_ff15 ,
+            ff_div_1 => \UART_GPS:Net_847_ff1\ );
         Properties:
         {
         }
@@ -1597,6 +1713,24 @@ LCD group 0: empty
 Vref group 0: empty
 LPCOMP group 0: empty
 SCB group 0: 
+    SCB @ F(SCB,1): 
+    SCB: Name =\UART_GPS:SCB\
+        PORT MAP (
+            clock => \UART_GPS:Net_847_ff1\ ,
+            uart_rx => \UART_GPS:Net_1172\ ,
+            uart_tx => \UART_GPS:tx_wire\ ,
+            uart_rts => \UART_GPS:rts_wire\ ,
+            interrupt => \UART_GPS:intr_wire\ ,
+            tr_tx_req => Net_548 ,
+            tr_rx_req => Net_547 ,
+            tr_i2c_scl_filtered => \UART_GPS:Net_161\ );
+        Properties:
+        {
+            cy_registers = ""
+            master = 0
+            mode = 2
+            requires_io_preconfigure = 0
+        }
     SCB @ F(SCB,5): 
     SCB: Name =\UART:SCB\
         PORT MAP (
@@ -1803,7 +1937,8 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
    9 |   2 |     * |      NONE |         CMOS_OUT |              trashservo(0) | In(Net_82)
      |   6 |     * |      NONE |         CMOS_OUT |                finservo(0) | In(Net_79)
 -----+-----+-------+-----------+------------------+----------------------------+-------------------------
-  10 |   6 |     * |      NONE |         CMOS_OUT |             thrustmotor(0) | In(Net_139)
+  10 |   0 |     * |      NONE |      HI_Z_ANALOG |           \UART_GPS:rx(0)\ | FB(\UART_GPS:Net_1172\)
+     |   6 |     * |      NONE |         CMOS_OUT |             thrustmotor(0) | In(Net_139)
 -----+-----+-------+-----------+------------------+----------------------------+-------------------------
   12 |   6 |     * |      NONE |         CMOS_OUT |          UltrasonicTrig(0) | In(Net_173)
      |   7 |     * |      NONE |      HI_Z_ANALOG |          UltrasonicEcho(0) | FB(Net_439)
@@ -1812,32 +1947,32 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.031ms
-Digital Placement phase: Elapsed time ==> 3s.227ms
+Digital Placement phase: Elapsed time ==> 3s.132ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata" --vh2-path "betawble_r.vh2" --pcf-path "betawble.pco" --des-name "betawble" --dsf-path "betawble.dsf" --sdc-path "betawble.sdc" --lib-path "betawble_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.581ms
+Digital Routing phase: Elapsed time ==> 0s.564ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.299ms
+Bitstream Generation phase: Elapsed time ==> 0s.314ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
 Bitstream Verification phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in betawble_timing.html.
-Static timing analysis phase: Elapsed time ==> 5s.180ms
+Static timing analysis phase: Elapsed time ==> 5s.129ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.093ms
+Design database save phase: Elapsed time ==> 0s.078ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 10s.274ms
+cydsfit: Elapsed time ==> 10s.297ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 10s.274ms
-API generation phase: Elapsed time ==> 0s.472ms
-Dependency generation phase: Elapsed time ==> 0s.009ms
-Cleanup phase: Elapsed time ==> 0s.000ms
+Fitter phase: Elapsed time ==> 10s.297ms
+API generation phase: Elapsed time ==> 0s.504ms
+Dependency generation phase: Elapsed time ==> 0s.015ms
+Cleanup phase: Elapsed time ==> 0s.001ms
