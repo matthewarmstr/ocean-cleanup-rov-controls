@@ -1,6 +1,6 @@
-C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cyprj|882f0d08-d8b5-4065-a528-b955cee82e3e
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e6d2b4c0-6325-493a-92f5-88bba5c17854
-C:\Users\armst\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|81a272d4-15cd-46b7-a83b-f156bcac18d1
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|4c6af66c-72fa-40c2-99cf-4ee4d73a1d06
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|88239d3a-2dbc-4742-afa0-915be57cee72
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|8c522cb0-3032-400f-8e03-bac50022ba90
+C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cyprj|0c5a7747-0e15-4bd9-9df3-a2386dbfbec2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|321e253f-ff0c-48f1-85c0-9350b7caad4d
+C:\Users\armst\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|0bc7cf1f-3afc-425e-a376-fe6562572563
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|b5ee4dc6-b90d-4af0-a53f-27a8baf08cbb
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d64e4ae4-3b35-4e9e-98fb-f6b4d22a0006
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|c91a8528-7fb0-41cb-a71c-2641f639e7de

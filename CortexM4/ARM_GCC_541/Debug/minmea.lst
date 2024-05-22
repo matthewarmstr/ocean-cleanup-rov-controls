@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 1
 
 
    1              		.syntax unified
@@ -26,7 +26,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
   23              		.thumb_func
   24              		.type	hex2int, %function
   25              	hex2int:
-  26              	.LFB4:
+  26              	.LFB5:
   27              		.file 1 "minmea.c"
    1:minmea.c      **** /*
    2:minmea.c      ****  * Copyright © 2014 Kosma Moczek <kosma@cloudyourcar.com>
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
   35 0000 A0F13003 		sub	r3, r0, #48
   36 0004 DBB2     		uxtb	r3, r3
   37 0006 092B     		cmp	r3, #9
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 2
 
 
   38 0008 01D8     		bhi	.L2
@@ -103,7 +103,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
   70              		.loc 1 27 0
   71 002e 7047     		bx	lr
   72              		.cfi_endproc
-  73              	.LFE4:
+  73              	.LFE5:
   74              		.size	hex2int, .-hex2int
   75              		.section	.text.minmea_checksum,"ax",%progbits
   76              		.align	2
@@ -112,13 +112,13 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
   79              		.thumb_func
   80              		.type	minmea_checksum, %function
   81              	minmea_checksum:
-  82              	.LFB5:
+  82              	.LFB6:
   28:minmea.c      **** 
   29:minmea.c      **** uint8_t minmea_checksum(const char *sentence)
   30:minmea.c      **** {
   83              		.loc 1 30 0
   84              		.cfi_startproc
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 3
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 3
 
 
   85              		@ args = 0, pretend = 0, frame = 0
@@ -170,7 +170,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  116              		.loc 1 42 0 is_stmt 1
  117 001a 7047     		bx	lr
  118              		.cfi_endproc
- 119              	.LFE5:
+ 119              	.LFE6:
  120              		.size	minmea_checksum, .-minmea_checksum
  121              		.section	.text.minmea_check,"ax",%progbits
  122              		.align	2
@@ -178,11 +178,11 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  124              		.thumb
  125              		.thumb_func
  126              		.type	minmea_check, %function
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 4
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 4
 
 
  127              	minmea_check:
- 128              	.LFB6:
+ 128              	.LFB7:
   43:minmea.c      **** 
   44:minmea.c      **** bool minmea_check(const char *sentence, bool strict)
   45:minmea.c      **** {
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  166 001a 1A4A     		ldr	r2, .L27
  167 001c 1268     		ldr	r2, [r2]
  168 001e 1A44     		add	r2, r2, r3
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 5
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 5
 
 
  169 0020 5278     		ldrb	r2, [r2, #1]	@ zero_extendqisi2
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  207              	.L16:
  208              	.LBE37:
   70:minmea.c      ****             return false;
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 6
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 6
 
 
   71:minmea.c      ****     } else if (strict) {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  246 0072 0020     		movs	r0, #0
  247              	.LVL34:
  248 0074 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 7
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 7
 
 
  249              	.LVL35:
@@ -391,7 +391,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  270              	.L27:
  271 0084 00000000 		.word	__ctype_ptr__
  272              		.cfi_endproc
- 273              	.LFE6:
+ 273              	.LFE7:
  274              		.size	minmea_check, .-minmea_check
  275              		.section	.text.minmea_scan,"ax",%progbits
  276              		.align	2
@@ -400,7 +400,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  279              		.thumb_func
  280              		.type	minmea_scan, %function
  281              	minmea_scan:
- 282              	.LFB7:
+ 282              	.LFB8:
   87:minmea.c      **** 
   88:minmea.c      **** bool minmea_scan(const char *sentence, const char *format, ...)
   89:minmea.c      **** {
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  294              		.cfi_def_cfa_offset 48
  295              		.cfi_offset 4, -48
  296              		.cfi_offset 5, -44
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 8
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 8
 
 
  297              		.cfi_offset 6, -40
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  115:minmea.c      ****         char type = *format++;
  325              		.loc 1 115 0
  326 001c 0135     		adds	r5, r5, #1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 9
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 9
 
 
  327              	.LVL44:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  368 0068 A402     		.2byte	(.L97-.L36)/2
  369 006a A402     		.2byte	(.L97-.L36)/2
  370 006c A402     		.2byte	(.L97-.L36)/2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 10
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 10
 
 
  371 006e 7F02     		.2byte	(.L66-.L36)/2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
   17:minmea.h      **** #include <ctype.h>
   18:minmea.h      **** #include <stdint.h>
   19:minmea.h      **** #include <stdbool.h>
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 11
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 11
 
 
   20:minmea.h      **** #include <time.h>
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
   74:minmea.h      ****     struct minmea_time time;
   75:minmea.h      ****     bool valid;
   76:minmea.h      ****     struct minmea_float latitude;
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 12
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 12
 
 
   77:minmea.h      ****     struct minmea_float longitude;
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  131:minmea.h      **** enum minmea_gsa_mode {
  132:minmea.h      ****     MINMEA_GPGSA_MODE_AUTO = 'A',
  133:minmea.h      ****     MINMEA_GPGSA_MODE_FORCED = 'M',
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 13
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 13
 
 
  134:minmea.h      **** };
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  188:minmea.h      **** bool minmea_check(const char *sentence, bool strict);
  189:minmea.h      **** 
  190:minmea.h      **** /**
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 14
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 14
 
 
  191:minmea.h      ****  * Determine talker identifier.
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  245:minmea.h      ****         return 0;
  246:minmea.h      ****     if (f->scale == new_scale)
  247:minmea.h      ****         return f->value;
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 15
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 15
 
 
  248:minmea.h      ****     if (f->scale > new_scale)
@@ -876,19 +876,37 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  280:minmea.h      **** }
  281:minmea.h      **** 
  282:minmea.h      **** /**
- 283:minmea.h      ****  * Check whether a character belongs to the set of characters allowed in a
- 284:minmea.h      ****  * sentence data field.
+ 283:minmea.h      ****  * Return the heading (labeled as 'course').
+ 284:minmea.h      ****  * Returns NaN for "unknown" values.
  285:minmea.h      ****  */
- 286:minmea.h      **** static inline bool minmea_isfield(char c) {
- 287:minmea.h      ****     return isprint((unsigned char) c) && c != ',' && c != '*';
- 405              		.loc 2 287 0 is_stmt 1 discriminator 1
+ 286:minmea.h      **** static inline float minmea_getheading(const struct minmea_float *f)
+ 287:minmea.h      **** {
+ 288:minmea.h      ****     if (f->scale == 0)
+ 289:minmea.h      ****         return NAN;
+ 290:minmea.h      ****     if (f->scale  > (INT_LEAST32_MAX / 100))
+ 291:minmea.h      ****         return NAN;
+ 292:minmea.h      ****     if (f->scale < (INT_LEAST32_MIN / 100))
+ 293:minmea.h      ****         return NAN;
+ 294:minmea.h      ****     return (float) f->value;
+ 295:minmea.h      **** }
+ 296:minmea.h      **** 
+ 297:minmea.h      **** /**
+ 298:minmea.h      ****  * Check whether a character belongs to the set of characters allowed in a
+ 299:minmea.h      ****  * sentence data field.
+ 300:minmea.h      ****  */
+ 301:minmea.h      **** static inline bool minmea_isfield(char c) {
+ 302:minmea.h      ****     return isprint((unsigned char) c) && c != ',' && c != '*';
+ 405              		.loc 2 302 0 is_stmt 1 discriminator 1
  406 009e A24A     		ldr	r2, .L153
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 16
+
+
  407 00a0 1268     		ldr	r2, [r2]
  408 00a2 1A44     		add	r2, r2, r3
  409 00a4 5278     		ldrb	r2, [r2, #1]	@ zero_extendqisi2
  410 00a6 12F0970F 		tst	r2, #151
  411 00aa 05D0     		beq	.L99
- 412              		.loc 2 287 0 is_stmt 0
+ 412              		.loc 2 302 0 is_stmt 0
  413 00ac 2C2B     		cmp	r3, #44
  414 00ae 05D0     		beq	.L100
  415 00b0 2A2B     		cmp	r3, #42
@@ -898,9 +916,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  419              	.L99:
  420 00b8 0022     		movs	r2, #0
  421 00ba 02E0     		b	.L46
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 16
-
-
  422              	.L100:
  423 00bc 0022     		movs	r2, #0
  424 00be 00E0     		b	.L46
@@ -943,24 +958,24 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  141:minmea.c      ****                 if (field && minmea_isfield(*field)) {
  452              		.loc 1 141 0
  453 00d6 77B3     		cbz	r7, .L102
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 17
+
+
  454              		.loc 1 141 0 is_stmt 0 discriminator 1
  455 00d8 3B78     		ldrb	r3, [r7]	@ zero_extendqisi2
  456              	.LVL51:
  457              	.LBB44:
  458              	.LBB45:
- 459              		.loc 2 287 0 is_stmt 1 discriminator 1
+ 459              		.loc 2 302 0 is_stmt 1 discriminator 1
  460 00da 934A     		ldr	r2, .L153
  461 00dc 1268     		ldr	r2, [r2]
  462 00de 1A44     		add	r2, r2, r3
  463 00e0 5278     		ldrb	r2, [r2, #1]	@ zero_extendqisi2
  464 00e2 12F0970F 		tst	r2, #151
  465 00e6 05D0     		beq	.L103
- 466              		.loc 2 287 0 is_stmt 0
+ 466              		.loc 2 302 0 is_stmt 0
  467 00e8 2C2B     		cmp	r3, #44
  468 00ea 05D0     		beq	.L104
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 17
-
-
  469 00ec 2A2B     		cmp	r3, #42
  470 00ee 05D1     		bne	.L105
  471 00f0 0022     		movs	r2, #0
@@ -1003,6 +1018,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  507 0128 1900     		.2byte	(.L108-.L50)/2
  508 012a 3C02     		.2byte	(.L107-.L50)/2
  509 012c 3C02     		.2byte	(.L107-.L50)/2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 18
+
+
  510 012e 3C02     		.2byte	(.L107-.L50)/2
  511 0130 1900     		.2byte	(.L108-.L50)/2
  512              		.p2align 1
@@ -1018,9 +1036,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  518              		.loc 1 139 0
  519 0136 0021     		movs	r1, #0
  520 0138 03E0     		b	.L47
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 18
-
-
  521              	.L106:
  522 013a 0021     		movs	r1, #0
  523 013c 01E0     		b	.L47
@@ -1063,6 +1078,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  541              		.loc 1 164 0
  542 014e 002F     		cmp	r7, #0
  543 0150 4DD1     		bne	.L109
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 19
+
+
  162:minmea.c      **** 
  544              		.loc 1 162 0
  545 0152 0020     		movs	r0, #0
@@ -1078,9 +1096,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  165:minmea.c      ****                     while (minmea_isfield(*field)) {
  166:minmea.c      ****                         if (*field == '+' && !sign && value == -1) {
  553              		.loc 1 166 0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 19
-
-
  554 015c 2B2B     		cmp	r3, #43
  555 015e 05D1     		bne	.L53
  556              		.loc 1 166 0 is_stmt 0 discriminator 1
@@ -1123,6 +1138,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  586              	.L57:
  174:minmea.c      ****                             if (value > (INT_LEAST32_MAX-digit) / 10) {
  587              		.loc 1 174 0
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 20
+
+
  588 018c 6FF00041 		mvn	r1, #-2147483648
  589 0190 C91A     		subs	r1, r1, r3
  590 0192 DFF898C1 		ldr	ip, .L153+4
@@ -1138,9 +1156,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  598 01a6 40D1     		bne	.L52
  599 01a8 FFE1     		b	.L30
  600              	.L58:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 20
-
-
  177:minmea.c      ****                                     /* truncate extra precision */
  178:minmea.c      ****                                     break;
  179:minmea.c      ****                                 } else {
@@ -1183,6 +1198,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  190:minmea.c      ****                             /* Allow spaces at the start of the field. Not NMEA
  191:minmea.c      ****                              * conformant, but some modules do this. */
  192:minmea.c      ****                             if (sign != 0 || value != -1 || scale != 0)
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 21
+
+
  627              		.loc 1 192 0
  628 01c8 BEF1000F 		cmp	lr, #0
  629 01cc 40F0DE81 		bne	.L115
@@ -1198,9 +1216,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  639              	.LBB83:
  640              	.LBB50:
  167:minmea.c      ****                         } else if (*field == '-' && !sign && value == -1) {
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 21
-
-
  641              		.loc 1 167 0 is_stmt 1
  642 01dc 4FF0010E 		mov	lr, #1
  643              	.LVL63:
@@ -1241,8 +1256,11 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  670              	.LVL71:
  671              	.LBB48:
  672              	.LBB49:
- 673              		.loc 2 287 0
+ 673              		.loc 2 302 0
  674 01f8 4B49     		ldr	r1, .L153
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 22
+
+
  675 01fa 0968     		ldr	r1, [r1]
  676 01fc 1944     		add	r1, r1, r3
  677 01fe 4978     		ldrb	r1, [r1, #1]	@ zero_extendqisi2
@@ -1258,9 +1276,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  687 0214 4FF0000C 		mov	ip, #0
  688 0218 04E0     		b	.L60
  689              	.L119:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 22
-
-
  690 021a 4FF0000C 		mov	ip, #0
  691 021e 01E0     		b	.L60
  692              	.L120:
@@ -1303,6 +1318,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  717 0240 18B1     		cbz	r0, .L123
  718 0242 03E0     		b	.L64
  719              	.L122:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 23
+
+
  207:minmea.c      ****                 } else if (scale == 0) {
  720              		.loc 1 207 0
  721 0244 0020     		movs	r0, #0
@@ -1318,9 +1336,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  210:minmea.c      ****                     scale = 1;
  729              		.loc 1 210 0
  730 024a 0120     		movs	r0, #1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 23
-
-
  731              	.LVL77:
  732              	.L64:
  211:minmea.c      ****                 }
@@ -1363,6 +1378,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  757 0266 0A22     		movs	r2, #10
  758 0268 02A9     		add	r1, sp, #8
  759 026a 3846     		mov	r0, r7
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 24
+
+
  760 026c FFF7FEFF 		bl	strtol
  761              	.LVL80:
  224:minmea.c      ****                     if (minmea_isfield(*endptr))
@@ -1372,15 +1390,12 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  765              	.LVL81:
  766              	.LBB53:
  767              	.LBB54:
- 768              		.loc 2 287 0
+ 768              		.loc 2 302 0
  769 0274 2C4B     		ldr	r3, .L153
  770 0276 1B68     		ldr	r3, [r3]
  771 0278 1344     		add	r3, r3, r2
  772 027a 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
  773 027c 13F0970F 		tst	r3, #151
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 24
-
-
  774 0280 05D0     		beq	.L125
  775 0282 2C2A     		cmp	r2, #44
  776 0284 05D0     		beq	.L126
@@ -1423,6 +1438,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  226:minmea.c      ****                 }
  227:minmea.c      **** 
  228:minmea.c      ****                 *va_arg(ap, int *) = value;
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 25
+
+
  810              		.loc 1 228 0
  811 02a0 039B     		ldr	r3, [sp, #12]
  812 02a2 1A1D     		adds	r2, r3, #4
@@ -1438,9 +1456,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  821              	.LBB56:
  230:minmea.c      **** 
  231:minmea.c      ****             case 's': { // String value (char *).
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 25
-
-
  232:minmea.c      ****                 char *buf = va_arg(ap, char *);
  822              		.loc 1 232 0
  823 02ac 039B     		ldr	r3, [sp, #12]
@@ -1470,7 +1485,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  842              	.LVL91:
  843              	.LBB57:
  844              	.LBB58:
- 845              		.loc 2 287 0
+ 845              		.loc 2 302 0
  846 02c0 194B     		ldr	r3, .L153
  847 02c2 1B68     		ldr	r3, [r3]
  848 02c4 1344     		add	r3, r3, r2
@@ -1483,6 +1498,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  855 02d4 05D1     		bne	.L130
  856 02d6 0023     		movs	r3, #0
  857 02d8 04E0     		b	.L72
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 26
+
+
  858              	.L128:
  859 02da 0023     		movs	r3, #0
  860 02dc 02E0     		b	.L72
@@ -1498,9 +1516,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  235:minmea.c      ****                     while (minmea_isfield(*field))
  870              		.loc 1 235 0
  871 02e4 002B     		cmp	r3, #0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 26
-
-
  872 02e6 E7D1     		bne	.L73
  873              	.L71:
  237:minmea.c      ****                 }
@@ -1543,9 +1558,12 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  897              	.LVL95:
  898 0302 F95C     		ldrb	r1, [r7, r3]	@ zero_extendqisi2
  899              	.LVL96:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 27
+
+
  900              	.LBB61:
  901              	.LBB62:
- 902              		.loc 2 287 0
+ 902              		.loc 2 302 0
  903 0304 084A     		ldr	r2, .L153
  904 0306 1268     		ldr	r2, [r2]
  905 0308 0A44     		add	r2, r2, r1
@@ -1558,9 +1576,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  912 0318 0AD1     		bne	.L135
  913 031a 0022     		movs	r2, #0
  914 031c 09E0     		b	.L75
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 27
-
-
  915              	.L133:
  916 031e 0022     		movs	r2, #0
  917 0320 07E0     		b	.L75
@@ -1603,6 +1618,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  949 0344 57F8012F 		ldr	r2, [r7, #1]!	@ unaligned
  950              	.LVL101:
  951 0348 1A60     		str	r2, [r3]	@ unaligned
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 28
+
+
  952 034a 3A79     		ldrb	r2, [r7, #4]	@ zero_extendqisi2
  953 034c 1A71     		strb	r2, [r3, #4]
  255:minmea.c      ****                 buf[5] = '\0';
@@ -1618,9 +1636,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  962              	.LBB63:
  257:minmea.c      **** 
  258:minmea.c      ****             case 'D': { // Date (int, int, int), -1 if empty.
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 28
-
-
  259:minmea.c      ****                 struct minmea_date *date = va_arg(ap, struct minmea_date *);
  963              		.loc 1 259 0
  964 0354 039B     		ldr	r3, [sp, #12]
@@ -1640,14 +1655,14 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  974              	.LVL104:
  975              	.LBB64:
  976              	.LBB65:
- 977              		.loc 2 287 0 is_stmt 1 discriminator 1
+ 977              		.loc 2 302 0 is_stmt 1 discriminator 1
  978 0364 934B     		ldr	r3, .L155
  979 0366 1968     		ldr	r1, [r3]
  980 0368 0B18     		adds	r3, r1, r0
  981 036a 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
  982 036c 13F0970F 		tst	r3, #151
  983 0370 05D0     		beq	.L138
- 984              		.loc 2 287 0 is_stmt 0
+ 984              		.loc 2 302 0 is_stmt 0
  985 0372 2C28     		cmp	r0, #44
  986 0374 05D0     		beq	.L139
  987 0376 2A28     		cmp	r0, #42
@@ -1663,6 +1678,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  997              	.L140:
  998 0386 0123     		movs	r3, #1
  999              	.L78:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 29
+
+
  1000              	.LVL105:
  1001              	.LBE65:
  1002              	.LBE64:
@@ -1678,9 +1696,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1011              	.LVL107:
  1012              	.L81:
  1013              	.LBB66:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 29
-
-
  1014              	.LBB67:
  264:minmea.c      ****                     // Always six digits.
  265:minmea.c      ****                     for (int f=0; f<6; f++)
@@ -1723,6 +1738,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  270:minmea.c      ****                     char mArr[] = {field[2], field[3], '\0'};
  1045              		.loc 1 270 0
  1046 03bc BB78     		ldrb	r3, [r7, #2]	@ zero_extendqisi2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 30
+
+
  1047 03be 8DF80430 		strb	r3, [sp, #4]
  1048 03c2 FB78     		ldrb	r3, [r7, #3]	@ zero_extendqisi2
  1049 03c4 8DF80530 		strb	r3, [sp, #5]
@@ -1738,9 +1756,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1057              		.loc 1 272 0
  1058 03dc 0A22     		movs	r2, #10
  1059 03de 4946     		mov	r1, r9
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 30
-
-
  1060 03e0 6846     		mov	r0, sp
  1061 03e2 FFF7FEFF 		bl	strtol
  1062              	.LVL112:
@@ -1783,6 +1798,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1095 0404 4FF0FF30 		mov	r0, #-1
  1096 0408 0746     		mov	r7, r0
  1097              	.LVL121:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 31
+
+
  1098 040a 8246     		mov	r10, r0
  1099              	.LVL122:
  1100              	.L77:
@@ -1798,9 +1816,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1105              		.loc 1 279 0
  1106 0414 C8F80800 		str	r0, [r8, #8]
  1107              	.LBE70:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 31
-
-
  280:minmea.c      ****             } break;
  1108              		.loc 1 280 0
  1109 0418 8DE0     		b	.L66
@@ -1828,14 +1843,14 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1124              	.LVL125:
  1125              	.LBB72:
  1126              	.LBB73:
- 1127              		.loc 2 287 0 is_stmt 1 discriminator 1
+ 1127              		.loc 2 302 0 is_stmt 1 discriminator 1
  1128 042a 624B     		ldr	r3, .L155
  1129 042c 1968     		ldr	r1, [r3]
  1130 042e 0B18     		adds	r3, r1, r0
  1131 0430 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
  1132 0432 13F0970F 		tst	r3, #151
  1133 0436 05D0     		beq	.L143
- 1134              		.loc 2 287 0 is_stmt 0
+ 1134              		.loc 2 302 0 is_stmt 0
  1135 0438 2C28     		cmp	r0, #44
  1136 043a 05D0     		beq	.L144
  1137 043c 2A28     		cmp	r0, #42
@@ -1843,6 +1858,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1139 0440 0023     		movs	r3, #0
  1140 0442 04E0     		b	.L83
  1141              	.L143:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 32
+
+
  1142 0444 0023     		movs	r3, #0
  1143 0446 02E0     		b	.L83
  1144              	.L144:
@@ -1858,9 +1876,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1154 044e 6BB9     		cbnz	r3, .L146
  285:minmea.c      **** 
  1155              		.loc 1 285 0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 32
-
-
  1156 0450 4FF0FF33 		mov	r3, #-1
  1157 0454 1846     		mov	r0, r3
  1158 0456 9946     		mov	r9, r3
@@ -1903,6 +1918,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  293:minmea.c      ****                     char hArr[] = {field[0], field[1], '\0'};
  1188              		.loc 1 293 0 is_stmt 1
  1189 0472 8DF80000 		strb	r0, [sp]
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 33
+
+
  1190 0476 7B78     		ldrb	r3, [r7, #1]	@ zero_extendqisi2
  1191              	.LVL131:
  1192 0478 8DF80130 		strb	r3, [sp, #1]
@@ -1918,9 +1936,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  295:minmea.c      ****                     char sArr[] = {field[4], field[5], '\0'};
  1201              		.loc 1 295 0
  1202 0494 3B79     		ldrb	r3, [r7, #4]	@ zero_extendqisi2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 33
-
-
  1203 0496 8DF80830 		strb	r3, [sp, #8]
  1204 049a 7B79     		ldrb	r3, [r7, #5]	@ zero_extendqisi2
  1205 049c 8DF80930 		strb	r3, [sp, #9]
@@ -1963,6 +1978,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1235 04cc 2E2B     		cmp	r3, #46
  1236 04ce 0FD0     		beq	.L147
  303:minmea.c      ****                         uint32_t value = 0;
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 34
+
+
  304:minmea.c      ****                         uint32_t scale = 1000000LU;
  305:minmea.c      ****                         while (isdigit((unsigned char) *field) && scale > 1) {
  306:minmea.c      ****                             value = (value * 10) + (*field++ - '0');
@@ -1978,9 +1996,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1241              	.L90:
  1242              	.LBB77:
  306:minmea.c      ****                             scale /= 10;
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 34
-
-
  1243              		.loc 1 306 0
  1244 04d4 01EB8103 		add	r3, r1, r1, lsl #2
  1245 04d8 5F00     		lsls	r7, r3, #1
@@ -2023,6 +2038,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1278              		.loc 1 309 0 is_stmt 1
  1279 050e 02FB01F3 		mul	r3, r2, r1
  1280              	.LVL147:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 35
+
+
  1281              	.LBE78:
  1282 0512 06E0     		b	.L82
  1283              	.LVL148:
@@ -2038,9 +2056,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1292              	.L142:
  1293              	.LBB86:
  1294              	.LBB80:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 35
-
-
  285:minmea.c      **** 
  1295              		.loc 1 285 0
  1296 0518 4FF0FF33 		mov	r3, #-1
@@ -2083,24 +2098,24 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1315              		.loc 1 329 0 discriminator 2
  1316 0534 0134     		adds	r4, r4, #1
  1317              	.LVL152:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 36
+
+
  1318              	.L66:
  1319              		.loc 1 329 0 is_stmt 0 discriminator 1
  1320 0536 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
  1321              	.LVL153:
  1322              	.LBB81:
  1323              	.LBB82:
- 1324              		.loc 2 287 0 is_stmt 1 discriminator 1
+ 1324              		.loc 2 302 0 is_stmt 1 discriminator 1
  1325 0538 1E4B     		ldr	r3, .L155
  1326 053a 1B68     		ldr	r3, [r3]
  1327 053c 1344     		add	r3, r3, r2
  1328 053e 5B78     		ldrb	r3, [r3, #1]	@ zero_extendqisi2
  1329 0540 13F0970F 		tst	r3, #151
  1330 0544 05D0     		beq	.L148
- 1331              		.loc 2 287 0 is_stmt 0
+ 1331              		.loc 2 302 0 is_stmt 0
  1332 0546 2C2A     		cmp	r2, #44
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 36
-
-
  1333 0548 05D0     		beq	.L149
  1334 054a 2A2A     		cmp	r2, #42
  1335 054c 05D1     		bne	.L150
@@ -2143,6 +2158,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1371              	.LVL159:
  1372              	.L31:
  1373              	.LBE86:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 37
+
+
  114:minmea.c      ****         char type = *format++;
  1374              		.loc 1 114 0
  1375 0570 2B78     		ldrb	r3, [r5]	@ zero_extendqisi2
@@ -2158,9 +2176,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1382              	.L96:
   90:minmea.c      ****     bool optional = false;
  1383              		.loc 1 90 0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 37
-
-
  1384 057c 0020     		movs	r0, #0
  1385 057e 14E0     		b	.L30
  1386              	.LVL161:
@@ -2203,6 +2218,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1423              	.L132:
  1424 05a0 0020     		movs	r0, #0
  1425 05a2 02E0     		b	.L30
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 38
+
+
  1426              	.LVL174:
  1427              	.L136:
  1428 05a4 0020     		movs	r0, #0
@@ -2218,9 +2236,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1434              	.L94:
   94:minmea.c      **** 
  1435              		.loc 1 94 0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 38
-
-
  1436 05a8 0020     		movs	r0, #0
  1437              	.LVL177:
  1438              	.L30:
@@ -2253,7 +2268,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1464 05b8 CDCCCCCC 		.word	-858993459
  1465 05bc 40420F00 		.word	1000000
  1466              		.cfi_endproc
- 1467              	.LFE7:
+ 1467              	.LFE8:
  1468              		.size	minmea_scan, .-minmea_scan
  1469              		.section	.text.minmea_talker_id,"ax",%progbits
  1470              		.align	2
@@ -2262,7 +2277,10 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1473              		.thumb_func
  1474              		.type	minmea_talker_id, %function
  1475              	minmea_talker_id:
- 1476              	.LFB8:
+ 1476              	.LFB9:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 39
+
+
  338:minmea.c      **** 
  339:minmea.c      **** bool minmea_talker_id(char talker[3], const char *sentence)
  340:minmea.c      **** {
@@ -2278,9 +2296,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1486 0002 82B0     		sub	sp, sp, #8
  1487              		.cfi_def_cfa_offset 16
  1488 0004 0446     		mov	r4, r0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 39
-
-
  1489 0006 0846     		mov	r0, r1
  1490              	.LVL179:
  341:minmea.c      ****     char type[6];
@@ -2323,7 +2338,10 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1518              	.L160:
  1519 002c 00000000 		.word	.LC0
  1520              		.cfi_endproc
- 1521              	.LFE8:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 40
+
+
+ 1521              	.LFE9:
  1522              		.size	minmea_talker_id, .-minmea_talker_id
  1523              		.section	.text.minmea_sentence_id,"ax",%progbits
  1524              		.align	2
@@ -2332,15 +2350,12 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1527              		.thumb_func
  1528              		.type	minmea_sentence_id, %function
  1529              	minmea_sentence_id:
- 1530              	.LFB9:
+ 1530              	.LFB10:
  351:minmea.c      **** 
  352:minmea.c      **** enum minmea_sentence_id minmea_sentence_id(const char *sentence, bool strict)
  353:minmea.c      **** {
  1531              		.loc 1 353 0
  1532              		.cfi_startproc
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 40
-
-
  1533              		@ args = 0, pretend = 0, frame = 8
  1534              		@ frame_needed = 0, uses_anonymous_args = 0
  1535              	.LVL183:
@@ -2383,6 +2398,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1562              		.loc 1 363 0
  1563 0028 2749     		ldr	r1, .L176+8
  1564 002a 0DF10200 		add	r0, sp, #2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 41
+
+
  1565 002e FFF7FEFF 		bl	strcmp
  1566              	.LVL187:
  1567 0032 98B3     		cbz	r0, .L167
@@ -2398,9 +2416,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  367:minmea.c      ****     if (!strcmp(type+2, "GSA"))
  1574              		.loc 1 367 0
  1575 0040 2349     		ldr	r1, .L176+16
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 41
-
-
  1576 0042 0DF10200 		add	r0, sp, #2
  1577 0046 FFF7FEFF 		bl	strcmp
  1578              	.LVL189:
@@ -2443,6 +2458,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1605 007c 1949     		ldr	r1, .L176+36
  1606 007e 0DF10200 		add	r0, sp, #2
  1607 0082 FFF7FEFF 		bl	strcmp
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 42
+
+
  1608              	.LVL194:
  1609 0086 B8B9     		cbnz	r0, .L174
  378:minmea.c      ****         return MINMEA_SENTENCE_ZDA;
@@ -2458,9 +2476,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  359:minmea.c      **** 
  1618              		.loc 1 359 0
  1619 0092 4FF0FF30 		mov	r0, #-1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 42
-
-
  1620 0096 10E0     		b	.L163
  1621              	.L166:
  362:minmea.c      ****     if (!strcmp(type+2, "GGA"))
@@ -2503,6 +2518,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1651 00b4 0820     		movs	r0, #8
  1652 00b6 00E0     		b	.L163
  1653              	.L174:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 43
+
+
  379:minmea.c      **** 
  380:minmea.c      ****     return MINMEA_UNKNOWN;
  1654              		.loc 1 380 0
@@ -2518,9 +2536,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1663              	.L177:
  1664 00be 00BF     		.align	2
  1665              	.L176:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 43
-
-
  1666 00c0 00000000 		.word	.LC0
  1667 00c4 04000000 		.word	.LC1
  1668 00c8 08000000 		.word	.LC2
@@ -2532,7 +2547,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1674 00e0 20000000 		.word	.LC8
  1675 00e4 24000000 		.word	.LC9
  1676              		.cfi_endproc
- 1677              	.LFE9:
+ 1677              	.LFE10:
  1678              		.size	minmea_sentence_id, .-minmea_sentence_id
  1679              		.section	.text.minmea_parse_gbs,"ax",%progbits
  1680              		.align	2
@@ -2541,7 +2556,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1683              		.thumb_func
  1684              		.type	minmea_parse_gbs, %function
  1685              	minmea_parse_gbs:
- 1686              	.LFB10:
+ 1686              	.LFB11:
  382:minmea.c      **** 
  383:minmea.c      **** bool minmea_parse_gbs(struct minmea_sentence_gbs *frame, const char *sentence)
  384:minmea.c      **** {
@@ -2563,6 +2578,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  386:minmea.c      ****     char type[6];
  387:minmea.c      ****     if (!minmea_scan(sentence, "tTfffifff",
  1701              		.loc 1 387 0
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 44
+
+
  1702 0008 03F13C02 		add	r2, r3, #60
  1703 000c 0692     		str	r2, [sp, #24]
  1704 000e 03F13402 		add	r2, r3, #52
@@ -2578,9 +2596,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1714 002c 03F11002 		add	r2, r3, #16
  1715 0030 0092     		str	r2, [sp]
  1716 0032 08AA     		add	r2, sp, #32
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 44
-
-
  1717 0034 0749     		ldr	r1, .L181
  1718              	.LVL198:
  1719 0036 FFF7FEFF 		bl	minmea_scan
@@ -2623,8 +2638,11 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1740              	.L181:
  1741 0054 28000000 		.word	.LC10
  1742 0058 04000000 		.word	.LC1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 45
+
+
  1743              		.cfi_endproc
- 1744              	.LFE10:
+ 1744              	.LFE11:
  1745              		.size	minmea_parse_gbs, .-minmea_parse_gbs
  1746              		.section	.text.minmea_parse_rmc,"ax",%progbits
  1747              		.align	2
@@ -2633,14 +2651,11 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1750              		.thumb_func
  1751              		.type	minmea_parse_rmc, %function
  1752              	minmea_parse_rmc:
- 1753              	.LFB11:
+ 1753              	.LFB12:
  404:minmea.c      **** 
  405:minmea.c      **** bool minmea_parse_rmc(struct minmea_sentence_rmc *frame, const char *sentence)
  406:minmea.c      **** {
  1754              		.loc 1 406 0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 45
-
-
  1755              		.cfi_startproc
  1756              		@ args = 0, pretend = 0, frame = 24
  1757              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2683,6 +2698,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1787 0036 0193     		str	r3, [sp, #4]
  1788 0038 0DF13703 		add	r3, sp, #55
  1789 003c 0093     		str	r3, [sp]
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 46
+
+
  1790 003e 2346     		mov	r3, r4
  1791 0040 0EAA     		add	r2, sp, #56
  1792 0042 1349     		ldr	r1, .L187
@@ -2698,9 +2716,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  418:minmea.c      ****             &frame->longitude, &longitude_direction,
  419:minmea.c      ****             &frame->speed,
  420:minmea.c      ****             &frame->course,
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 46
-
-
  421:minmea.c      ****             &frame->date,
  422:minmea.c      ****             &frame->variation, &variation_direction))
  423:minmea.c      ****         return false;
@@ -2743,6 +2758,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  432:minmea.c      ****     return true;
  1826              		.loc 1 432 0
  1827 0084 00E0     		b	.L184
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 47
+
+
  1828              	.L185:
  425:minmea.c      **** 
  1829              		.loc 1 425 0
@@ -2758,14 +2776,11 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1838              	.LVL206:
  1839              	.L188:
  1840 008e 00BF     		.align	2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 47
-
-
  1841              	.L187:
  1842 0090 34000000 		.word	.LC11
  1843 0094 1C000000 		.word	.LC7
  1844              		.cfi_endproc
- 1845              	.LFE11:
+ 1845              	.LFE12:
  1846              		.size	minmea_parse_rmc, .-minmea_parse_rmc
  1847              		.section	.text.minmea_parse_gga,"ax",%progbits
  1848              		.align	2
@@ -2774,7 +2789,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1851              		.thumb_func
  1852              		.type	minmea_parse_gga, %function
  1853              	minmea_parse_gga:
- 1854              	.LFB12:
+ 1854              	.LFB13:
  434:minmea.c      **** 
  435:minmea.c      **** bool minmea_parse_gga(struct minmea_sentence_gga *frame, const char *sentence)
  436:minmea.c      **** {
@@ -2803,6 +2818,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1871 0008 04F14803 		add	r3, r4, #72
  1872 000c 0B93     		str	r3, [sp, #44]
  1873 000e 04F14403 		add	r3, r4, #68
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 48
+
+
  1874 0012 0A93     		str	r3, [sp, #40]
  1875 0014 04F13C03 		add	r3, r4, #60
  1876 0018 0993     		str	r3, [sp, #36]
@@ -2818,9 +2836,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1886 0036 0493     		str	r3, [sp, #16]
  1887 0038 0CAB     		add	r3, sp, #48
  1888 003a 0393     		str	r3, [sp, #12]
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 48
-
-
  1889 003c 04F11803 		add	r3, r4, #24
  1890 0040 0293     		str	r3, [sp, #8]
  1891 0042 0DAB     		add	r3, sp, #52
@@ -2863,6 +2878,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1913 006e 2361     		str	r3, [r4, #16]
  458:minmea.c      ****     frame->longitude.value *= longitude_direction;
  1914              		.loc 1 458 0
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 49
+
+
  1915 0070 A269     		ldr	r2, [r4, #24]
  1916 0072 0C9B     		ldr	r3, [sp, #48]
  1917 0074 03FB02F3 		mul	r3, r3, r2
@@ -2878,9 +2896,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1924              	.L190:
  461:minmea.c      **** }
  1925              		.loc 1 461 0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 49
-
-
  1926 007e 2846     		mov	r0, r5
  1927 0080 11B0     		add	sp, sp, #68
  1928              		.cfi_def_cfa_offset 12
@@ -2893,7 +2908,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1935 0084 44000000 		.word	.LC12
  1936 0088 08000000 		.word	.LC2
  1937              		.cfi_endproc
- 1938              	.LFE12:
+ 1938              	.LFE13:
  1939              		.size	minmea_parse_gga, .-minmea_parse_gga
  1940              		.section	.text.minmea_parse_gsa,"ax",%progbits
  1941              		.align	2
@@ -2902,7 +2917,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1944              		.thumb_func
  1945              		.type	minmea_parse_gsa, %function
  1946              	minmea_parse_gsa:
- 1947              	.LFB13:
+ 1947              	.LFB14:
  462:minmea.c      **** 
  463:minmea.c      **** bool minmea_parse_gsa(struct minmea_sentence_gsa *frame, const char *sentence)
  464:minmea.c      **** {
@@ -2923,6 +2938,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  465:minmea.c      ****     // $GPGSA,A,3,04,05,,09,12,,,24,,,,,2.5,1.3,2.1*39
  466:minmea.c      ****     char type[6];
  467:minmea.c      **** 
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 50
+
+
  468:minmea.c      ****     if (!minmea_scan(sentence, "tciiiiiiiiiiiiifff",
  1962              		.loc 1 468 0
  1963 0008 03F14802 		add	r2, r3, #72
@@ -2938,9 +2956,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  1973 0026 03F12C02 		add	r2, r3, #44
  1974 002a 0A92     		str	r2, [sp, #40]
  1975 002c 03F12802 		add	r2, r3, #40
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 50
-
-
  1976 0030 0992     		str	r2, [sp, #36]
  1977 0032 03F12402 		add	r2, r3, #36
  1978 0036 0892     		str	r2, [sp, #32]
@@ -2983,6 +2998,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  482:minmea.c      ****             &frame->sats[10],
  483:minmea.c      ****             &frame->sats[11],
  484:minmea.c      ****             &frame->pdop,
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 51
+
+
  485:minmea.c      ****             &frame->hdop,
  486:minmea.c      ****             &frame->vdop))
  487:minmea.c      ****         return false;
@@ -2998,9 +3016,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2009 007e 0024     		movs	r4, #0
  2010              	.L196:
  490:minmea.c      **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 51
-
-
  491:minmea.c      ****     return true;
  492:minmea.c      **** }
  2011              		.loc 1 492 0
@@ -3015,7 +3030,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2020 0088 54000000 		.word	.LC13
  2021 008c 10000000 		.word	.LC4
  2022              		.cfi_endproc
- 2023              	.LFE13:
+ 2023              	.LFE14:
  2024              		.size	minmea_parse_gsa, .-minmea_parse_gsa
  2025              		.section	.text.minmea_parse_gll,"ax",%progbits
  2026              		.align	2
@@ -3024,7 +3039,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2029              		.thumb_func
  2030              		.type	minmea_parse_gll, %function
  2031              	minmea_parse_gll:
- 2032              	.LFB14:
+ 2032              	.LFB15:
  493:minmea.c      **** 
  494:minmea.c      **** bool minmea_parse_gll(struct minmea_sentence_gll *frame, const char *sentence)
  495:minmea.c      **** {
@@ -3043,6 +3058,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2045 0004 0446     		mov	r4, r0
  2046 0006 0846     		mov	r0, r1
  2047              	.LVL219:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 52
+
+
  496:minmea.c      ****     // $GPGLL,3723.2475,N,12158.3416,W,161229.487,A,A*41$;
  497:minmea.c      ****     char type[6];
  498:minmea.c      ****     int latitude_direction;
@@ -3058,9 +3076,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2054 0018 0393     		str	r3, [sp, #12]
  2055 001a 06AB     		add	r3, sp, #24
  2056 001c 0293     		str	r3, [sp, #8]
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 52
-
-
  2057 001e 04F10803 		add	r3, r4, #8
  2058 0022 0193     		str	r3, [sp, #4]
  2059 0024 07AB     		add	r3, sp, #28
@@ -3103,6 +3118,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2084 0054 A360     		str	r3, [r4, #8]
  514:minmea.c      **** 
  515:minmea.c      ****     return true;
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 53
+
+
  2085              		.loc 1 515 0
  2086 0056 00E0     		b	.L201
  2087              	.L202:
@@ -3118,16 +3136,13 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2095              		@ sp needed
  2096 005e 30BD     		pop	{r4, r5, pc}
  2097              	.LVL223:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 53
-
-
  2098              	.L205:
  2099              		.align	2
  2100              	.L204:
  2101 0060 68000000 		.word	.LC14
  2102 0064 0C000000 		.word	.LC3
  2103              		.cfi_endproc
- 2104              	.LFE14:
+ 2104              	.LFE15:
  2105              		.size	minmea_parse_gll, .-minmea_parse_gll
  2106              		.section	.text.minmea_parse_gst,"ax",%progbits
  2107              		.align	2
@@ -3136,7 +3151,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2110              		.thumb_func
  2111              		.type	minmea_parse_gst, %function
  2112              	minmea_parse_gst:
- 2113              	.LFB15:
+ 2113              	.LFB16:
  517:minmea.c      **** 
  518:minmea.c      **** bool minmea_parse_gst(struct minmea_sentence_gst *frame, const char *sentence)
  519:minmea.c      **** {
@@ -3163,6 +3178,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2130 000c 0692     		str	r2, [sp, #24]
  2131 000e 03F13802 		add	r2, r3, #56
  2132 0012 0592     		str	r2, [sp, #20]
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 54
+
+
  2133 0014 03F13002 		add	r2, r3, #48
  2134 0018 0492     		str	r2, [sp, #16]
  2135 001a 03F12802 		add	r2, r3, #40
@@ -3178,9 +3196,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2145              	.LVL226:
  2146 0036 FFF7FEFF 		bl	minmea_scan
  2147              	.LVL227:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 54
-
-
  2148 003a 0446     		mov	r4, r0
  2149 003c 30B1     		cbz	r0, .L207
  524:minmea.c      ****             type,
@@ -3219,16 +3234,19 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2168 0054 74000000 		.word	.LC15
  2169 0058 14000000 		.word	.LC5
  2170              		.cfi_endproc
- 2171              	.LFE15:
+ 2171              	.LFE16:
  2172              		.size	minmea_parse_gst, .-minmea_parse_gst
  2173              		.section	.text.minmea_parse_gsv,"ax",%progbits
  2174              		.align	2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 55
+
+
  2175              		.global	minmea_parse_gsv
  2176              		.thumb
  2177              		.thumb_func
  2178              		.type	minmea_parse_gsv, %function
  2179              	minmea_parse_gsv:
- 2180              	.LFB16:
+ 2180              	.LFB17:
  539:minmea.c      **** 
  540:minmea.c      **** bool minmea_parse_gsv(struct minmea_sentence_gsv *frame, const char *sentence)
  541:minmea.c      **** {
@@ -3238,9 +3256,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2184              		@ frame_needed = 0, uses_anonymous_args = 0
  2185              	.LVL229:
  2186 0000 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 55
-
-
  2187              		.cfi_def_cfa_offset 8
  2188              		.cfi_offset 4, -8
  2189              		.cfi_offset 14, -4
@@ -3283,6 +3298,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2218 004a 03F11C02 		add	r2, r3, #28
  2219 004e 0692     		str	r2, [sp, #24]
  2220 0050 03F11802 		add	r2, r3, #24
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 56
+
+
  2221 0054 0592     		str	r2, [sp, #20]
  2222 0056 03F11402 		add	r2, r3, #20
  2223 005a 0492     		str	r2, [sp, #16]
@@ -3298,9 +3316,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2233 0074 0749     		ldr	r1, .L214
  2234              	.LVL231:
  2235 0076 FFF7FEFF 		bl	minmea_scan
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 56
-
-
  2236              	.LVL232:
  2237 007a 0446     		mov	r4, r0
  2238 007c 30B1     		cbz	r0, .L212
@@ -3343,6 +3358,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  577:minmea.c      **** }
  2248              		.loc 1 577 0
  2249 008c 2046     		mov	r0, r4
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 57
+
+
  2250 008e 14B0     		add	sp, sp, #80
  2251              		.cfi_def_cfa_offset 8
  2252              		@ sp needed
@@ -3353,19 +3371,16 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2257 0094 80000000 		.word	.LC16
  2258 0098 18000000 		.word	.LC6
  2259              		.cfi_endproc
- 2260              	.LFE16:
+ 2260              	.LFE17:
  2261              		.size	minmea_parse_gsv, .-minmea_parse_gsv
  2262              		.section	.text.minmea_parse_vtg,"ax",%progbits
  2263              		.align	2
  2264              		.global	minmea_parse_vtg
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 57
-
-
  2265              		.thumb
  2266              		.thumb_func
  2267              		.type	minmea_parse_vtg, %function
  2268              	minmea_parse_vtg:
- 2269              	.LFB17:
+ 2269              	.LFB18:
  578:minmea.c      **** 
  579:minmea.c      **** bool minmea_parse_vtg(struct minmea_sentence_vtg *frame, const char *sentence)
  580:minmea.c      **** {
@@ -3403,6 +3418,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2293 001c 0493     		str	r3, [sp, #16]
  2294 001e 04F11003 		add	r3, r4, #16
  2295 0022 0393     		str	r3, [sp, #12]
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 58
+
+
  2296 0024 0DF12603 		add	r3, sp, #38
  2297 0028 0293     		str	r3, [sp, #8]
  2298 002a 04F10803 		add	r3, r4, #8
@@ -3418,9 +3436,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2308 0040 0546     		mov	r5, r0
  2309 0042 18B3     		cbz	r0, .L217
  589:minmea.c      ****             type,
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 58
-
-
  590:minmea.c      ****             &frame->true_track_degrees,
  591:minmea.c      ****             &c_true,
  592:minmea.c      ****             &frame->magnetic_track_degrees,
@@ -3463,6 +3478,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  607:minmea.c      ****     if (c_knots != 'N')
  2332              		.loc 1 607 0
  2333 0068 9DF82530 		ldrb	r3, [sp, #37]	@ zero_extendqisi2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 59
+
+
  2334 006c 4E2B     		cmp	r3, #78
  2335 006e 01D0     		beq	.L220
  608:minmea.c      ****         frame->speed_knots.scale = 0;
@@ -3478,9 +3496,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  610:minmea.c      ****         frame->speed_kph.scale = 0;
  2344              		.loc 1 610 0
  2345 007c 0023     		movs	r3, #0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 59
-
-
  2346 007e E361     		str	r3, [r4, #28]
  2347              	.L221:
  611:minmea.c      ****     frame->faa_mode = (enum minmea_faa_mode)c_faa_mode;
@@ -3510,7 +3525,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2367 0094 98000000 		.word	.LC17
  2368 0098 20000000 		.word	.LC8
  2369              		.cfi_endproc
- 2370              	.LFE17:
+ 2370              	.LFE18:
  2371              		.size	minmea_parse_vtg, .-minmea_parse_vtg
  2372              		.section	.text.minmea_parse_zda,"ax",%progbits
  2373              		.align	2
@@ -3519,10 +3534,13 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2376              		.thumb_func
  2377              		.type	minmea_parse_zda, %function
  2378              	minmea_parse_zda:
- 2379              	.LFB18:
+ 2379              	.LFB19:
  615:minmea.c      **** 
  616:minmea.c      **** bool minmea_parse_zda(struct minmea_sentence_zda *frame, const char *sentence)
  617:minmea.c      **** {
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 60
+
+
  2380              		.loc 1 617 0
  2381              		.cfi_startproc
  2382              		@ args = 0, pretend = 0, frame = 8
@@ -3538,9 +3556,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2392 0004 0446     		mov	r4, r0
  2393 0006 0846     		mov	r0, r1
  2394              	.LVL241:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 60
-
-
  618:minmea.c      ****   // $GPZDA,201530.00,04,07,2002,00,00*60
  619:minmea.c      ****   char type[6];
  620:minmea.c      **** 
@@ -3583,6 +3598,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  632:minmea.c      **** 
  633:minmea.c      ****   // check offsets
  634:minmea.c      ****   if (abs(frame->hour_offset) > 13 ||
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 61
+
+
  2420              		.loc 1 634 0
  2421 0040 E369     		ldr	r3, [r4, #28]
  2422 0042 002B     		cmp	r3, #0
@@ -3598,9 +3616,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2430 004e 3B2B     		cmp	r3, #59
  2431 0050 07DC     		bgt	.L230
  2432              		.loc 1 635 0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 61
-
-
  2433 0052 002B     		cmp	r3, #0
  2434 0054 06DA     		bge	.L227
  636:minmea.c      ****       frame->minute_offset < 0)
@@ -3636,16 +3651,19 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2459 006c A4000000 		.word	.LC18
  2460 0070 24000000 		.word	.LC9
  2461              		.cfi_endproc
- 2462              	.LFE18:
+ 2462              	.LFE19:
  2463              		.size	minmea_parse_zda, .-minmea_parse_zda
  2464              		.section	.text.minmea_getdatetime,"ax",%progbits
  2465              		.align	2
  2466              		.global	minmea_getdatetime
  2467              		.thumb
  2468              		.thumb_func
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 62
+
+
  2469              		.type	minmea_getdatetime, %function
  2470              	minmea_getdatetime:
- 2471              	.LFB19:
+ 2471              	.LFB20:
  641:minmea.c      **** 
  642:minmea.c      **** int minmea_getdatetime(struct tm *tm, const struct minmea_date *date, const struct minmea_time *tim
  643:minmea.c      **** {
@@ -3658,9 +3676,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2477              		.loc 1 644 0
  2478 0000 8B68     		ldr	r3, [r1, #8]
  2479 0002 B3F1FF3F 		cmp	r3, #-1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 62
-
-
  2480 0006 28D0     		beq	.L240
  2481              		.loc 1 644 0 is_stmt 0 discriminator 1
  2482 0008 1368     		ldr	r3, [r2]
@@ -3703,6 +3718,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2512 002c 40F26B72 		movw	r2, #1899
  2513 0030 9342     		cmp	r3, r2
  2514 0032 03DD     		ble	.L238
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 63
+
+
  651:minmea.c      ****         tm->tm_year = date->year - 1900;        // 4 digit year, use directly
  2515              		.loc 1 651 0
  2516 0034 A3F26C73 		subw	r3, r3, #1900
@@ -3718,9 +3736,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  655:minmea.c      ****     tm->tm_mon = date->month - 1;
  2523              		.loc 1 655 0
  2524 003e 6B68     		ldr	r3, [r5, #4]
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 63
-
-
  2525 0040 013B     		subs	r3, r3, #1
  2526 0042 2361     		str	r3, [r4, #16]
  656:minmea.c      ****     tm->tm_mday = date->day;
@@ -3758,11 +3773,14 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2552              	.LVL251:
  2553 005c 7047     		bx	lr
  2554              		.cfi_endproc
- 2555              	.LFE19:
+ 2555              	.LFE20:
  2556              		.size	minmea_getdatetime, .-minmea_getdatetime
  2557 005e 00BF     		.section	.rodata.str1.4,"aMS",%progbits,1
  2558              		.align	2
  2559              	.LC0:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 64
+
+
  2560 0000 7400     		.ascii	"t\000"
  2561 0002 0000     		.space	2
  2562              	.LC1:
@@ -3778,9 +3796,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2572              	.LC6:
  2573 0018 47535600 		.ascii	"GSV\000"
  2574              	.LC7:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 64
-
-
  2575 001c 524D4300 		.ascii	"RMC\000"
  2576              	.LC8:
  2577 0020 56544700 		.ascii	"VTG\000"
@@ -3823,6 +3838,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2598 0080 74696969 		.ascii	"tiii;iiiiiiiiiiiiiiii\000"
  2598      3B696969 
  2598      69696969 
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 65
+
+
  2598      69696969 
  2598      69696969 
  2599 0096 0000     		.space	2
@@ -3838,9 +3856,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2606              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
  2607              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
  2608              		.file 5 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 65
-
-
  2609              		.file 6 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
  2610              		.file 7 "<built-in>"
  2611              		.file 8 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
@@ -3883,6 +3898,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2648 0047 07       		.byte	0x7
  2649 0048 B0080000 		.4byte	.LASF3
  2650 004c 02       		.uleb128 0x2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 66
+
+
  2651 004d 04       		.byte	0x4
  2652 004e 05       		.byte	0x5
  2653 004f E6060000 		.4byte	.LASF4
@@ -3898,9 +3916,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2663 0065 02       		.uleb128 0x2
  2664 0066 08       		.byte	0x8
  2665 0067 05       		.byte	0x5
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 66
-
-
  2666 0068 4F050000 		.4byte	.LASF8
  2667 006c 02       		.uleb128 0x2
  2668 006d 08       		.byte	0x8
@@ -3943,6 +3958,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2705 00b6 07       		.byte	0x7
  2706 00b7 BE070000 		.4byte	.LASF16
  2707 00bb 05       		.uleb128 0x5
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 67
+
+
  2708 00bc 04       		.byte	0x4
  2709 00bd 06       		.uleb128 0x6
  2710 00be AF070000 		.4byte	.LASF18
@@ -3958,9 +3976,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2720 00d4 08       		.uleb128 0x8
  2721 00d5 04       		.byte	0x4
  2722 00d6 DA000000 		.4byte	0xda
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 67
-
-
  2723 00da 02       		.uleb128 0x2
  2724 00db 01       		.byte	0x1
  2725 00dc 08       		.byte	0x8
@@ -4003,6 +4018,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2762 0127 0B       		.uleb128 0xb
  2763 0128 3D020000 		.4byte	.LASF23
  2764 012c 06       		.byte	0x6
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 68
+
+
  2765 012d 27       		.byte	0x27
  2766 012e 7E000000 		.4byte	0x7e
  2767 0132 10       		.byte	0x10
@@ -4018,9 +4036,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2777 0145 29       		.byte	0x29
  2778 0146 7E000000 		.4byte	0x7e
  2779 014a 18       		.byte	0x18
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 68
-
-
  2780 014b 0B       		.uleb128 0xb
  2781 014c 63000000 		.4byte	.LASF26
  2782 0150 06       		.byte	0x6
@@ -4063,6 +4078,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2819 0199 02       		.byte	0x2
  2820 019a 0E       		.uleb128 0xe
  2821 019b 00000000 		.4byte	.LASF34
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 69
+
+
  2822 019f 03       		.byte	0x3
  2823 01a0 0E       		.uleb128 0xe
  2824 01a1 9D040000 		.4byte	.LASF35
@@ -4078,9 +4096,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2834 01b7 07       		.byte	0x7
  2835 01b8 0E       		.uleb128 0xe
  2836 01b9 F6040000 		.4byte	.LASF39
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 69
-
-
  2837 01bd 08       		.byte	0x8
  2838 01be 0E       		.uleb128 0xe
  2839 01bf 14000000 		.4byte	.LASF40
@@ -4123,6 +4138,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2876 0208 33       		.byte	0x33
  2877 0209 7E000000 		.4byte	0x7e
  2878 020d 04       		.byte	0x4
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 70
+
+
  2879 020e 0B       		.uleb128 0xb
  2880 020f F7070000 		.4byte	.LASF46
  2881 0213 02       		.byte	0x2
@@ -4138,9 +4156,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2891 0223 58020000 		.4byte	0x258
  2892 0227 0B       		.uleb128 0xb
  2893 0228 51070000 		.4byte	.LASF48
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 70
-
-
  2894 022c 02       		.byte	0x2
  2895 022d 38       		.byte	0x38
  2896 022e 7E000000 		.4byte	0x7e
@@ -4183,6 +4198,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2933 0277 C5010000 		.4byte	0x1c5
  2934 027b 10       		.byte	0x10
  2935 027c 0B       		.uleb128 0xb
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 71
+
+
  2936 027d C0040000 		.4byte	.LASF55
  2937 0281 02       		.byte	0x2
  2938 0282 41       		.byte	0x41
@@ -4198,9 +4216,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2948 0295 0E060000 		.4byte	.LASF57
  2949 0299 02       		.byte	0x2
  2950 029a 43       		.byte	0x43
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 71
-
-
  2951 029b 7E000000 		.4byte	0x7e
  2952 029f 28       		.byte	0x28
  2953 02a0 0B       		.uleb128 0xb
@@ -4243,6 +4258,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  2990 02e9 0B       		.uleb128 0xb
  2991 02ea EE030000 		.4byte	.LASF63
  2992 02ee 02       		.byte	0x2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 72
+
+
  2993 02ef 4C       		.byte	0x4c
  2994 02f0 C5010000 		.4byte	0x1c5
  2995 02f4 14       		.byte	0x14
@@ -4258,9 +4276,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3005 0307 4E       		.byte	0x4e
  3006 0308 C5010000 		.4byte	0x1c5
  3007 030c 24       		.byte	0x24
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 72
-
-
  3008 030d 0B       		.uleb128 0xb
  3009 030e A1000000 		.4byte	.LASF66
  3010 0312 02       		.byte	0x2
@@ -4303,6 +4318,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3047 0358 C5010000 		.4byte	0x1c5
  3048 035c 10       		.byte	0x10
  3049 035d 0B       		.uleb128 0xb
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 73
+
+
  3050 035e 14040000 		.4byte	.LASF64
  3051 0362 02       		.byte	0x2
  3052 0363 57       		.byte	0x57
@@ -4318,9 +4336,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3062 0376 E8010000 		.4byte	.LASF72
  3063 037a 02       		.byte	0x2
  3064 037b 59       		.byte	0x59
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 73
-
-
  3065 037c 7E000000 		.4byte	0x7e
  3066 0380 24       		.byte	0x24
  3067 0381 0B       		.uleb128 0xb
@@ -4363,6 +4378,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3104 03ca 0C       		.uleb128 0xc
  3105 03cb 70040000 		.4byte	.LASF80
  3106 03cf 01       		.byte	0x1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 74
+
+
  3107 03d0 37000000 		.4byte	0x37
  3108 03d4 02       		.byte	0x2
  3109 03d5 66       		.byte	0x66
@@ -4378,9 +4396,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3119 03eb 45       		.byte	0x45
  3120 03ec 0E       		.uleb128 0xe
  3121 03ed 95050000 		.4byte	.LASF84
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 74
-
-
  3122 03f1 4D       		.byte	0x4d
  3123 03f2 0E       		.uleb128 0xe
  3124 03f3 60080000 		.4byte	.LASF85
@@ -4423,6 +4438,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3161 043c DA000000 		.4byte	0xda
  3162 0440 20       		.byte	0x20
  3163 0441 0B       		.uleb128 0xb
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 75
+
+
  3164 0442 DB000000 		.4byte	.LASF90
  3165 0446 02       		.byte	0x2
  3166 0447 75       		.byte	0x75
@@ -4438,9 +4456,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3176 045a 0B       		.uleb128 0xb
  3177 045b 39030000 		.4byte	.LASF53
  3178 045f 02       		.byte	0x2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 75
-
-
  3179 0460 79       		.byte	0x79
  3180 0461 1B020000 		.4byte	0x21b
  3181 0465 00       		.byte	0
@@ -4483,6 +4498,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3218 04ae 0B       		.uleb128 0xb
  3219 04af 5E020000 		.4byte	.LASF98
  3220 04b3 02       		.byte	0x2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 76
+
+
  3221 04b4 80       		.byte	0x80
  3222 04b5 C5010000 		.4byte	0x1c5
  3223 04b9 40       		.byte	0x40
@@ -4498,9 +4516,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3233 04cc 02       		.byte	0x2
  3234 04cd 8F       		.byte	0x8f
  3235 04ce DA000000 		.4byte	0xda
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 76
-
-
  3236 04d2 00       		.byte	0
  3237 04d3 0B       		.uleb128 0xb
  3238 04d4 E7080000 		.4byte	.LASF100
@@ -4543,6 +4558,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3275 0520 06       		.uleb128 0x6
  3276 0521 4C000000 		.4byte	.LASF104
  3277 0525 10       		.byte	0x10
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 77
+
+
  3278 0526 02       		.byte	0x2
  3279 0527 97       		.byte	0x97
  3280 0528 5C050000 		.4byte	0x55c
@@ -4558,9 +4576,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3290 053d 99       		.byte	0x99
  3291 053e 7E000000 		.4byte	0x7e
  3292 0542 04       		.byte	0x4
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 77
-
-
  3293 0543 0B       		.uleb128 0xb
  3294 0544 58080000 		.4byte	.LASF106
  3295 0548 02       		.byte	0x2
@@ -4603,6 +4618,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3332 0591 02       		.byte	0x2
  3333 0592 A2       		.byte	0xa2
  3334 0593 99050000 		.4byte	0x599
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 78
+
+
  3335 0597 0C       		.byte	0xc
  3336 0598 00       		.byte	0
  3337 0599 10       		.uleb128 0x10
@@ -4618,9 +4636,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3347 05af 02       		.byte	0x2
  3348 05b0 A5       		.byte	0xa5
  3349 05b1 F2050000 		.4byte	0x5f2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 78
-
-
  3350 05b5 0B       		.uleb128 0xb
  3351 05b6 A0060000 		.4byte	.LASF112
  3352 05ba 02       		.byte	0x2
@@ -4663,6 +4678,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3389 0603 02       		.byte	0x2
  3390 0604 AE       		.byte	0xae
  3391 0605 1B020000 		.4byte	0x21b
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 79
+
+
  3392 0609 00       		.byte	0
  3393 060a 0B       		.uleb128 0xb
  3394 060b 98040000 		.4byte	.LASF67
@@ -4678,9 +4696,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3404 0621 1C       		.byte	0x1c
  3405 0622 0B       		.uleb128 0xb
  3406 0623 B1050000 		.4byte	.LASF119
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 79
-
-
  3407 0627 02       		.byte	0x2
  3408 0628 B1       		.byte	0xb1
  3409 0629 7E000000 		.4byte	0x7e
@@ -4699,14 +4714,14 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3422 0645 12       		.uleb128 0x12
  3423 0646 36070000 		.4byte	.LASF174
  3424 064a 02       		.byte	0x2
- 3425 064b 1E01     		.2byte	0x11e
+ 3425 064b 2D01     		.2byte	0x12d
  3426 064d 32030000 		.4byte	0x332
  3427 0651 03       		.byte	0x3
  3428 0652 61060000 		.4byte	0x661
  3429 0656 13       		.uleb128 0x13
  3430 0657 6300     		.ascii	"c\000"
  3431 0659 02       		.byte	0x2
- 3432 065a 1E01     		.2byte	0x11e
+ 3432 065a 2D01     		.2byte	0x12d
  3433 065c DA000000 		.4byte	0xda
  3434 0660 00       		.byte	0
  3435 0661 14       		.uleb128 0x14
@@ -4714,8 +4729,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3437 0666 01       		.byte	0x1
  3438 0667 12       		.byte	0x12
  3439 0668 7E000000 		.4byte	0x7e
- 3440 066c 00000000 		.4byte	.LFB4
- 3441 0670 30000000 		.4byte	.LFE4-.LFB4
+ 3440 066c 00000000 		.4byte	.LFB5
+ 3441 0670 30000000 		.4byte	.LFE5-.LFB5
  3442 0674 01       		.uleb128 0x1
  3443 0675 9C       		.byte	0x9c
  3444 0676 88060000 		.4byte	0x688
@@ -4723,6 +4738,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3446 067b 6300     		.ascii	"c\000"
  3447 067d 01       		.byte	0x1
  3448 067e 12       		.byte	0x12
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 80
+
+
  3449 067f DA000000 		.4byte	0xda
  3450 0683 00000000 		.4byte	.LLST0
  3451 0687 00       		.byte	0
@@ -4731,16 +4749,13 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3454 068d 01       		.byte	0x1
  3455 068e 1D       		.byte	0x1d
  3456 068f 93000000 		.4byte	0x93
- 3457 0693 00000000 		.4byte	.LFB5
- 3458 0697 1C000000 		.4byte	.LFE5-.LFB5
+ 3457 0693 00000000 		.4byte	.LFB6
+ 3458 0697 1C000000 		.4byte	.LFE6-.LFB6
  3459 069b 01       		.uleb128 0x1
  3460 069c 9C       		.byte	0x9c
  3461 069d BE060000 		.4byte	0x6be
  3462 06a1 17       		.uleb128 0x17
  3463 06a2 15020000 		.4byte	.LASF122
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 80
-
-
  3464 06a6 01       		.byte	0x1
  3465 06a7 1D       		.byte	0x1d
  3466 06a8 E1000000 		.4byte	0xe1
@@ -4758,8 +4773,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3478 06c3 01       		.byte	0x1
  3479 06c4 2C       		.byte	0x2c
  3480 06c5 32030000 		.4byte	0x332
- 3481 06c9 00000000 		.4byte	.LFB6
- 3482 06cd 88000000 		.4byte	.LFE6-.LFB6
+ 3481 06c9 00000000 		.4byte	.LFB7
+ 3482 06cd 88000000 		.4byte	.LFE7-.LFB7
  3483 06d1 01       		.uleb128 0x1
  3484 06d2 9C       		.byte	0x9c
  3485 06d3 4A070000 		.4byte	0x74a
@@ -4783,6 +4798,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3503 0700 84010000 		.4byte	.LLST4
  3504 0704 1A       		.uleb128 0x1a
  3505 0705 00000000 		.4byte	.Ldebug_ranges0+0
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 81
+
+
  3506 0709 19       		.uleb128 0x19
  3507 070a 37080000 		.4byte	.LASF127
  3508 070e 01       		.byte	0x1
@@ -4798,9 +4816,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3518 0727 19       		.uleb128 0x19
  3519 0728 8C050000 		.4byte	.LASF129
  3520 072c 01       		.byte	0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 81
-
-
  3521 072d 42       		.byte	0x42
  3522 072e 7E000000 		.4byte	0x7e
  3523 0732 0C020000 		.4byte	.LLST7
@@ -4817,8 +4832,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3534 074f 01       		.byte	0x1
  3535 0750 58       		.byte	0x58
  3536 0751 32030000 		.4byte	0x332
- 3537 0755 00000000 		.4byte	.LFB7
- 3538 0759 C0050000 		.4byte	.LFE7-.LFB7
+ 3537 0755 00000000 		.4byte	.LFB8
+ 3538 0759 C0050000 		.4byte	.LFE8-.LFB8
  3539 075d 01       		.uleb128 0x1
  3540 075e 9C       		.byte	0x9c
  3541 075f 060C0000 		.4byte	0xc06
@@ -4843,6 +4858,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3560 078d 7E020000 		.4byte	.LLST10
  3561 0791 19       		.uleb128 0x19
  3562 0792 67090000 		.4byte	.LASF133
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 82
+
+
  3563 0796 01       		.byte	0x1
  3564 0797 5B       		.byte	0x5b
  3565 0798 32030000 		.4byte	0x332
@@ -4858,9 +4876,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3575 07ad 19       		.uleb128 0x19
  3576 07ae 80020000 		.4byte	.LASF134
  3577 07b2 01       		.byte	0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 82
-
-
  3578 07b3 63       		.byte	0x63
  3579 07b4 E1000000 		.4byte	0xe1
  3580 07b8 DF020000 		.4byte	.LLST12
@@ -4903,6 +4918,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3617 0817 76000000 		.4byte	.LBE43-.LBB43
  3618 081b 48080000 		.4byte	0x848
  3619 081f 19       		.uleb128 0x19
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 83
+
+
  3620 0820 44030000 		.4byte	.LASF42
  3621 0824 01       		.byte	0x1
  3622 0825 8B       		.byte	0x8b
@@ -4918,9 +4936,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3632 083e 56060000 		.4byte	0x656
  3633 0842 00040000 		.4byte	.LLST17
  3634 0846 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 83
-
-
  3635 0847 00       		.byte	0
  3636 0848 22       		.uleb128 0x22
  3637 0849 48000000 		.4byte	.Ldebug_ranges0+0x48
@@ -4963,6 +4978,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3674 08aa 21       		.uleb128 0x21
  3675 08ab 56060000 		.4byte	0x656
  3676 08af 63050000 		.4byte	.LLST22
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 84
+
+
  3677 08b3 00       		.byte	0
  3678 08b4 00       		.byte	0
  3679 08b5 22       		.uleb128 0x22
@@ -4978,9 +4996,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3689 08ce 66020000 		.4byte	.LBB52
  3690 08d2 34000000 		.4byte	.LBE52-.LBB52
  3691 08d6 18       		.uleb128 0x18
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 84
-
-
  3692 08d7 9A000000 		.4byte	.LASF138
  3693 08db 01       		.byte	0x1
  3694 08dc DE       		.byte	0xde
@@ -5023,6 +5038,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3731 091d 00       		.byte	0
  3732 091e 00       		.byte	0
  3733 091f 1F       		.uleb128 0x1f
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 85
+
+
  3734 0920 AC020000 		.4byte	.LBB56
  3735 0924 40000000 		.4byte	.LBE56-.LBB56
  3736 0928 55090000 		.4byte	0x955
@@ -5038,9 +5056,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3746 0944 24000000 		.4byte	.LBE57-.LBB57
  3747 0948 01       		.byte	0x1
  3748 0949 EB       		.byte	0xeb
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 85
-
-
  3749 094a 21       		.uleb128 0x21
  3750 094b 56060000 		.4byte	0x656
  3751 094f EA050000 		.4byte	.LLST26
@@ -5083,6 +5098,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3788 09ab 28       		.uleb128 0x28
  3789 09ac 98040000 		.4byte	.LASF67
  3790 09b0 01       		.byte	0x1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 86
+
+
  3791 09b1 0301     		.2byte	0x103
  3792 09b3 060C0000 		.4byte	0xc06
  3793 09b7 5B060000 		.4byte	.LLST30
@@ -5098,9 +5116,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3803 09cd 0501     		.2byte	0x105
  3804 09cf 7E000000 		.4byte	0x7e
  3805 09d3 B1060000 		.4byte	.LLST32
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 86
-
-
  3806 09d7 29       		.uleb128 0x29
  3807 09d8 7900     		.ascii	"y\000"
  3808 09da 01       		.byte	0x1
@@ -5143,6 +5158,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3845 0a2e 0C0C0000 		.4byte	0xc0c
  3846 0a32 02       		.uleb128 0x2
  3847 0a33 91       		.byte	0x91
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 87
+
+
  3848 0a34 48       		.sleb128 -56
  3849 0a35 22       		.uleb128 0x22
  3850 0a36 A8000000 		.4byte	.Ldebug_ranges0+0xa8
@@ -5158,9 +5176,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3860 0a4e E6030000 		.4byte	.LVL112
  3861 0a52 A0170000 		.4byte	0x17a0
  3862 0a56 6C0A0000 		.4byte	0xa6c
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 87
-
-
  3863 0a5a 26       		.uleb128 0x26
  3864 0a5b 01       		.uleb128 0x1
  3865 0a5c 50       		.byte	0x50
@@ -5203,6 +5218,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3902 0a8b 00       		.byte	0
  3903 0a8c 25       		.uleb128 0x25
  3904 0a8d FE030000 		.4byte	.LVL118
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 88
+
+
  3905 0a91 A0170000 		.4byte	0x17a0
  3906 0a95 26       		.uleb128 0x26
  3907 0a96 01       		.uleb128 0x1
@@ -5218,9 +5236,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3917 0aa1 00       		.sleb128 0
  3918 0aa2 26       		.uleb128 0x26
  3919 0aa3 01       		.uleb128 0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 88
-
-
  3920 0aa4 52       		.byte	0x52
  3921 0aa5 01       		.uleb128 0x1
  3922 0aa6 3A       		.byte	0x3a
@@ -5263,6 +5278,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3959 0afb 2A       		.uleb128 0x2a
  3960 0afc 45060000 		.4byte	0x645
  3961 0b00 2A040000 		.4byte	.LBB72
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 89
+
+
  3962 0b04 24000000 		.4byte	.LBE72-.LBB72
  3963 0b08 01       		.byte	0x1
  3964 0b09 1F01     		.2byte	0x11f
@@ -5278,9 +5296,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  3974 0b23 01       		.byte	0x1
  3975 0b24 2501     		.2byte	0x125
  3976 0b26 0C0C0000 		.4byte	0xc0c
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 89
-
-
  3977 0b2a 02       		.uleb128 0x2
  3978 0b2b 91       		.byte	0x91
  3979 0b2c 40       		.sleb128 -64
@@ -5323,6 +5338,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4016 0b7d BF050000 		.4byte	.LASF43
  4017 0b81 01       		.byte	0x1
  4018 0b82 3001     		.2byte	0x130
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 90
+
+
  4019 0b84 9E000000 		.4byte	0x9e
  4020 0b88 CB080000 		.4byte	.LLST44
  4021 0b8c 00       		.byte	0
@@ -5338,9 +5356,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4031 0b9f 00       		.sleb128 0
  4032 0ba0 26       		.uleb128 0x26
  4033 0ba1 01       		.uleb128 0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 90
-
-
  4034 0ba2 51       		.byte	0x51
  4035 0ba3 02       		.uleb128 0x2
  4036 0ba4 7B       		.byte	0x7b
@@ -5383,6 +5398,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4073 0bd9 91       		.byte	0x91
  4074 0bda B07F     		.sleb128 -80
  4075 0bdc 26       		.uleb128 0x26
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 91
+
+
  4076 0bdd 01       		.uleb128 0x1
  4077 0bde 51       		.byte	0x51
  4078 0bdf 02       		.uleb128 0x2
@@ -5398,9 +5416,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4088 0be9 00       		.byte	0
  4089 0bea 2D       		.uleb128 0x2d
  4090 0beb 45060000 		.4byte	0x645
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 91
-
-
  4091 0bef 38050000 		.4byte	.LBB81
  4092 0bf3 24000000 		.4byte	.LBE81-.LBB81
  4093 0bf7 01       		.byte	0x1
@@ -5429,8 +5444,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4116 0c27 01       		.byte	0x1
  4117 0c28 5301     		.2byte	0x153
  4118 0c2a 32030000 		.4byte	0x332
- 4119 0c2e 00000000 		.4byte	.LFB8
- 4120 0c32 30000000 		.4byte	.LFE8-.LFB8
+ 4119 0c2e 00000000 		.4byte	.LFB9
+ 4120 0c32 30000000 		.4byte	.LFE9-.LFB9
  4121 0c36 01       		.uleb128 0x1
  4122 0c37 9C       		.byte	0x9c
  4123 0c38 8C0C0000 		.4byte	0xc8c
@@ -5443,6 +5458,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4130 0c4c 2F       		.uleb128 0x2f
  4131 0c4d 15020000 		.4byte	.LASF122
  4132 0c51 01       		.byte	0x1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 92
+
+
  4133 0c52 5301     		.2byte	0x153
  4134 0c54 E1000000 		.4byte	0xe1
  4135 0c58 33090000 		.4byte	.LLST47
@@ -5458,9 +5476,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4145 0c6c 10000000 		.4byte	.LVL181
  4146 0c70 4A070000 		.4byte	0x74a
  4147 0c74 26       		.uleb128 0x26
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 92
-
-
  4148 0c75 01       		.uleb128 0x1
  4149 0c76 50       		.byte	0x50
  4150 0c77 03       		.uleb128 0x3
@@ -5493,8 +5508,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4177 0ca1 01       		.byte	0x1
  4178 0ca2 6001     		.2byte	0x160
  4179 0ca4 72010000 		.4byte	0x172
- 4180 0ca8 00000000 		.4byte	.LFB9
- 4181 0cac E8000000 		.4byte	.LFE9-.LFB9
+ 4180 0ca8 00000000 		.4byte	.LFB10
+ 4181 0cac E8000000 		.4byte	.LFE10-.LFB10
  4182 0cb0 01       		.uleb128 0x1
  4183 0cb1 9C       		.byte	0x9c
  4184 0cb2 1E0E0000 		.4byte	0xe1e
@@ -5503,6 +5518,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4187 0cbb 01       		.byte	0x1
  4188 0cbc 6001     		.2byte	0x160
  4189 0cbe E1000000 		.4byte	0xe1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 93
+
+
  4190 0cc2 5F090000 		.4byte	.LLST48
  4191 0cc6 2F       		.uleb128 0x2f
  4192 0cc7 2F070000 		.4byte	.LASF125
@@ -5518,9 +5536,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4202 0ce2 02       		.uleb128 0x2
  4203 0ce3 91       		.byte	0x91
  4204 0ce4 70       		.sleb128 -16
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 93
-
-
  4205 0ce5 2C       		.uleb128 0x2c
  4206 0ce6 0A000000 		.4byte	.LVL184
  4207 0cea BE060000 		.4byte	0x6be
@@ -5563,6 +5578,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4244 0d2a 01       		.uleb128 0x1
  4245 0d2b 50       		.byte	0x50
  4246 0d2c 02       		.uleb128 0x2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 94
+
+
  4247 0d2d 91       		.byte	0x91
  4248 0d2e 72       		.sleb128 -14
  4249 0d2f 26       		.uleb128 0x26
@@ -5578,9 +5596,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4259 0d42 560D0000 		.4byte	0xd56
  4260 0d46 26       		.uleb128 0x26
  4261 0d47 01       		.uleb128 0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 94
-
-
  4262 0d48 50       		.byte	0x50
  4263 0d49 02       		.uleb128 0x2
  4264 0d4a 91       		.byte	0x91
@@ -5623,6 +5638,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4301 0d87 01       		.uleb128 0x1
  4302 0d88 51       		.byte	0x51
  4303 0d89 05       		.uleb128 0x5
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 95
+
+
  4304 0d8a 03       		.byte	0x3
  4305 0d8b 10000000 		.4byte	.LC4
  4306 0d8f 00       		.byte	0
@@ -5638,9 +5656,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4316 0da2 72       		.sleb128 -14
  4317 0da3 26       		.uleb128 0x26
  4318 0da4 01       		.uleb128 0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 95
-
-
  4319 0da5 51       		.byte	0x51
  4320 0da6 05       		.uleb128 0x5
  4321 0da7 03       		.byte	0x3
@@ -5683,6 +5698,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4358 0de7 2C       		.uleb128 0x2c
  4359 0de8 7A000000 		.4byte	.LVL193
  4360 0dec AB170000 		.4byte	0x17ab
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 96
+
+
  4361 0df0 040E0000 		.4byte	0xe04
  4362 0df4 26       		.uleb128 0x26
  4363 0df5 01       		.uleb128 0x1
@@ -5698,9 +5716,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4373 0dff 20000000 		.4byte	.LC8
  4374 0e03 00       		.byte	0
  4375 0e04 25       		.uleb128 0x25
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 96
-
-
  4376 0e05 86000000 		.4byte	.LVL194
  4377 0e09 AB170000 		.4byte	0x17ab
  4378 0e0d 26       		.uleb128 0x26
@@ -5722,8 +5737,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4394 0e23 01       		.byte	0x1
  4395 0e24 7F01     		.2byte	0x17f
  4396 0e26 32030000 		.4byte	0x332
- 4397 0e2a 00000000 		.4byte	.LFB10
- 4398 0e2e 5C000000 		.4byte	.LFE10-.LFB10
+ 4397 0e2a 00000000 		.4byte	.LFB11
+ 4398 0e2e 5C000000 		.4byte	.LFE11-.LFB11
  4399 0e32 01       		.uleb128 0x1
  4400 0e33 9C       		.byte	0x9c
  4401 0e34 F20E0000 		.4byte	0xef2
@@ -5743,6 +5758,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4415 0e59 19080000 		.4byte	.LASF135
  4416 0e5d 01       		.byte	0x1
  4417 0e5e 8201     		.2byte	0x182
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 97
+
+
  4418 0e60 8C0C0000 		.4byte	0xc8c
  4419 0e64 02       		.uleb128 0x2
  4420 0e65 91       		.byte	0x91
@@ -5758,9 +5776,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4430 0e78 F3       		.byte	0xf3
  4431 0e79 01       		.uleb128 0x1
  4432 0e7a 51       		.byte	0x51
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 97
-
-
  4433 0e7b 26       		.uleb128 0x26
  4434 0e7c 01       		.uleb128 0x1
  4435 0e7d 51       		.byte	0x51
@@ -5803,6 +5818,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4472 0ea5 26       		.uleb128 0x26
  4473 0ea6 02       		.uleb128 0x2
  4474 0ea7 7D       		.byte	0x7d
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 98
+
+
  4475 0ea8 08       		.sleb128 8
  4476 0ea9 05       		.uleb128 0x5
  4477 0eaa F3       		.byte	0xf3
@@ -5818,9 +5836,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4487 0eb4 F3       		.byte	0xf3
  4488 0eb5 01       		.uleb128 0x1
  4489 0eb6 50       		.byte	0x50
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 98
-
-
  4490 0eb7 23       		.byte	0x23
  4491 0eb8 28       		.uleb128 0x28
  4492 0eb9 26       		.uleb128 0x26
@@ -5863,6 +5878,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4529 0ee4 02       		.uleb128 0x2
  4530 0ee5 91       		.byte	0x91
  4531 0ee6 72       		.sleb128 -14
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 99
+
+
  4532 0ee7 26       		.uleb128 0x26
  4533 0ee8 01       		.uleb128 0x1
  4534 0ee9 51       		.byte	0x51
@@ -5878,12 +5896,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4544 0ef9 E9050000 		.4byte	.LASF150
  4545 0efd 01       		.byte	0x1
  4546 0efe 9501     		.2byte	0x195
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 99
-
-
  4547 0f00 32030000 		.4byte	0x332
- 4548 0f04 00000000 		.4byte	.LFB11
- 4549 0f08 98000000 		.4byte	.LFE11-.LFB11
+ 4548 0f04 00000000 		.4byte	.LFB12
+ 4549 0f08 98000000 		.4byte	.LFE12-.LFB12
  4550 0f0c 01       		.uleb128 0x1
  4551 0f0d 9C       		.byte	0x9c
  4552 0f0e 08100000 		.4byte	0x1008
@@ -5923,6 +5938,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4586 0f5c 02       		.uleb128 0x2
  4587 0f5d 91       		.byte	0x91
  4588 0f5e 60       		.sleb128 -32
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 100
+
+
  4589 0f5f 2B       		.uleb128 0x2b
  4590 0f60 D5050000 		.4byte	.LASF153
  4591 0f64 01       		.byte	0x1
@@ -5938,9 +5956,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4601 0f76 7E000000 		.4byte	0x7e
  4602 0f7a 02       		.uleb128 0x2
  4603 0f7b 91       		.byte	0x91
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 100
-
-
  4604 0f7c 58       		.sleb128 -40
  4605 0f7d 2C       		.uleb128 0x2c
  4606 0f7e 48000000 		.4byte	.LVL204
@@ -5983,6 +5998,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4643 0faf 7D       		.byte	0x7d
  4644 0fb0 04       		.sleb128 4
  4645 0fb1 02       		.uleb128 0x2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 101
+
+
  4646 0fb2 74       		.byte	0x74
  4647 0fb3 14       		.sleb128 20
  4648 0fb4 26       		.uleb128 0x26
@@ -5998,9 +6016,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4658 0fbe 0C       		.sleb128 12
  4659 0fbf 02       		.uleb128 0x2
  4660 0fc0 74       		.byte	0x74
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 101
-
-
  4661 0fc1 1C       		.sleb128 28
  4662 0fc2 26       		.uleb128 0x26
  4663 0fc3 02       		.uleb128 0x2
@@ -6043,6 +6058,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4700 0fe9 24       		.sleb128 36
  4701 0fea 02       		.uleb128 0x2
  4702 0feb 91       		.byte	0x91
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 102
+
+
  4703 0fec 58       		.sleb128 -40
  4704 0fed 00       		.byte	0
  4705 0fee 25       		.uleb128 0x25
@@ -6058,9 +6076,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4715 0ffe 01       		.uleb128 0x1
  4716 0fff 51       		.byte	0x51
  4717 1000 05       		.uleb128 0x5
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 102
-
-
  4718 1001 03       		.byte	0x3
  4719 1002 1C000000 		.4byte	.LC7
  4720 1006 00       		.byte	0
@@ -6073,8 +6088,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4727 1013 01       		.byte	0x1
  4728 1014 B301     		.2byte	0x1b3
  4729 1016 32030000 		.4byte	0x332
- 4730 101a 00000000 		.4byte	.LFB12
- 4731 101e 8C000000 		.4byte	.LFE12-.LFB12
+ 4730 101a 00000000 		.4byte	.LFB13
+ 4731 101e 8C000000 		.4byte	.LFE13-.LFB13
  4732 1022 01       		.uleb128 0x1
  4733 1023 9C       		.byte	0x9c
  4734 1024 0F110000 		.4byte	0x110f
@@ -6103,6 +6118,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4757 105c 01       		.byte	0x1
  4758 105d B701     		.2byte	0x1b7
  4759 105f 7E000000 		.4byte	0x7e
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 103
+
+
  4760 1063 02       		.uleb128 0x2
  4761 1064 91       		.byte	0x91
  4762 1065 64       		.sleb128 -28
@@ -6118,9 +6136,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4772 1076 56000000 		.4byte	.LVL210
  4773 107a 4A070000 		.4byte	0x74a
  4774 107e F5100000 		.4byte	0x10f5
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 103
-
-
  4775 1082 26       		.uleb128 0x26
  4776 1083 01       		.uleb128 0x1
  4777 1084 50       		.byte	0x50
@@ -6163,6 +6178,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4814 10ac 26       		.uleb128 0x26
  4815 10ad 02       		.uleb128 0x2
  4816 10ae 7D       		.byte	0x7d
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 104
+
+
  4817 10af 08       		.sleb128 8
  4818 10b0 02       		.uleb128 0x2
  4819 10b1 74       		.byte	0x74
@@ -6178,9 +6196,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4829 10bb 02       		.uleb128 0x2
  4830 10bc 7D       		.byte	0x7d
  4831 10bd 10       		.sleb128 16
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 104
-
-
  4832 10be 02       		.uleb128 0x2
  4833 10bf 74       		.byte	0x74
  4834 10c0 20       		.sleb128 32
@@ -6223,6 +6238,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4871 10e5 02       		.uleb128 0x2
  4872 10e6 7D       		.byte	0x7d
  4873 10e7 28       		.sleb128 40
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 105
+
+
  4874 10e8 03       		.uleb128 0x3
  4875 10e9 74       		.byte	0x74
  4876 10ea C400     		.sleb128 68
@@ -6238,9 +6256,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4886 10f6 64000000 		.4byte	.LVL211
  4887 10fa AB170000 		.4byte	0x17ab
  4888 10fe 26       		.uleb128 0x26
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 105
-
-
  4889 10ff 01       		.uleb128 0x1
  4890 1100 50       		.byte	0x50
  4891 1101 02       		.uleb128 0x2
@@ -6262,8 +6277,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4907 111a 01       		.byte	0x1
  4908 111b CF01     		.2byte	0x1cf
  4909 111d 32030000 		.4byte	0x332
- 4910 1121 00000000 		.4byte	.LFB13
- 4911 1125 90000000 		.4byte	.LFE13-.LFB13
+ 4910 1121 00000000 		.4byte	.LFB14
+ 4911 1125 90000000 		.4byte	.LFE14-.LFB14
  4912 1129 01       		.uleb128 0x1
  4913 112a 9C       		.byte	0x9c
  4914 112b 43120000 		.4byte	0x1243
@@ -6283,6 +6298,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4928 1150 19080000 		.4byte	.LASF135
  4929 1154 01       		.byte	0x1
  4930 1155 D201     		.2byte	0x1d2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 106
+
+
  4931 1157 8C0C0000 		.4byte	0xc8c
  4932 115b 02       		.uleb128 0x2
  4933 115c 91       		.byte	0x91
@@ -6298,9 +6316,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4943 116f F3       		.byte	0xf3
  4944 1170 01       		.uleb128 0x1
  4945 1171 51       		.byte	0x51
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 106
-
-
  4946 1172 26       		.uleb128 0x26
  4947 1173 01       		.uleb128 0x1
  4948 1174 51       		.byte	0x51
@@ -6343,6 +6358,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  4985 119c 26       		.uleb128 0x26
  4986 119d 02       		.uleb128 0x2
  4987 119e 7D       		.byte	0x7d
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 107
+
+
  4988 119f 08       		.sleb128 8
  4989 11a0 05       		.uleb128 0x5
  4990 11a1 F3       		.byte	0xf3
@@ -6358,9 +6376,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5000 11ab F3       		.byte	0xf3
  5001 11ac 01       		.uleb128 0x1
  5002 11ad 50       		.byte	0x50
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 107
-
-
  5003 11ae 23       		.byte	0x23
  5004 11af 10       		.uleb128 0x10
  5005 11b0 26       		.uleb128 0x26
@@ -6403,6 +6418,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5042 11d5 50       		.byte	0x50
  5043 11d6 23       		.byte	0x23
  5044 11d7 20       		.uleb128 0x20
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 108
+
+
  5045 11d8 26       		.uleb128 0x26
  5046 11d9 02       		.uleb128 0x2
  5047 11da 7D       		.byte	0x7d
@@ -6418,9 +6436,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5057 11e4 7D       		.byte	0x7d
  5058 11e5 24       		.sleb128 36
  5059 11e6 05       		.uleb128 0x5
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 108
-
-
  5060 11e7 F3       		.byte	0xf3
  5061 11e8 01       		.uleb128 0x1
  5062 11e9 50       		.byte	0x50
@@ -6463,6 +6478,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5099 120e 05       		.uleb128 0x5
  5100 120f F3       		.byte	0xf3
  5101 1210 01       		.uleb128 0x1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 109
+
+
  5102 1211 50       		.byte	0x50
  5103 1212 23       		.byte	0x23
  5104 1213 38       		.uleb128 0x38
@@ -6478,9 +6496,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5114 121d 40       		.uleb128 0x40
  5115 121e 26       		.uleb128 0x26
  5116 121f 02       		.uleb128 0x2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 109
-
-
  5117 1220 7D       		.byte	0x7d
  5118 1221 3C       		.sleb128 60
  5119 1222 05       		.uleb128 0x5
@@ -6515,14 +6530,17 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5148 124e 01       		.byte	0x1
  5149 124f EE01     		.2byte	0x1ee
  5150 1251 32030000 		.4byte	0x332
- 5151 1255 00000000 		.4byte	.LFB14
- 5152 1259 68000000 		.4byte	.LFE14-.LFB14
+ 5151 1255 00000000 		.4byte	.LFB15
+ 5152 1259 68000000 		.4byte	.LFE15-.LFB15
  5153 125d 01       		.uleb128 0x1
  5154 125e 9C       		.byte	0x9c
  5155 125f 1E130000 		.4byte	0x131e
  5156 1263 2F       		.uleb128 0x2f
  5157 1264 82080000 		.4byte	.LASF149
  5158 1268 01       		.byte	0x1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 110
+
+
  5159 1269 EE01     		.2byte	0x1ee
  5160 126b 1E130000 		.4byte	0x131e
  5161 126f 0C0B0000 		.4byte	.LLST58
@@ -6538,9 +6556,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5171 1289 F101     		.2byte	0x1f1
  5172 128b 8C0C0000 		.4byte	0xc8c
  5173 128f 02       		.uleb128 0x2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 110
-
-
  5174 1290 91       		.byte	0x91
  5175 1291 68       		.sleb128 -24
  5176 1292 2B       		.uleb128 0x2b
@@ -6583,6 +6598,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5213 12d1 91       		.byte	0x91
  5214 12d2 68       		.sleb128 -24
  5215 12d3 26       		.uleb128 0x26
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 111
+
+
  5216 12d4 01       		.uleb128 0x1
  5217 12d5 53       		.byte	0x53
  5218 12d6 02       		.uleb128 0x2
@@ -6598,9 +6616,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5228 12e0 26       		.uleb128 0x26
  5229 12e1 02       		.uleb128 0x2
  5230 12e2 7D       		.byte	0x7d
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 111
-
-
  5231 12e3 04       		.sleb128 4
  5232 12e4 02       		.uleb128 0x2
  5233 12e5 74       		.byte	0x74
@@ -6643,6 +6658,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5270 1310 02       		.uleb128 0x2
  5271 1311 91       		.byte	0x91
  5272 1312 6A       		.sleb128 -22
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 112
+
+
  5273 1313 26       		.uleb128 0x26
  5274 1314 01       		.uleb128 0x1
  5275 1315 51       		.byte	0x51
@@ -6658,12 +6676,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5285 1325 4A060000 		.4byte	.LASF158
  5286 1329 01       		.byte	0x1
  5287 132a 0602     		.2byte	0x206
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 112
-
-
  5288 132c 32030000 		.4byte	0x332
- 5289 1330 00000000 		.4byte	.LFB15
- 5290 1334 5C000000 		.4byte	.LFE15-.LFB15
+ 5289 1330 00000000 		.4byte	.LFB16
+ 5290 1334 5C000000 		.4byte	.LFE16-.LFB16
  5291 1338 01       		.uleb128 0x1
  5292 1339 9C       		.byte	0x9c
  5293 133a F8130000 		.4byte	0x13f8
@@ -6703,6 +6718,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5327 1383 51       		.byte	0x51
  5328 1384 05       		.uleb128 0x5
  5329 1385 03       		.byte	0x3
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 113
+
+
  5330 1386 74000000 		.4byte	.LC15
  5331 138a 26       		.uleb128 0x26
  5332 138b 01       		.uleb128 0x1
@@ -6718,9 +6736,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5342 1395 01       		.uleb128 0x1
  5343 1396 50       		.byte	0x50
  5344 1397 26       		.uleb128 0x26
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 113
-
-
  5345 1398 02       		.uleb128 0x2
  5346 1399 7D       		.byte	0x7d
  5347 139a 00       		.sleb128 0
@@ -6763,6 +6778,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5384 13bf 26       		.uleb128 0x26
  5385 13c0 02       		.uleb128 0x2
  5386 13c1 7D       		.byte	0x7d
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 114
+
+
  5387 13c2 10       		.sleb128 16
  5388 13c3 05       		.uleb128 0x5
  5389 13c4 F3       		.byte	0xf3
@@ -6778,9 +6796,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5399 13ce F3       		.byte	0xf3
  5400 13cf 01       		.uleb128 0x1
  5401 13d0 50       		.byte	0x50
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 114
-
-
  5402 13d1 23       		.byte	0x23
  5403 13d2 38       		.uleb128 0x38
  5404 13d3 26       		.uleb128 0x26
@@ -6819,10 +6834,13 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5437 1403 01       		.byte	0x1
  5438 1404 1C02     		.2byte	0x21c
  5439 1406 32030000 		.4byte	0x332
- 5440 140a 00000000 		.4byte	.LFB16
- 5441 140e 9C000000 		.4byte	.LFE16-.LFB16
+ 5440 140a 00000000 		.4byte	.LFB17
+ 5441 140e 9C000000 		.4byte	.LFE17-.LFB17
  5442 1412 01       		.uleb128 0x1
  5443 1413 9C       		.byte	0x9c
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 115
+
+
  5444 1414 42150000 		.4byte	0x1542
  5445 1418 2F       		.uleb128 0x2f
  5446 1419 82080000 		.4byte	.LASF149
@@ -6838,9 +6856,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5456 1434 E80B0000 		.4byte	.LLST63
  5457 1438 2B       		.uleb128 0x2b
  5458 1439 19080000 		.4byte	.LASF135
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 115
-
-
  5459 143d 01       		.byte	0x1
  5460 143e 2302     		.2byte	0x223
  5461 1440 8C0C0000 		.4byte	0xc8c
@@ -6883,6 +6898,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5498 1474 00       		.sleb128 0
  5499 1475 05       		.uleb128 0x5
  5500 1476 F3       		.byte	0xf3
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 116
+
+
  5501 1477 01       		.uleb128 0x1
  5502 1478 50       		.byte	0x50
  5503 1479 23       		.byte	0x23
@@ -6898,9 +6916,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5513 1483 23       		.byte	0x23
  5514 1484 08       		.uleb128 0x8
  5515 1485 26       		.uleb128 0x26
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 116
-
-
  5516 1486 02       		.uleb128 0x2
  5517 1487 7D       		.byte	0x7d
  5518 1488 08       		.sleb128 8
@@ -6943,6 +6958,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5555 14ad 26       		.uleb128 0x26
  5556 14ae 02       		.uleb128 0x2
  5557 14af 7D       		.byte	0x7d
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 117
+
+
  5558 14b0 18       		.sleb128 24
  5559 14b1 05       		.uleb128 0x5
  5560 14b2 F3       		.byte	0xf3
@@ -6958,9 +6976,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5570 14bc F3       		.byte	0xf3
  5571 14bd 01       		.uleb128 0x1
  5572 14be 50       		.byte	0x50
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 117
-
-
  5573 14bf 23       		.byte	0x23
  5574 14c0 20       		.uleb128 0x20
  5575 14c1 26       		.uleb128 0x26
@@ -7003,6 +7018,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5612 14e6 50       		.byte	0x50
  5613 14e7 23       		.byte	0x23
  5614 14e8 30       		.uleb128 0x30
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 118
+
+
  5615 14e9 26       		.uleb128 0x26
  5616 14ea 02       		.uleb128 0x2
  5617 14eb 7D       		.byte	0x7d
@@ -7018,9 +7036,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5627 14f5 7D       		.byte	0x7d
  5628 14f6 34       		.sleb128 52
  5629 14f7 05       		.uleb128 0x5
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 118
-
-
  5630 14f8 F3       		.byte	0xf3
  5631 14f9 01       		.uleb128 0x1
  5632 14fa 50       		.byte	0x50
@@ -7063,6 +7078,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5669 1521 05       		.uleb128 0x5
  5670 1522 F3       		.byte	0xf3
  5671 1523 01       		.uleb128 0x1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 119
+
+
  5672 1524 50       		.byte	0x50
  5673 1525 23       		.byte	0x23
  5674 1526 48       		.uleb128 0x48
@@ -7078,9 +7096,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5684 1536 72       		.sleb128 -14
  5685 1537 26       		.uleb128 0x26
  5686 1538 01       		.uleb128 0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 119
-
-
  5687 1539 51       		.byte	0x51
  5688 153a 05       		.uleb128 0x5
  5689 153b 03       		.byte	0x3
@@ -7095,8 +7110,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5698 154d 01       		.byte	0x1
  5699 154e 4302     		.2byte	0x243
  5700 1550 32030000 		.4byte	0x332
- 5701 1554 00000000 		.4byte	.LFB17
- 5702 1558 9C000000 		.4byte	.LFE17-.LFB17
+ 5701 1554 00000000 		.4byte	.LFB18
+ 5702 1558 9C000000 		.4byte	.LFE18-.LFB18
  5703 155c 01       		.uleb128 0x1
  5704 155d 9C       		.byte	0x9c
  5705 155e 58160000 		.4byte	0x1658
@@ -7123,6 +7138,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5726 1591 2B       		.uleb128 0x2b
  5727 1592 AB020000 		.4byte	.LASF161
  5728 1596 01       		.byte	0x1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 120
+
+
  5729 1597 4A02     		.2byte	0x24a
  5730 1599 DA000000 		.4byte	0xda
  5731 159d 02       		.uleb128 0x2
@@ -7138,9 +7156,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5741 15ae 66       		.sleb128 -26
  5742 15af 2B       		.uleb128 0x2b
  5743 15b0 A8000000 		.4byte	.LASF163
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 120
-
-
  5744 15b4 01       		.byte	0x1
  5745 15b5 4A02     		.2byte	0x24a
  5746 15b7 DA000000 		.4byte	0xda
@@ -7183,6 +7198,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5783 15f9 26       		.uleb128 0x26
  5784 15fa 01       		.uleb128 0x1
  5785 15fb 52       		.byte	0x52
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 121
+
+
  5786 15fc 02       		.uleb128 0x2
  5787 15fd 91       		.byte	0x91
  5788 15fe 68       		.sleb128 -24
@@ -7198,9 +7216,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5798 1608 00       		.sleb128 0
  5799 1609 02       		.uleb128 0x2
  5800 160a 91       		.byte	0x91
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 121
-
-
  5801 160b 67       		.sleb128 -25
  5802 160c 26       		.uleb128 0x26
  5803 160d 02       		.uleb128 0x2
@@ -7243,6 +7258,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5840 1632 18       		.sleb128 24
  5841 1633 02       		.uleb128 0x2
  5842 1634 91       		.byte	0x91
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 122
+
+
  5843 1635 64       		.sleb128 -28
  5844 1636 26       		.uleb128 0x26
  5845 1637 02       		.uleb128 0x2
@@ -7258,9 +7276,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5855 1647 26       		.uleb128 0x26
  5856 1648 01       		.uleb128 0x1
  5857 1649 50       		.byte	0x50
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 122
-
-
  5858 164a 02       		.uleb128 0x2
  5859 164b 91       		.byte	0x91
  5860 164c 6A       		.sleb128 -22
@@ -7280,8 +7295,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5874 1663 01       		.byte	0x1
  5875 1664 6802     		.2byte	0x268
  5876 1666 32030000 		.4byte	0x332
- 5877 166a 00000000 		.4byte	.LFB18
- 5878 166e 74000000 		.4byte	.LFE18-.LFB18
+ 5877 166a 00000000 		.4byte	.LFB19
+ 5878 166e 74000000 		.4byte	.LFE19-.LFB19
  5879 1672 01       		.uleb128 0x1
  5880 1673 9C       		.byte	0x9c
  5881 1674 0E170000 		.4byte	0x170e
@@ -7303,6 +7318,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5897 169e 6B02     		.2byte	0x26b
  5898 16a0 8C0C0000 		.4byte	0xc8c
  5899 16a4 02       		.uleb128 0x2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 123
+
+
  5900 16a5 91       		.byte	0x91
  5901 16a6 68       		.sleb128 -24
  5902 16a7 2C       		.uleb128 0x2c
@@ -7318,9 +7336,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5912 16ba 51       		.byte	0x51
  5913 16bb 26       		.uleb128 0x26
  5914 16bc 01       		.uleb128 0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 123
-
-
  5915 16bd 51       		.byte	0x51
  5916 16be 05       		.uleb128 0x5
  5917 16bf 03       		.byte	0x3
@@ -7363,6 +7378,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5954 16e7 7D       		.byte	0x7d
  5955 16e8 0C       		.sleb128 12
  5956 16e9 02       		.uleb128 0x2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 124
+
+
  5957 16ea 74       		.byte	0x74
  5958 16eb 1C       		.sleb128 28
  5959 16ec 26       		.uleb128 0x26
@@ -7378,9 +7396,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5969 16f9 AB170000 		.4byte	0x17ab
  5970 16fd 26       		.uleb128 0x26
  5971 16fe 01       		.uleb128 0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 124
-
-
  5972 16ff 50       		.byte	0x50
  5973 1700 02       		.uleb128 0x2
  5974 1701 91       		.byte	0x91
@@ -7401,8 +7416,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  5989 1719 01       		.byte	0x1
  5990 171a 8202     		.2byte	0x282
  5991 171c 7E000000 		.4byte	0x7e
- 5992 1720 00000000 		.4byte	.LFB19
- 5993 1724 5E000000 		.4byte	.LFE19-.LFB19
+ 5992 1720 00000000 		.4byte	.LFB20
+ 5993 1724 5E000000 		.4byte	.LFE20-.LFB20
  5994 1728 01       		.uleb128 0x1
  5995 1729 9C       		.byte	0x9c
  5996 172a 79170000 		.4byte	0x1779
@@ -7423,6 +7438,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6011 1752 01       		.byte	0x1
  6012 1753 8202     		.2byte	0x282
  6013 1755 8A170000 		.4byte	0x178a
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 125
+
+
  6014 1759 240D0000 		.4byte	.LLST70
  6015 175d 25       		.uleb128 0x25
  6016 175e 20000000 		.4byte	.LVL249
@@ -7438,9 +7456,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6026 176e 51       		.byte	0x51
  6027 176f 01       		.uleb128 0x1
  6028 1770 30       		.byte	0x30
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 125
-
-
  6029 1771 26       		.uleb128 0x26
  6030 1772 01       		.uleb128 0x1
  6031 1773 52       		.byte	0x52
@@ -7483,6 +7498,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6068 17bf 00       		.byte	0
  6069              		.section	.debug_abbrev,"",%progbits
  6070              	.Ldebug_abbrev0:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 126
+
+
  6071 0000 01       		.uleb128 0x1
  6072 0001 11       		.uleb128 0x11
  6073 0002 01       		.byte	0x1
@@ -7498,9 +7516,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6083 000c 17       		.uleb128 0x17
  6084 000d 11       		.uleb128 0x11
  6085 000e 01       		.uleb128 0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 126
-
-
  6086 000f 10       		.uleb128 0x10
  6087 0010 17       		.uleb128 0x17
  6088 0011 00       		.byte	0
@@ -7543,6 +7558,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6125 0036 05       		.uleb128 0x5
  6126 0037 0F       		.uleb128 0xf
  6127 0038 00       		.byte	0
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 127
+
+
  6128 0039 0B       		.uleb128 0xb
  6129 003a 0B       		.uleb128 0xb
  6130 003b 00       		.byte	0
@@ -7558,9 +7576,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6140 0045 0B       		.uleb128 0xb
  6141 0046 3B       		.uleb128 0x3b
  6142 0047 0B       		.uleb128 0xb
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 127
-
-
  6143 0048 01       		.uleb128 0x1
  6144 0049 13       		.uleb128 0x13
  6145 004a 00       		.byte	0
@@ -7603,6 +7618,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6182 006f 0B       		.uleb128 0xb
  6183 0070 3A       		.uleb128 0x3a
  6184 0071 0B       		.uleb128 0xb
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 128
+
+
  6185 0072 3B       		.uleb128 0x3b
  6186 0073 0B       		.uleb128 0xb
  6187 0074 01       		.uleb128 0x1
@@ -7618,9 +7636,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6197 007e 0B       		.uleb128 0xb
  6198 007f 3B       		.uleb128 0x3b
  6199 0080 0B       		.uleb128 0xb
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 128
-
-
  6200 0081 49       		.uleb128 0x49
  6201 0082 13       		.uleb128 0x13
  6202 0083 38       		.uleb128 0x38
@@ -7663,6 +7678,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6239 00a8 00       		.byte	0
  6240 00a9 00       		.byte	0
  6241 00aa 0F       		.uleb128 0xf
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 129
+
+
  6242 00ab 0D       		.uleb128 0xd
  6243 00ac 00       		.byte	0
  6244 00ad 03       		.uleb128 0x3
@@ -7678,9 +7696,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6254 00b7 00       		.byte	0
  6255 00b8 00       		.byte	0
  6256 00b9 10       		.uleb128 0x10
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 129
-
-
  6257 00ba 01       		.uleb128 0x1
  6258 00bb 01       		.byte	0x1
  6259 00bc 49       		.uleb128 0x49
@@ -7723,6 +7738,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6296 00e1 03       		.uleb128 0x3
  6297 00e2 08       		.uleb128 0x8
  6298 00e3 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 130
+
+
  6299 00e4 0B       		.uleb128 0xb
  6300 00e5 3B       		.uleb128 0x3b
  6301 00e6 05       		.uleb128 0x5
@@ -7738,9 +7756,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6311 00f0 3A       		.uleb128 0x3a
  6312 00f1 0B       		.uleb128 0xb
  6313 00f2 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 130
-
-
  6314 00f3 0B       		.uleb128 0xb
  6315 00f4 27       		.uleb128 0x27
  6316 00f5 19       		.uleb128 0x19
@@ -7783,6 +7798,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6353 011b 3A       		.uleb128 0x3a
  6354 011c 0B       		.uleb128 0xb
  6355 011d 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 131
+
+
  6356 011e 0B       		.uleb128 0xb
  6357 011f 27       		.uleb128 0x27
  6358 0120 19       		.uleb128 0x19
@@ -7798,9 +7816,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6368 012b 19       		.uleb128 0x19
  6369 012c 01       		.uleb128 0x1
  6370 012d 13       		.uleb128 0x13
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 131
-
-
  6371 012e 00       		.byte	0
  6372 012f 00       		.byte	0
  6373 0130 17       		.uleb128 0x17
@@ -7843,6 +7858,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6410 0155 3B       		.uleb128 0x3b
  6411 0156 0B       		.uleb128 0xb
  6412 0157 49       		.uleb128 0x49
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 132
+
+
  6413 0158 13       		.uleb128 0x13
  6414 0159 02       		.uleb128 0x2
  6415 015a 17       		.uleb128 0x17
@@ -7858,9 +7876,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6425 0164 1B       		.uleb128 0x1b
  6426 0165 898201   		.uleb128 0x4109
  6427 0168 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 132
-
-
  6428 0169 11       		.uleb128 0x11
  6429 016a 01       		.uleb128 0x1
  6430 016b 31       		.uleb128 0x31
@@ -7903,6 +7918,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6467 0190 1F       		.uleb128 0x1f
  6468 0191 0B       		.uleb128 0xb
  6469 0192 01       		.byte	0x1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 133
+
+
  6470 0193 11       		.uleb128 0x11
  6471 0194 01       		.uleb128 0x1
  6472 0195 12       		.uleb128 0x12
@@ -7918,9 +7936,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6482 019f 13       		.uleb128 0x13
  6483 01a0 11       		.uleb128 0x11
  6484 01a1 01       		.uleb128 0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 133
-
-
  6485 01a2 12       		.uleb128 0x12
  6486 01a3 06       		.uleb128 0x6
  6487 01a4 58       		.uleb128 0x58
@@ -7963,6 +7978,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6524 01c9 13       		.uleb128 0x13
  6525 01ca 11       		.uleb128 0x11
  6526 01cb 01       		.uleb128 0x1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 134
+
+
  6527 01cc 12       		.uleb128 0x12
  6528 01cd 06       		.uleb128 0x6
  6529 01ce 58       		.uleb128 0x58
@@ -7978,9 +7996,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6539 01da 01       		.byte	0x1
  6540 01db 11       		.uleb128 0x11
  6541 01dc 01       		.uleb128 0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 134
-
-
  6542 01dd 31       		.uleb128 0x31
  6543 01de 13       		.uleb128 0x13
  6544 01df 00       		.byte	0
@@ -8023,6 +8038,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6581 0207 02       		.uleb128 0x2
  6582 0208 17       		.uleb128 0x17
  6583 0209 00       		.byte	0
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 135
+
+
  6584 020a 00       		.byte	0
  6585 020b 29       		.uleb128 0x29
  6586 020c 34       		.uleb128 0x34
@@ -8038,9 +8056,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6596 0216 02       		.uleb128 0x2
  6597 0217 17       		.uleb128 0x17
  6598 0218 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 135
-
-
  6599 0219 00       		.byte	0
  6600 021a 2A       		.uleb128 0x2a
  6601 021b 1D       		.uleb128 0x1d
@@ -8083,6 +8098,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6638 0242 13       		.uleb128 0x13
  6639 0243 01       		.uleb128 0x1
  6640 0244 13       		.uleb128 0x13
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 136
+
+
  6641 0245 00       		.byte	0
  6642 0246 00       		.byte	0
  6643 0247 2D       		.uleb128 0x2d
@@ -8098,9 +8116,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6653 0251 0B       		.uleb128 0xb
  6654 0252 59       		.uleb128 0x59
  6655 0253 05       		.uleb128 0x5
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 136
-
-
  6656 0254 00       		.byte	0
  6657 0255 00       		.byte	0
  6658 0256 2E       		.uleb128 0x2e
@@ -8143,6 +8158,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6695 027c 13       		.uleb128 0x13
  6696 027d 02       		.uleb128 0x2
  6697 027e 17       		.uleb128 0x17
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 137
+
+
  6698 027f 00       		.byte	0
  6699 0280 00       		.byte	0
  6700 0281 30       		.uleb128 0x30
@@ -8158,9 +8176,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6710 028b 13       		.uleb128 0x13
  6711 028c 02       		.uleb128 0x2
  6712 028d 17       		.uleb128 0x17
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 137
-
-
  6713 028e 00       		.byte	0
  6714 028f 00       		.byte	0
  6715 0290 31       		.uleb128 0x31
@@ -8203,6 +8218,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6752 02b5 3F       		.uleb128 0x3f
  6753 02b6 19       		.uleb128 0x19
  6754 02b7 3C       		.uleb128 0x3c
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 138
+
+
  6755 02b8 19       		.uleb128 0x19
  6756 02b9 6E       		.uleb128 0x6e
  6757 02ba 0E       		.uleb128 0xe
@@ -8218,9 +8236,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6767 0004 0C000000 		.4byte	.LVL1
  6768 0008 0100     		.2byte	0x1
  6769 000a 50       		.byte	0x50
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 138
-
-
  6770 000b 0C000000 		.4byte	.LVL1
  6771 000f 0E000000 		.4byte	.LVL2
  6772 0013 0400     		.2byte	0x4
@@ -8255,7 +8270,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6801 0053 0100     		.2byte	0x1
  6802 0055 50       		.byte	0x50
  6803 0056 2E000000 		.4byte	.LVL7
- 6804 005a 30000000 		.4byte	.LFE4
+ 6804 005a 30000000 		.4byte	.LFE5
  6805 005e 0400     		.2byte	0x4
  6806 0060 F3       		.byte	0xf3
  6807 0061 01       		.uleb128 0x1
@@ -8263,13 +8278,16 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6809 0063 9F       		.byte	0x9f
  6810 0064 00000000 		.4byte	0
  6811 0068 00000000 		.4byte	0
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 139
+
+
  6812              	.LLST1:
  6813 006c 00000000 		.4byte	.LVL8
  6814 0070 0A000000 		.4byte	.LVL9
  6815 0074 0100     		.2byte	0x1
  6816 0076 50       		.byte	0x50
  6817 0077 0A000000 		.4byte	.LVL9
- 6818 007b 1C000000 		.4byte	.LFE5
+ 6818 007b 1C000000 		.4byte	.LFE6
  6819 007f 0100     		.2byte	0x1
  6820 0081 52       		.byte	0x52
  6821 0082 00000000 		.4byte	0
@@ -8278,9 +8296,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6824 008a 00000000 		.4byte	.LVL13
  6825 008e 02000000 		.4byte	.LVL14
  6826 0092 0100     		.2byte	0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 139
-
-
  6827 0094 50       		.byte	0x50
  6828 0095 02000000 		.4byte	.LVL14
  6829 0099 0A000000 		.4byte	.LVL15
@@ -8323,6 +8338,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6866 00ec 9F       		.byte	0x9f
  6867 00ed 6E000000 		.4byte	.LVL31
  6868 00f1 72000000 		.4byte	.LVL33
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 140
+
+
  6869 00f5 0300     		.2byte	0x3
  6870 00f7 74       		.byte	0x74
  6871 00f8 02       		.sleb128 2
@@ -8338,9 +8356,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6881 0110 00000000 		.4byte	0
  6882 0114 00000000 		.4byte	0
  6883              	.LLST3:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 140
-
-
  6884 0118 00000000 		.4byte	.LVL13
  6885 011c 31000000 		.4byte	.LVL20-1
  6886 0120 0100     		.2byte	0x1
@@ -8379,10 +8394,13 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6919 016b 0100     		.2byte	0x1
  6920 016d 51       		.byte	0x51
  6921 016e 7E000000 		.4byte	.LVL38
- 6922 0172 88000000 		.4byte	.LFE6
+ 6922 0172 88000000 		.4byte	.LFE7
  6923 0176 0400     		.2byte	0x4
  6924 0178 F3       		.byte	0xf3
  6925 0179 01       		.uleb128 0x1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 141
+
+
  6926 017a 51       		.byte	0x51
  6927 017b 9F       		.byte	0x9f
  6928 017c 00000000 		.4byte	0
@@ -8398,9 +8416,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6938 0198 0100     		.2byte	0x1
  6939 019a 55       		.byte	0x55
  6940 019b 6A000000 		.4byte	.LVL29
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 141
-
-
  6941 019f 6E000000 		.4byte	.LVL31
  6942 01a3 0200     		.2byte	0x2
  6943 01a5 30       		.byte	0x30
@@ -8443,6 +8458,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6980 0208 00000000 		.4byte	0
  6981              	.LLST7:
  6982 020c 4C000000 		.4byte	.LVL25
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 142
+
+
  6983 0210 54000000 		.4byte	.LVL26
  6984 0214 0100     		.2byte	0x1
  6985 0216 50       		.byte	0x50
@@ -8458,9 +8476,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  6995 0232 0100     		.2byte	0x1
  6996 0234 50       		.byte	0x50
  6997 0235 1C000000 		.4byte	.LVL43
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 142
-
-
  6998 0239 A8050000 		.4byte	.LVL176
  6999 023d 0100     		.2byte	0x1
  7000 023f 54       		.byte	0x54
@@ -8503,6 +8518,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7037 029f 30       		.byte	0x30
  7038 02a0 9F       		.byte	0x9f
  7039 02a1 00000000 		.4byte	0
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 143
+
+
  7040 02a5 00000000 		.4byte	0
  7041              	.LLST11:
  7042 02a9 0A000000 		.4byte	.LVL41
@@ -8518,9 +8536,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7052 02c4 A8050000 		.4byte	.LVL176
  7053 02c8 0100     		.2byte	0x1
  7054 02ca 56       		.byte	0x56
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 143
-
-
  7055 02cb A8050000 		.4byte	.LVL176
  7056 02cf AA050000 		.4byte	.LVL177
  7057 02d3 0200     		.2byte	0x2
@@ -8563,6 +8578,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7094 0332 CA040000 		.4byte	.LVL139
  7095 0336 0300     		.2byte	0x3
  7096 0338 77       		.byte	0x77
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 144
+
+
  7097 0339 06       		.sleb128 6
  7098 033a 9F       		.byte	0x9f
  7099 033b CA040000 		.4byte	.LVL139
@@ -8578,9 +8596,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7109 0359 0100     		.2byte	0x1
  7110 035b 54       		.byte	0x54
  7111 035c 6A050000 		.4byte	.LVL156
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 144
-
-
  7112 0360 6E050000 		.4byte	.LVL158
  7113 0364 0100     		.2byte	0x1
  7114 0366 57       		.byte	0x57
@@ -8623,6 +8638,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7151 03ca 0100     		.2byte	0x1
  7152 03cc 53       		.byte	0x53
  7153 03cd 00000000 		.4byte	0
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 145
+
+
  7154 03d1 00000000 		.4byte	0
  7155              	.LLST16:
  7156 03d5 D6000000 		.4byte	.LVL50
@@ -8638,9 +8656,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7166 03f0 88050000 		.4byte	.LVL163
  7167 03f4 0200     		.2byte	0x2
  7168 03f6 30       		.byte	0x30
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 145
-
-
  7169 03f7 9F       		.byte	0x9f
  7170 03f8 00000000 		.4byte	0
  7171 03fc 00000000 		.4byte	0
@@ -8683,6 +8698,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7208 045f 0100     		.2byte	0x1
  7209 0461 5E       		.byte	0x5e
  7210 0462 00000000 		.4byte	0
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 146
+
+
  7211 0466 00000000 		.4byte	0
  7212              	.LLST19:
  7213 046a 4E010000 		.4byte	.LVL54
@@ -8698,9 +8716,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7223 0482 B2010000 		.4byte	.LVL59
  7224 0486 EE010000 		.4byte	.LVL69
  7225 048a 0100     		.2byte	0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 146
-
-
  7226 048c 52       		.byte	0x52
  7227 048d EE010000 		.4byte	.LVL69
  7228 0491 F6010000 		.4byte	.LVL70
@@ -8743,6 +8758,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7265 04f0 50       		.byte	0x50
  7266 04f1 4A020000 		.4byte	.LVL76
  7267 04f5 64020000 		.4byte	.LVL79
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 147
+
+
  7268 04f9 0100     		.2byte	0x1
  7269 04fb 50       		.byte	0x50
  7270 04fc 88050000 		.4byte	.LVL163
@@ -8758,9 +8776,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7280 051a 0100     		.2byte	0x1
  7281 051c 50       		.byte	0x50
  7282 051d 94050000 		.4byte	.LVL169
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 147
-
-
  7283 0521 96050000 		.4byte	.LVL170
  7284 0525 0100     		.2byte	0x1
  7285 0527 50       		.byte	0x50
@@ -8803,6 +8818,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7322 057a 70020000 		.4byte	.LVL80
  7323 057e 0200     		.2byte	0x2
  7324 0580 30       		.byte	0x30
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 148
+
+
  7325 0581 9F       		.byte	0x9f
  7326 0582 70020000 		.4byte	.LVL80
  7327 0586 9C020000 		.4byte	.LVL83
@@ -8818,9 +8836,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7337 05a1 0100     		.2byte	0x1
  7338 05a3 50       		.byte	0x50
  7339 05a4 00000000 		.4byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 148
-
-
  7340 05a8 00000000 		.4byte	0
  7341              	.LLST24:
  7342 05ac 74020000 		.4byte	.LVL81
@@ -8863,6 +8878,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7379              	.LLST28:
  7380 0610 00030000 		.4byte	.LVL94
  7381 0614 02030000 		.4byte	.LVL95
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 149
+
+
  7382 0618 0100     		.2byte	0x1
  7383 061a 53       		.byte	0x53
  7384 061b 02030000 		.4byte	.LVL95
@@ -8878,9 +8896,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7394 0633 A4050000 		.4byte	.LVL174
  7395 0637 A8050000 		.4byte	.LVL176
  7396 063b 0300     		.2byte	0x3
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 149
-
-
  7397 063d 73       		.byte	0x73
  7398 063e 7F       		.sleb128 -1
  7399 063f 9F       		.byte	0x9f
@@ -8923,6 +8938,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7436 069d 9F       		.byte	0x9f
  7437 069e 0C040000 		.4byte	.LVL122
  7438 06a2 1A040000 		.4byte	.LVL123
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 150
+
+
  7439 06a6 0100     		.2byte	0x1
  7440 06a8 5A       		.byte	0x5a
  7441 06a9 00000000 		.4byte	0
@@ -8938,9 +8956,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7451 06c2 FA030000 		.4byte	.LVL117
  7452 06c6 0100     		.2byte	0x1
  7453 06c8 50       		.byte	0x50
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 150
-
-
  7454 06c9 FA030000 		.4byte	.LVL117
  7455 06cd 00040000 		.4byte	.LVL119
  7456 06d1 0100     		.2byte	0x1
@@ -8983,6 +8998,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7493              	.LLST34:
  7494 072c 64030000 		.4byte	.LVL104
  7495 0730 88030000 		.4byte	.LVL105
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 151
+
+
  7496 0734 0100     		.2byte	0x1
  7497 0736 50       		.byte	0x50
  7498 0737 00000000 		.4byte	0
@@ -8998,9 +9016,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7508 0754 53       		.byte	0x53
  7509 0755 00040000 		.4byte	.LVL119
  7510 0759 04040000 		.4byte	.LVL120
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 151
-
-
  7511 075d 0100     		.2byte	0x1
  7512 075f 53       		.byte	0x53
  7513 0760 00000000 		.4byte	0
@@ -9043,6 +9058,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7550 07be 24040000 		.4byte	.LVL124
  7551 07c2 BC040000 		.4byte	.LVL136
  7552 07c6 0300     		.2byte	0x3
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 152
+
+
  7553 07c8 09       		.byte	0x9
  7554 07c9 FF       		.byte	0xff
  7555 07ca 9F       		.byte	0x9f
@@ -9058,9 +9076,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7565 07e5 22050000 		.4byte	.LVL150
  7566 07e9 0300     		.2byte	0x3
  7567 07eb 09       		.byte	0x9
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 152
-
-
  7568 07ec FF       		.byte	0xff
  7569 07ed 9F       		.byte	0x9f
  7570 07ee 22050000 		.4byte	.LVL150
@@ -9103,6 +9118,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7607 084a 14050000 		.4byte	.LVL148
  7608 084e 0100     		.2byte	0x1
  7609 0850 53       		.byte	0x53
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 153
+
+
  7610 0851 14050000 		.4byte	.LVL148
  7611 0855 22050000 		.4byte	.LVL150
  7612 0859 0300     		.2byte	0x3
@@ -9118,9 +9136,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7622              	.LLST41:
  7623 0871 2A040000 		.4byte	.LVL125
  7624 0875 4E040000 		.4byte	.LVL126
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 153
-
-
  7625 0879 0100     		.2byte	0x1
  7626 087b 50       		.byte	0x50
  7627 087c 00000000 		.4byte	0
@@ -9163,6 +9178,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7664 08e1 F4040000 		.4byte	.LVL146
  7665 08e5 14050000 		.4byte	.LVL148
  7666 08e9 0100     		.2byte	0x1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 154
+
+
  7667 08eb 52       		.byte	0x52
  7668 08ec 00000000 		.4byte	0
  7669 08f0 00000000 		.4byte	0
@@ -9178,15 +9196,12 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7679 090b 08000000 		.4byte	.LVL179
  7680 090f 0100     		.2byte	0x1
  7681 0911 50       		.byte	0x50
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 154
-
-
  7682 0912 08000000 		.4byte	.LVL179
  7683 0916 2A000000 		.4byte	.LVL182
  7684 091a 0100     		.2byte	0x1
  7685 091c 54       		.byte	0x54
  7686 091d 2A000000 		.4byte	.LVL182
- 7687 0921 30000000 		.4byte	.LFE8
+ 7687 0921 30000000 		.4byte	.LFE9
  7688 0925 0400     		.2byte	0x4
  7689 0927 F3       		.byte	0xf3
  7690 0928 01       		.uleb128 0x1
@@ -9204,7 +9219,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7702 0946 0100     		.2byte	0x1
  7703 0948 50       		.byte	0x50
  7704 0949 0F000000 		.4byte	.LVL181-1
- 7705 094d 30000000 		.4byte	.LFE8
+ 7705 094d 30000000 		.4byte	.LFE9
  7706 0951 0400     		.2byte	0x4
  7707 0953 F3       		.byte	0xf3
  7708 0954 01       		.uleb128 0x1
@@ -9222,7 +9237,10 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7720 0972 0100     		.2byte	0x1
  7721 0974 54       		.byte	0x54
  7722 0975 BE000000 		.4byte	.LVL195
- 7723 0979 E8000000 		.4byte	.LFE9
+ 7723 0979 E8000000 		.4byte	.LFE10
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 155
+
+
  7724 097d 0400     		.2byte	0x4
  7725 097f F3       		.byte	0xf3
  7726 0980 01       		.uleb128 0x1
@@ -9236,11 +9254,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7734 0993 0100     		.2byte	0x1
  7735 0995 51       		.byte	0x51
  7736 0996 09000000 		.4byte	.LVL184-1
- 7737 099a E8000000 		.4byte	.LFE9
+ 7737 099a E8000000 		.4byte	.LFE10
  7738 099e 0400     		.2byte	0x4
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 155
-
-
  7739 09a0 F3       		.byte	0xf3
  7740 09a1 01       		.uleb128 0x1
  7741 09a2 51       		.byte	0x51
@@ -9257,7 +9272,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7752 09bf 0100     		.2byte	0x1
  7753 09c1 53       		.byte	0x53
  7754 09c2 39000000 		.4byte	.LVL199-1
- 7755 09c6 5C000000 		.4byte	.LFE10
+ 7755 09c6 5C000000 		.4byte	.LFE11
  7756 09ca 0400     		.2byte	0x4
  7757 09cc F3       		.byte	0xf3
  7758 09cd 01       		.uleb128 0x1
@@ -9275,7 +9290,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7770 09eb 0100     		.2byte	0x1
  7771 09ed 50       		.byte	0x50
  7772 09ee 39000000 		.4byte	.LVL199-1
- 7773 09f2 5C000000 		.4byte	.LFE10
+ 7773 09f2 5C000000 		.4byte	.LFE11
  7774 09f6 0400     		.2byte	0x4
  7775 09f8 F3       		.byte	0xf3
  7776 09f9 01       		.uleb128 0x1
@@ -9283,6 +9298,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7778 09fb 9F       		.byte	0x9f
  7779 09fc 00000000 		.4byte	0
  7780 0a00 00000000 		.4byte	0
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 156
+
+
  7781              	.LLST52:
  7782 0a04 00000000 		.4byte	.LVL201
  7783 0a08 08000000 		.4byte	.LVL202
@@ -9293,14 +9311,11 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7788 0a17 0100     		.2byte	0x1
  7789 0a19 54       		.byte	0x54
  7790 0a1a 8E000000 		.4byte	.LVL206
- 7791 0a1e 98000000 		.4byte	.LFE11
+ 7791 0a1e 98000000 		.4byte	.LFE12
  7792 0a22 0400     		.2byte	0x4
  7793 0a24 F3       		.byte	0xf3
  7794 0a25 01       		.uleb128 0x1
  7795 0a26 50       		.byte	0x50
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 156
-
-
  7796 0a27 9F       		.byte	0x9f
  7797 0a28 00000000 		.4byte	0
  7798 0a2c 00000000 		.4byte	0
@@ -9314,7 +9329,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7806 0a43 0100     		.2byte	0x1
  7807 0a45 50       		.byte	0x50
  7808 0a46 47000000 		.4byte	.LVL204-1
- 7809 0a4a 98000000 		.4byte	.LFE11
+ 7809 0a4a 98000000 		.4byte	.LFE12
  7810 0a4e 0400     		.2byte	0x4
  7811 0a50 F3       		.byte	0xf3
  7812 0a51 01       		.uleb128 0x1
@@ -9332,7 +9347,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7824 0a6f 0100     		.2byte	0x1
  7825 0a71 54       		.byte	0x54
  7826 0a72 84000000 		.4byte	.LVL212
- 7827 0a76 8C000000 		.4byte	.LFE12
+ 7827 0a76 8C000000 		.4byte	.LFE13
  7828 0a7a 0400     		.2byte	0x4
  7829 0a7c F3       		.byte	0xf3
  7830 0a7d 01       		.uleb128 0x1
@@ -9343,6 +9358,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7835              	.LLST55:
  7836 0a88 00000000 		.4byte	.LVL207
  7837 0a8c 52000000 		.4byte	.LVL209
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 157
+
+
  7838 0a90 0100     		.2byte	0x1
  7839 0a92 51       		.byte	0x51
  7840 0a93 52000000 		.4byte	.LVL209
@@ -9350,7 +9368,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7842 0a9b 0100     		.2byte	0x1
  7843 0a9d 50       		.byte	0x50
  7844 0a9e 55000000 		.4byte	.LVL210-1
- 7845 0aa2 8C000000 		.4byte	.LFE12
+ 7845 0aa2 8C000000 		.4byte	.LFE13
  7846 0aa6 0400     		.2byte	0x4
  7847 0aa8 F3       		.byte	0xf3
  7848 0aa9 01       		.uleb128 0x1
@@ -9358,9 +9376,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7850 0aab 9F       		.byte	0x9f
  7851 0aac 00000000 		.4byte	0
  7852 0ab0 00000000 		.4byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 157
-
-
  7853              	.LLST56:
  7854 0ab4 00000000 		.4byte	.LVL213
  7855 0ab8 08000000 		.4byte	.LVL214
@@ -9371,7 +9386,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7860 0ac7 0100     		.2byte	0x1
  7861 0ac9 53       		.byte	0x53
  7862 0aca 6D000000 		.4byte	.LVL216-1
- 7863 0ace 90000000 		.4byte	.LFE13
+ 7863 0ace 90000000 		.4byte	.LFE14
  7864 0ad2 0400     		.2byte	0x4
  7865 0ad4 F3       		.byte	0xf3
  7866 0ad5 01       		.uleb128 0x1
@@ -9389,7 +9404,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7878 0af3 0100     		.2byte	0x1
  7879 0af5 50       		.byte	0x50
  7880 0af6 6D000000 		.4byte	.LVL216-1
- 7881 0afa 90000000 		.4byte	.LFE13
+ 7881 0afa 90000000 		.4byte	.LFE14
  7882 0afe 0400     		.2byte	0x4
  7883 0b00 F3       		.byte	0xf3
  7884 0b01 01       		.uleb128 0x1
@@ -9403,11 +9418,14 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7892 0b14 0100     		.2byte	0x1
  7893 0b16 50       		.byte	0x50
  7894 0b17 08000000 		.4byte	.LVL219
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 158
+
+
  7895 0b1b 60000000 		.4byte	.LVL223
  7896 0b1f 0100     		.2byte	0x1
  7897 0b21 54       		.byte	0x54
  7898 0b22 60000000 		.4byte	.LVL223
- 7899 0b26 68000000 		.4byte	.LFE14
+ 7899 0b26 68000000 		.4byte	.LFE15
  7900 0b2a 0400     		.2byte	0x4
  7901 0b2c F3       		.byte	0xf3
  7902 0b2d 01       		.uleb128 0x1
@@ -9418,9 +9436,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7907              	.LLST59:
  7908 0b38 00000000 		.4byte	.LVL218
  7909 0b3c 2E000000 		.4byte	.LVL220
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 158
-
-
  7910 0b40 0100     		.2byte	0x1
  7911 0b42 51       		.byte	0x51
  7912 0b43 2E000000 		.4byte	.LVL220
@@ -9428,7 +9443,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7914 0b4b 0100     		.2byte	0x1
  7915 0b4d 50       		.byte	0x50
  7916 0b4e 31000000 		.4byte	.LVL221-1
- 7917 0b52 68000000 		.4byte	.LFE14
+ 7917 0b52 68000000 		.4byte	.LFE15
  7918 0b56 0400     		.2byte	0x4
  7919 0b58 F3       		.byte	0xf3
  7920 0b59 01       		.uleb128 0x1
@@ -9446,7 +9461,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7932 0b77 0100     		.2byte	0x1
  7933 0b79 53       		.byte	0x53
  7934 0b7a 39000000 		.4byte	.LVL227-1
- 7935 0b7e 5C000000 		.4byte	.LFE15
+ 7935 0b7e 5C000000 		.4byte	.LFE16
  7936 0b82 0400     		.2byte	0x4
  7937 0b84 F3       		.byte	0xf3
  7938 0b85 01       		.uleb128 0x1
@@ -9463,8 +9478,11 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7949 0b9f 39000000 		.4byte	.LVL227-1
  7950 0ba3 0100     		.2byte	0x1
  7951 0ba5 50       		.byte	0x50
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 159
+
+
  7952 0ba6 39000000 		.4byte	.LVL227-1
- 7953 0baa 5C000000 		.4byte	.LFE15
+ 7953 0baa 5C000000 		.4byte	.LFE16
  7954 0bae 0400     		.2byte	0x4
  7955 0bb0 F3       		.byte	0xf3
  7956 0bb1 01       		.uleb128 0x1
@@ -9478,14 +9496,11 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7964 0bc4 0100     		.2byte	0x1
  7965 0bc6 50       		.byte	0x50
  7966 0bc7 08000000 		.4byte	.LVL230
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 159
-
-
  7967 0bcb 79000000 		.4byte	.LVL232-1
  7968 0bcf 0100     		.2byte	0x1
  7969 0bd1 53       		.byte	0x53
  7970 0bd2 79000000 		.4byte	.LVL232-1
- 7971 0bd6 9C000000 		.4byte	.LFE16
+ 7971 0bd6 9C000000 		.4byte	.LFE17
  7972 0bda 0400     		.2byte	0x4
  7973 0bdc F3       		.byte	0xf3
  7974 0bdd 01       		.uleb128 0x1
@@ -9503,7 +9518,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  7986 0bfb 0100     		.2byte	0x1
  7987 0bfd 50       		.byte	0x50
  7988 0bfe 79000000 		.4byte	.LVL232-1
- 7989 0c02 9C000000 		.4byte	.LFE16
+ 7989 0c02 9C000000 		.4byte	.LFE17
  7990 0c06 0400     		.2byte	0x4
  7991 0c08 F3       		.byte	0xf3
  7992 0c09 01       		.uleb128 0x1
@@ -9521,8 +9536,11 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8004 0c27 0100     		.2byte	0x1
  8005 0c29 54       		.byte	0x54
  8006 0c2a 92000000 		.4byte	.LVL239
- 8007 0c2e 9C000000 		.4byte	.LFE17
+ 8007 0c2e 9C000000 		.4byte	.LFE18
  8008 0c32 0400     		.2byte	0x4
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 160
+
+
  8009 0c34 F3       		.byte	0xf3
  8010 0c35 01       		.uleb128 0x1
  8011 0c36 50       		.byte	0x50
@@ -9538,11 +9556,8 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8021 0c4f 3F000000 		.4byte	.LVL237-1
  8022 0c53 0100     		.2byte	0x1
  8023 0c55 50       		.byte	0x50
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 160
-
-
  8024 0c56 3F000000 		.4byte	.LVL237-1
- 8025 0c5a 9C000000 		.4byte	.LFE17
+ 8025 0c5a 9C000000 		.4byte	.LFE18
  8026 0c5e 0400     		.2byte	0x4
  8027 0c60 F3       		.byte	0xf3
  8028 0c61 01       		.uleb128 0x1
@@ -9560,7 +9575,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8040 0c7f 0100     		.2byte	0x1
  8041 0c81 54       		.byte	0x54
  8042 0c82 6A000000 		.4byte	.LVL245
- 8043 0c86 74000000 		.4byte	.LFE18
+ 8043 0c86 74000000 		.4byte	.LFE19
  8044 0c8a 0400     		.2byte	0x4
  8045 0c8c F3       		.byte	0xf3
  8046 0c8d 01       		.uleb128 0x1
@@ -9578,11 +9593,14 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8058 0cab 0100     		.2byte	0x1
  8059 0cad 50       		.byte	0x50
  8060 0cae 2F000000 		.4byte	.LVL243-1
- 8061 0cb2 74000000 		.4byte	.LFE18
+ 8061 0cb2 74000000 		.4byte	.LFE19
  8062 0cb6 0400     		.2byte	0x4
  8063 0cb8 F3       		.byte	0xf3
  8064 0cb9 01       		.uleb128 0x1
  8065 0cba 51       		.byte	0x51
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 161
+
+
  8066 0cbb 9F       		.byte	0x9f
  8067 0cbc 00000000 		.4byte	0
  8068 0cc0 00000000 		.4byte	0
@@ -9598,12 +9616,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8078 0cda 5A000000 		.4byte	.LVL250
  8079 0cde 5C000000 		.4byte	.LVL251
  8080 0ce2 0100     		.2byte	0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 161
-
-
  8081 0ce4 50       		.byte	0x50
  8082 0ce5 5C000000 		.4byte	.LVL251
- 8083 0ce9 5E000000 		.4byte	.LFE19
+ 8083 0ce9 5E000000 		.4byte	.LFE20
  8084 0ced 0400     		.2byte	0x4
  8085 0cef F3       		.byte	0xf3
  8086 0cf0 01       		.uleb128 0x1
@@ -9621,7 +9636,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8098 0d0e 0100     		.2byte	0x1
  8099 0d10 55       		.byte	0x55
  8100 0d11 5A000000 		.4byte	.LVL250
- 8101 0d15 5E000000 		.4byte	.LFE19
+ 8101 0d15 5E000000 		.4byte	.LFE20
  8102 0d19 0100     		.2byte	0x1
  8103 0d1b 51       		.byte	0x51
  8104 0d1c 00000000 		.4byte	0
@@ -9636,54 +9651,54 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8113 0d37 0100     		.2byte	0x1
  8114 0d39 56       		.byte	0x56
  8115 0d3a 5A000000 		.4byte	.LVL250
- 8116 0d3e 5E000000 		.4byte	.LFE19
+ 8116 0d3e 5E000000 		.4byte	.LFE20
  8117 0d42 0100     		.2byte	0x1
  8118 0d44 52       		.byte	0x52
  8119 0d45 00000000 		.4byte	0
  8120 0d49 00000000 		.4byte	0
  8121              		.section	.debug_aranges,"",%progbits
  8122 0000 94000000 		.4byte	0x94
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 162
+
+
  8123 0004 0200     		.2byte	0x2
  8124 0006 00000000 		.4byte	.Ldebug_info0
  8125 000a 04       		.byte	0x4
  8126 000b 00       		.byte	0
  8127 000c 0000     		.2byte	0
  8128 000e 0000     		.2byte	0
- 8129 0010 00000000 		.4byte	.LFB4
- 8130 0014 30000000 		.4byte	.LFE4-.LFB4
- 8131 0018 00000000 		.4byte	.LFB5
- 8132 001c 1C000000 		.4byte	.LFE5-.LFB5
- 8133 0020 00000000 		.4byte	.LFB6
- 8134 0024 88000000 		.4byte	.LFE6-.LFB6
- 8135 0028 00000000 		.4byte	.LFB7
- 8136 002c C0050000 		.4byte	.LFE7-.LFB7
- 8137 0030 00000000 		.4byte	.LFB8
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 162
-
-
- 8138 0034 30000000 		.4byte	.LFE8-.LFB8
- 8139 0038 00000000 		.4byte	.LFB9
- 8140 003c E8000000 		.4byte	.LFE9-.LFB9
- 8141 0040 00000000 		.4byte	.LFB10
- 8142 0044 5C000000 		.4byte	.LFE10-.LFB10
- 8143 0048 00000000 		.4byte	.LFB11
- 8144 004c 98000000 		.4byte	.LFE11-.LFB11
- 8145 0050 00000000 		.4byte	.LFB12
- 8146 0054 8C000000 		.4byte	.LFE12-.LFB12
- 8147 0058 00000000 		.4byte	.LFB13
- 8148 005c 90000000 		.4byte	.LFE13-.LFB13
- 8149 0060 00000000 		.4byte	.LFB14
- 8150 0064 68000000 		.4byte	.LFE14-.LFB14
- 8151 0068 00000000 		.4byte	.LFB15
- 8152 006c 5C000000 		.4byte	.LFE15-.LFB15
- 8153 0070 00000000 		.4byte	.LFB16
- 8154 0074 9C000000 		.4byte	.LFE16-.LFB16
- 8155 0078 00000000 		.4byte	.LFB17
- 8156 007c 9C000000 		.4byte	.LFE17-.LFB17
- 8157 0080 00000000 		.4byte	.LFB18
- 8158 0084 74000000 		.4byte	.LFE18-.LFB18
- 8159 0088 00000000 		.4byte	.LFB19
- 8160 008c 5E000000 		.4byte	.LFE19-.LFB19
+ 8129 0010 00000000 		.4byte	.LFB5
+ 8130 0014 30000000 		.4byte	.LFE5-.LFB5
+ 8131 0018 00000000 		.4byte	.LFB6
+ 8132 001c 1C000000 		.4byte	.LFE6-.LFB6
+ 8133 0020 00000000 		.4byte	.LFB7
+ 8134 0024 88000000 		.4byte	.LFE7-.LFB7
+ 8135 0028 00000000 		.4byte	.LFB8
+ 8136 002c C0050000 		.4byte	.LFE8-.LFB8
+ 8137 0030 00000000 		.4byte	.LFB9
+ 8138 0034 30000000 		.4byte	.LFE9-.LFB9
+ 8139 0038 00000000 		.4byte	.LFB10
+ 8140 003c E8000000 		.4byte	.LFE10-.LFB10
+ 8141 0040 00000000 		.4byte	.LFB11
+ 8142 0044 5C000000 		.4byte	.LFE11-.LFB11
+ 8143 0048 00000000 		.4byte	.LFB12
+ 8144 004c 98000000 		.4byte	.LFE12-.LFB12
+ 8145 0050 00000000 		.4byte	.LFB13
+ 8146 0054 8C000000 		.4byte	.LFE13-.LFB13
+ 8147 0058 00000000 		.4byte	.LFB14
+ 8148 005c 90000000 		.4byte	.LFE14-.LFB14
+ 8149 0060 00000000 		.4byte	.LFB15
+ 8150 0064 68000000 		.4byte	.LFE15-.LFB15
+ 8151 0068 00000000 		.4byte	.LFB16
+ 8152 006c 5C000000 		.4byte	.LFE16-.LFB16
+ 8153 0070 00000000 		.4byte	.LFB17
+ 8154 0074 9C000000 		.4byte	.LFE17-.LFB17
+ 8155 0078 00000000 		.4byte	.LFB18
+ 8156 007c 9C000000 		.4byte	.LFE18-.LFB18
+ 8157 0080 00000000 		.4byte	.LFB19
+ 8158 0084 74000000 		.4byte	.LFE19-.LFB19
+ 8159 0088 00000000 		.4byte	.LFB20
+ 8160 008c 5E000000 		.4byte	.LFE20-.LFB20
  8161 0090 00000000 		.4byte	0
  8162 0094 00000000 		.4byte	0
  8163              		.section	.debug_ranges,"",%progbits
@@ -9703,6 +9718,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8177 0030 04040000 		.4byte	.LBB85
  8178 0034 14050000 		.4byte	.LBE85
  8179 0038 18050000 		.4byte	.LBB86
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 163
+
+
  8180 003c 70050000 		.4byte	.LBE86
  8181 0040 00000000 		.4byte	0
  8182 0044 00000000 		.4byte	0
@@ -9718,9 +9736,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8192 006c AA020000 		.4byte	.LBE55
  8193 0070 00000000 		.4byte	0
  8194 0074 00000000 		.4byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 163
-
-
  8195 0078 54030000 		.4byte	.LBB63
  8196 007c 00040000 		.4byte	.LBE63
  8197 0080 04040000 		.4byte	.LBB70
@@ -9763,46 +9778,46 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8234 0114 12050000 		.4byte	.LBE78
  8235 0118 00000000 		.4byte	0
  8236 011c 00000000 		.4byte	0
- 8237 0120 00000000 		.4byte	.LFB4
- 8238 0124 30000000 		.4byte	.LFE4
- 8239 0128 00000000 		.4byte	.LFB5
- 8240 012c 1C000000 		.4byte	.LFE5
- 8241 0130 00000000 		.4byte	.LFB6
- 8242 0134 88000000 		.4byte	.LFE6
- 8243 0138 00000000 		.4byte	.LFB7
- 8244 013c C0050000 		.4byte	.LFE7
- 8245 0140 00000000 		.4byte	.LFB8
- 8246 0144 30000000 		.4byte	.LFE8
- 8247 0148 00000000 		.4byte	.LFB9
- 8248 014c E8000000 		.4byte	.LFE9
- 8249 0150 00000000 		.4byte	.LFB10
- 8250 0154 5C000000 		.4byte	.LFE10
- 8251 0158 00000000 		.4byte	.LFB11
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 164
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 164
 
 
- 8252 015c 98000000 		.4byte	.LFE11
- 8253 0160 00000000 		.4byte	.LFB12
- 8254 0164 8C000000 		.4byte	.LFE12
- 8255 0168 00000000 		.4byte	.LFB13
- 8256 016c 90000000 		.4byte	.LFE13
- 8257 0170 00000000 		.4byte	.LFB14
- 8258 0174 68000000 		.4byte	.LFE14
- 8259 0178 00000000 		.4byte	.LFB15
- 8260 017c 5C000000 		.4byte	.LFE15
- 8261 0180 00000000 		.4byte	.LFB16
- 8262 0184 9C000000 		.4byte	.LFE16
- 8263 0188 00000000 		.4byte	.LFB17
- 8264 018c 9C000000 		.4byte	.LFE17
- 8265 0190 00000000 		.4byte	.LFB18
- 8266 0194 74000000 		.4byte	.LFE18
- 8267 0198 00000000 		.4byte	.LFB19
- 8268 019c 5E000000 		.4byte	.LFE19
+ 8237 0120 00000000 		.4byte	.LFB5
+ 8238 0124 30000000 		.4byte	.LFE5
+ 8239 0128 00000000 		.4byte	.LFB6
+ 8240 012c 1C000000 		.4byte	.LFE6
+ 8241 0130 00000000 		.4byte	.LFB7
+ 8242 0134 88000000 		.4byte	.LFE7
+ 8243 0138 00000000 		.4byte	.LFB8
+ 8244 013c C0050000 		.4byte	.LFE8
+ 8245 0140 00000000 		.4byte	.LFB9
+ 8246 0144 30000000 		.4byte	.LFE9
+ 8247 0148 00000000 		.4byte	.LFB10
+ 8248 014c E8000000 		.4byte	.LFE10
+ 8249 0150 00000000 		.4byte	.LFB11
+ 8250 0154 5C000000 		.4byte	.LFE11
+ 8251 0158 00000000 		.4byte	.LFB12
+ 8252 015c 98000000 		.4byte	.LFE12
+ 8253 0160 00000000 		.4byte	.LFB13
+ 8254 0164 8C000000 		.4byte	.LFE13
+ 8255 0168 00000000 		.4byte	.LFB14
+ 8256 016c 90000000 		.4byte	.LFE14
+ 8257 0170 00000000 		.4byte	.LFB15
+ 8258 0174 68000000 		.4byte	.LFE15
+ 8259 0178 00000000 		.4byte	.LFB16
+ 8260 017c 5C000000 		.4byte	.LFE16
+ 8261 0180 00000000 		.4byte	.LFB17
+ 8262 0184 9C000000 		.4byte	.LFE17
+ 8263 0188 00000000 		.4byte	.LFB18
+ 8264 018c 9C000000 		.4byte	.LFE18
+ 8265 0190 00000000 		.4byte	.LFB19
+ 8266 0194 74000000 		.4byte	.LFE19
+ 8267 0198 00000000 		.4byte	.LFB20
+ 8268 019c 5E000000 		.4byte	.LFE20
  8269 01a0 00000000 		.4byte	0
  8270 01a4 00000000 		.4byte	0
  8271              		.section	.debug_line,"",%progbits
  8272              	.Ldebug_line0:
- 8273 0000 21060000 		.section	.debug_str,"MS",%progbits,1
+ 8273 0000 29060000 		.section	.debug_str,"MS",%progbits,1
  8273      02005902 
  8273      00000201 
  8273      FB0E0D00 
@@ -9823,6 +9838,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8279 0028 73617473 		.ascii	"sats\000"
  8279      00
  8280              	.LASF54:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 165
+
+
  8281 002d 6572725F 		.ascii	"err_latitude\000"
  8281      6C617469 
  8281      74756465 
@@ -9838,9 +9856,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8286              	.LASF104:
  8287 004c 6D696E6D 		.ascii	"minmea_sat_info\000"
  8287      65615F73 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 165
-
-
  8287      61745F69 
  8287      6E666F00 
  8288              	.LASF131:
@@ -9883,6 +9898,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8309 00b8 73706565 		.ascii	"speed\000"
  8309      6400
  8310              	.LASF10:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 166
+
+
  8311 00be 5F5F696E 		.ascii	"__int_least32_t\000"
  8311      745F6C65 
  8311      61737433 
@@ -9898,9 +9916,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8316              	.LASF70:
  8317 00e0 6D696E6D 		.ascii	"minmea_sentence_gga\000"
  8317      65615F73 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 166
-
-
  8317      656E7465 
  8317      6E63655F 
  8317      67676100 
@@ -9943,6 +9958,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8329              	.LASF137:
  8330 01cf 64696769 		.ascii	"digit\000"
  8330      7400
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 167
+
+
  8331              	.LASF79:
  8332 01d5 6D696E6D 		.ascii	"minmea_sentence_id\000"
  8332      65615F73 
@@ -9958,9 +9976,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8335              	.LASF97:
  8336 01fb 6C6F6E67 		.ascii	"longitude_error_deviation\000"
  8336      69747564 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 167
-
-
  8336      655F6572 
  8336      726F725F 
  8336      64657669 
@@ -10003,6 +10018,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8354 0277 63686563 		.ascii	"checksum\000"
  8354      6B73756D 
  8354      00
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 168
+
+
  8355              	.LASF134:
  8356 0280 6669656C 		.ascii	"field\000"
  8356      6400
@@ -10018,9 +10036,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8362      6E5F6469 
  8362      72656374 
  8362      696F6E00 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 168
-
-
  8363              	.LASF102:
  8364 02a6 70646F70 		.ascii	"pdop\000"
  8364      00
@@ -10063,6 +10078,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8381 034a 4D494E4D 		.ascii	"MINMEA_UNKNOWN\000"
  8381      45415F55 
  8381      4E4B4E4F 
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 169
+
+
  8381      574E00
  8382              	.LASF120:
  8383 0359 5F5F676E 		.ascii	"__gnuc_va_list\000"
@@ -10078,9 +10096,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8388              	.LASF152:
  8389 0372 6C617469 		.ascii	"latitude_direction\000"
  8389      74756465 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 169
-
-
  8389      5F646972 
  8389      65637469 
  8389      6F6E00
@@ -10123,6 +10138,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8406              	.LASF82:
  8407 03f7 4D494E4D 		.ascii	"MINMEA_FAA_MODE_DIFFERENTIAL\000"
  8407      45415F46 
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 170
+
+
  8407      41415F4D 
  8407      4F44455F 
  8407      44494646 
@@ -10138,9 +10156,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8413      6174696F 
  8413      6E00
  8414              	.LASF38:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 170
-
-
  8415 042d 4D494E4D 		.ascii	"MINMEA_SENTENCE_RMC\000"
  8415      45415F53 
  8415      454E5445 
@@ -10183,6 +10198,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8433      45415F53 
  8433      454E5445 
  8433      4E43455F 
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 171
+
+
  8433      47534100 
  8434              	.LASF13:
  8435 04b1 75696E74 		.ascii	"uint8_t\000"
@@ -10198,9 +10216,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8440              	.LASF36:
  8441 04ce 4D494E4D 		.ascii	"MINMEA_SENTENCE_GST\000"
  8441      45415F53 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 171
-
-
  8441      454E5445 
  8441      4E43455F 
  8441      47535400 
@@ -10243,6 +10258,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8455      6720696E 
  8455      7400
  8456              	.LASF167:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 172
+
+
  8457 055d 6D696E6D 		.ascii	"minmea_getdatetime\000"
  8457      65615F67 
  8457      65746461 
@@ -10258,9 +10276,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8461 0581 76616C69 		.ascii	"valid\000"
  8461      6400
  8462              	.LASF144:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 172
-
-
  8463 0587 69417272 		.ascii	"iArr\000"
  8463      00
  8464              	.LASF129:
@@ -10303,6 +10318,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8481      61727365 
  8481      5F726D63 
  8481      00
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 173
+
+
  8482              	.LASF50:
  8483 05fa 7365636F 		.ascii	"seconds\000"
  8483      6E647300 
@@ -10318,9 +10336,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8490              	.LASF156:
  8491 0613 6D696E6D 		.ascii	"minmea_parse_gsa\000"
  8491      65615F70 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 173
-
-
  8491      61727365 
  8491      5F677361 
  8491      00
@@ -10363,6 +10378,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8506              	.LASF139:
  8507 0689 64417272 		.ascii	"dArr\000"
  8507      00
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 174
+
+
  8508              	.LASF175:
  8509 068e 68657832 		.ascii	"hex2int\000"
  8509      696E7400 
@@ -10378,9 +10396,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8515      636B5F64 
  8515      65677265 
  8515      657300
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 174
-
-
  8516              	.LASF93:
  8517 06b3 73656D69 		.ascii	"semi_major_deviation\000"
  8517      5F6D616A 
@@ -10423,6 +10438,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8532              	.LASF49:
  8533 0727 6D696E75 		.ascii	"minutes\000"
  8533      74657300 
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 175
+
+
  8534              	.LASF125:
  8535 072f 73747269 		.ascii	"strict\000"
  8535      637400
@@ -10438,9 +10456,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8540              	.LASF48:
  8541 0751 686F7572 		.ascii	"hours\000"
  8541      7300
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 175
-
-
  8542              	.LASF5:
  8543 0757 5F5F7569 		.ascii	"__uint8_t\000"
  8543      6E74385F 
@@ -10483,6 +10498,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8559      00
  8560              	.LASF7:
  8561 07d0 6C6F6E67 		.ascii	"long unsigned int\000"
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 176
+
+
  8561      20756E73 
  8561      69676E65 
  8561      6420696E 
@@ -10498,9 +10516,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8566              	.LASF46:
  8567 07f7 79656172 		.ascii	"year\000"
  8567      00
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 176
-
-
  8568              	.LASF20:
  8569 07fc 746D5F6D 		.ascii	"tm_min\000"
  8569      696E00
@@ -10543,6 +10558,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8589 0858 617A696D 		.ascii	"azimuth\000"
  8589      75746800 
  8590              	.LASF85:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 177
+
+
  8591 0860 4D494E4D 		.ascii	"MINMEA_FAA_MODE_SIMULATED\000"
  8591      45415F46 
  8591      41415F4D 
@@ -10558,9 +10576,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8597 0888 6D696E6D 		.ascii	"minmea_sentence_rmc\000"
  8597      65615F73 
  8597      656E7465 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 177
-
-
  8597      6E63655F 
  8597      726D6300 
  8598              	.LASF21:
@@ -10603,6 +10618,9 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8615      726F7200 
  8616              	.LASF28:
  8617 0907 646F7562 		.ascii	"double\000"
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccNPhHLt.s 			page 178
+
+
  8617      6C6500
  8618              	.LASF91:
  8619 090e 6D696E6D 		.ascii	"minmea_sentence_gst\000"
@@ -10618,9 +10636,6 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 1
  8621      67737600 
  8622              	.LASF111:
  8623 0936 6D696E6D 		.ascii	"minmea_sentence_vtg\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccCmCjyy.s 			page 178
-
-
  8623      65615F73 
  8623      656E7465 
  8623      6E63655F 
