@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   28:main_cm0p.c   **** volatile uint16 pulseWidthUS = 0;
   29:main_cm0p.c   **** volatile uint8 newEchoPulseReceived = 0;
   30:main_cm0p.c   **** volatile uint8 disconnected = 0;
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 2
 
 
   31:main_cm0p.c   **** volatile uint8 controlsHaveBeenReset = 0;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   66              	.LVL3:
   47:main_cm0p.c   ****             break;
   67              		.loc 1 47 0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 3
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 3
 
 
   68 0030 14E0     		b	.L1
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  106              	.L1:
  107              	.LBE81:
   64:main_cm0p.c   ****             break;
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 4
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 4
 
 
   65:main_cm0p.c   ****         }
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   13:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *******************************************************************************/
   14:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
   15:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /**
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 5
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 5
 
 
   16:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \addtogroup group_tcpwm
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   70:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * Start, Reload, Stop, Capture, and Count Inputs
   71:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
   72:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \n
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 6
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 6
 
 
   73:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \b PWM
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  127:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \ref Cy_TCPWM_QuadDec_Enable).
  128:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
  129:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * Many functions work with an individual counter. You can also manage multiple 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 7
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 7
 
 
  130:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * counters simultaneously for certain functions. These are listed in the 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  184:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *   </tr>
  185:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * </table>
  186:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 8
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 8
 
 
  187:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \section group_tcpwm_changelog Changelog
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  241:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #if !defined(CY_TCPWM_H)
  242:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_H
  243:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 9
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 9
 
 
  244:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #include <stdint.h>
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  298:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_INPUT_CREATOR          (0xFFFFFFFFU)
  299:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** \} group_tcpwm_input_selection */
  300:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 10
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 10
 
 
  301:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /**
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  355:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** Initial value for the counter in the Up/Down counting modes */
  356:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_CNT_UP_DOWN_INIT_VAL       (0x1U)
  357:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** \} group_tcpwm_macros_common */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 11
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 11
 
 
  358:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  412:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
  413:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \funcusage
  414:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \snippet tcpwm\1.10\counter\snippet\main.c snippet_Cy_TCPWM_Enable_Multiple
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 12
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 12
 
 
  415:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  469:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * Function Name: Cy_TCPWM_TriggerReloadOrIndex
  470:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** ****************************************************************************//**
  471:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 13
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 13
 
 
  472:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * Triggers a software reload event (or index in QuadDec mode).
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  526:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
  527:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *******************************************************************************/
  528:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** __STATIC_INLINE void Cy_TCPWM_TriggerCaptureOrSwap(TCPWM_Type *base, uint32_t counters)
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 14
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 14
 
 
  529:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** {
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  583:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  584:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  585:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /*******************************************************************************
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 15
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 15
 
 
  586:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * Function Name: Cy_TCPWM_SetInterrupt
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  640:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * Returns the interrupt mask.
  641:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
  642:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \param base
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 16
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 16
 
 
  643:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The pointer to a TCPWM instance.
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  157              	.LBB85:
  580:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h ****     (void)TCPWM_CNT_INTR(base, cntNum);
  158              		.loc 2 580 0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 17
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 17
 
 
  159 000e D823     		movs	r3, #216
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   36:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #ifdef __cplusplus
   37:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****  extern "C" {
   38:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #endif
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 18
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 18
 
 
   39:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   93:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #elif defined ( __ICCARM__ )
   94:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****   #if defined __ARMVFP__
   95:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****     #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 19
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 19
 
 
   96:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****   #endif
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  150:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****   #ifndef __NVIC_PRIO_BITS
  151:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****     #define __NVIC_PRIO_BITS          2U
  152:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****     #warning "__NVIC_PRIO_BITS not defined in device header file; using default!"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 20
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 20
 
 
  153:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****   #endif
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  207:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** /**
  208:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****   \brief  Union type to access the Application Program Status Register (APSR).
  209:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****  */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 21
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 21
 
 
  210:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** typedef union
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  264:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****     uint32_t T:1;                        /*!< bit:     24  Thumb bit        (read 0) */
  265:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****     uint32_t _reserved1:3;               /*!< bit: 25..27  Reserved */
  266:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****     uint32_t V:1;                        /*!< bit:     28  Overflow condition code flag */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 22
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 22
 
 
  267:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****     uint32_t C:1;                        /*!< bit:     29  Carry condition code flag */
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  321:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****   \brief      Type definitions for the NVIC Registers
  322:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****   @{
  323:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****  */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 23
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 23
 
 
  324:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  378:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
  379:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #define SCB_CPUID_ARCHITECTURE_Pos         16U                                            /*!< SCB 
  380:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #define SCB_CPUID_ARCHITECTURE_Msk         (0xFUL << SCB_CPUID_ARCHITECTURE_Pos)          /*!< SCB 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 24
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 24
 
 
  381:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  435:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #define SCB_AIRCR_VECTCLRACTIVE_Pos         1U                                            /*!< SCB 
  436:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #define SCB_AIRCR_VECTCLRACTIVE_Msk        (1UL << SCB_AIRCR_VECTCLRACTIVE_Pos)           /*!< SCB 
  437:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 25
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 25
 
 
  438:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** /* SCB System Control Register Definitions */
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  492:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
  493:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** /* SysTick Reload Register Definitions */
  494:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #define SysTick_LOAD_RELOAD_Pos             0U                                            /*!< SysT
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 26
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 26
 
 
  495:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #define SysTick_LOAD_RELOAD_Msk            (0xFFFFFFUL /*<< SysTick_LOAD_RELOAD_Pos*/)    /*!< SysT
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  549:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #define MPU_CTRL_HFNMIENA_Pos               1U                                            /*!< MPU 
  550:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #define MPU_CTRL_HFNMIENA_Msk              (1UL << MPU_CTRL_HFNMIENA_Pos)                 /*!< MPU 
  551:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 27
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 27
 
 
  552:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #define MPU_CTRL_ENABLE_Pos                 0U                                            /*!< MPU 
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  606:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****   \defgroup CMSIS_CoreDebug       Core Debug Registers (CoreDebug)
  607:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****   \brief    Cortex-M0+ Core Debug Registers (DCB registers, SHCSR, and DFSR) are only accessible ov
  608:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****             Therefore they are not covered by the Cortex-M0+ header file.
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 28
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 28
 
 
  609:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h ****   @{
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  663:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
  664:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
  665:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 29
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 29
 
 
  666:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** /*******************************************************************************
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  720:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** /* Interrupt Priorities are WORD accessible only under Armv6-M                  */
  721:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** /* The following MACROS handle generation of the register offset and byte masks */
  722:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #define _BIT_SHIFT(IRQn)         (  ((((uint32_t)(int32_t)(IRQn))         )      &  0x03UL) * 8UL)
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 30
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 30
 
 
  723:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** #define _SHP_IDX(IRQn)           ( (((((uint32_t)(int32_t)(IRQn)) & 0x0FUL)-8UL) >>    2UL)      )
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  777:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** }
  778:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
  779:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 31
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 31
 
 
  780:Generated_Source\PSoC6\pdl\cmsis/include/core_cm0plus.h **** /**
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  182 0024 1E3B     		subs	r3, r3, #30
  183 0026 9340     		lsls	r3, r3, r2
  184 0028 C022     		movs	r2, #192
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 32
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 32
 
 
  185 002a 5200     		lsls	r2, r2, #1
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  232 000e 054B     		ldr	r3, .L17+4
  233 0010 1B78     		ldrb	r3, [r3]
  234 0012 022B     		cmp	r3, #2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 33
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 33
 
 
  235 0014 F9D1     		bne	.L16
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  278 000c 9A80     		strh	r2, [r3, #4]
   91:main_cm0p.c   ****     
   92:main_cm0p.c   ****     serviceHandle.value = serviceData;
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 34
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 34
 
 
  279              		.loc 1 92 0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  325 0008 7047     		bx	lr
  326              	.L24:
  327 000a C046     		.align	2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 35
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 35
 
 
  328              	.L23:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   21:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** #if defined(__cplusplus)
   22:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** extern "C" {
   23:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** #endif
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 36
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 36
 
 
   24:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** 
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   78:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** 
   79:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** /**
   80:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** * \addtogroup group_tcpwm_macros_counter
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 37
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 37
 
 
   81:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** * \{
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  135:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** 
  136:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** 
  137:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** /*******************************************************************************
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 38
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 38
 
 
  138:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** *        Function Prototypes
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  192:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** * \param base
  193:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** * The pointer to a TCPWM instance.
  194:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** *
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 39
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 39
 
 
  195:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** * \param cntNum 
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  249:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** * \param cntNum 
  250:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** * The Counter instance number in the selected TCPWM.
  251:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** *
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 40
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 40
 
 
  252:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_counter.h **** * \return
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  396 0028 1F23     		movs	r3, #31
  397 002a 1A40     		ands	r2, r3
  398              	.LVL31:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 41
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 41
 
 
  399 002c 1E3B     		subs	r3, r3, #30
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  447 000a 1100     		movs	r1, r2
  448 000c 0140     		ands	r1, r0
  449              	.LVL34:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 42
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 42
 
 
  114:main_cm0p.c   ****     uint8 right_bit = (inputControls >> 1) & 0x01;
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  494              		.file 5 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h"
    1:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** /***************************************************************************//**
    2:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** * \file cy_tcpwm_pwm.h
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 43
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 43
 
 
    3:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** * \version 1.10
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   57:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h ****     bool        enablePeriodSwap;   /**< Enables swapping of period 0 and period 1 on terminal coun
   58:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h ****     uint32_t    compare0;           /**< Sets the value for Compare0 */
   59:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h ****     uint32_t    compare1;           /**< Sets the value for Compare1 */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 44
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 44
 
 
   60:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h ****     bool        enableCompareSwap;  /**< If enabled, the compare values are swapped on the terminal
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  114:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** /** \} group_tcpwm_pwm_alignment */
  115:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** 
  116:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** /** \defgroup group_tcpwm_pwm_kill_modes PWM kill modes
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 45
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 45
 
 
  117:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** * Sets the kill mode for the PWM.
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  171:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** /** The configuration of PWM output signal in Pseudo Random Mode */
  172:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** #define CY_TCPWM_PWM_MODE_PR         (_VAL2FLD(TCPWM_CNT_TR_CTRL2_CC_MATCH_MODE, CY_TCPWM_PWM_TR_CT
  173:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h ****                                       _VAL2FLD(TCPWM_CNT_TR_CTRL2_OVERFLOW_MODE, CY_TCPWM_PWM_TR_CT
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 46
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 46
 
 
  174:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h ****                                       _VAL2FLD(TCPWM_CNT_TR_CTRL2_UNDERFLOW_MODE, CY_TCPWM_PWM_TR_C
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  228:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** * The pointer to a TCPWM instance.
  229:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** *
  230:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** * \param cntNum 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 47
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 47
 
 
  231:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h **** * The Counter instance number in the selected TCPWM.
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  285:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h ****     uint32_t status = TCPWM_CNT_STATUS(base, cntNum);
  286:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h ****     
  287:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h ****     /* Generates proper up counting status, does not generated by HW */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 48
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 48
 
 
  288:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm_pwm.h ****     status &= ~CY_TCPWM_PWM_STATUS_UP_COUNTING;
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  514 0040 1500     		movs	r5, r2
  515 0042 9324     		movs	r4, #147
  516 0044 A400     		lsls	r4, r4, #2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 49
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 49
 
 
  517 0046 FA23     		movs	r3, #250
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  557              		.align	2
  558              	.L36:
  559 0064 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 50
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 50
 
 
  560 0068 2E090000 		.word	2350
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  606 0014 00000000 		.word	.LANCHOR0
  607 0018 00000000 		.word	gpsLineBuff
  608              		.cfi_endproc
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 51
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 51
 
 
  609              	.LFE652:
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   23:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** * The functions and other declarations used in this driver are in cy_scb_spi.h, 
   24:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** * cy_scb_uart.h, cy_scb_ezi2c.h, cy_scb_i2c.h respectively. Include cy_pdl.h 
   25:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** * (ModusToolbox only) to get access to all functions and declarations in the PDL.
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 52
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 52
 
 
   26:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   80:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** *         before operation is performed.
   81:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** *         </td>
   82:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** *   </tr>
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 53
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 53
 
 
   83:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** * </table>
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  137:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #include "cy_device.h"
  138:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #include "cy_device_headers.h"
  139:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #include "cy_syslib.h"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 54
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 54
 
 
  140:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #include "cy_syspm.h"
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  194:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** 
  195:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** __STATIC_INLINE uint32_t Cy_SCB_GetSlaveInterruptStatus(CySCB_Type const *base);
  196:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** __STATIC_INLINE void     Cy_SCB_SetSlaveInterruptMask  (CySCB_Type *base, uint32_t interruptMask);
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 55
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 55
 
 
  197:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** __STATIC_INLINE uint32_t Cy_SCB_GetSlaveInterruptMask  (CySCB_Type const *base);
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  251:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #define CY_SCB_DRV_VERSION_MAJOR    (2)
  252:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** 
  253:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** /** Driver minor version */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 56
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 56
 
 
  254:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #define CY_SCB_DRV_VERSION_MINOR    (20)
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  308:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #define CY_SCB_TX_INTR_NOT_FULL        SCB_INTR_TX_NOT_FULL_Msk
  309:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** 
  310:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** /** The TX FIFO is empty */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 57
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 57
 
 
  311:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #define CY_SCB_TX_INTR_EMPTY           SCB_INTR_TX_EMPTY_Msk
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  365:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** /**
  366:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** * \defgroup group_scb_common_macros_slave_intr Slave Interrupt Statuses
  367:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** * \{
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 58
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 58
 
 
  368:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** */
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  422:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** /** The I2C master generated a Stop */
  423:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #define CY_SCB_MASTER_INTR_I2C_STOP        SCB_INTR_M_I2C_STOP_Msk
  424:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 59
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 59
 
 
  425:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** /** The I2C master bus error (detection of unexpected START or STOP condition)
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  479:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #define CY_SCB_I2C_CFG_DEF_VAL      (_VAL2FLD(SCB_I2C_CFG_SDA_IN_FILT_TRIM, 3UL)   | \
  480:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h ****                                      _VAL2FLD(SCB_I2C_CFG_SDA_IN_FILT_SEL, 1UL)    | \
  481:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h ****                                      _VAL2FLD(SCB_I2C_CFG_SCL_IN_FILT_SEL, 1UL)    | \
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 60
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 60
 
 
  482:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h ****                                      _VAL2FLD(SCB_I2C_CFG_SDA_OUT_FILT0_TRIM, 2UL) | \
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  536:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #define CY_SCB_SPI_CTRL_CLK_MODE_Pos    SCB_SPI_CTRL_CPHA_Pos
  537:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** #define CY_SCB_SPI_CTRL_CLK_MODE_Msk    (SCB_SPI_CTRL_CPHA_Msk | SCB_SPI_CTRL_CPOL_Msk)
  538:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 61
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 61
 
 
  539:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** /* UART parity and parity enable combination */
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  593:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** 
  594:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** 
  595:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** /*******************************************************************************
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 62
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 62
 
 
  596:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** *                       In-line Function Implementation
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  661              		.loc 1 155 0
  662 001c 0F4A     		ldr	r2, .L49+4
  663 001e 527A     		ldrb	r2, [r2, #9]
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 63
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 63
 
 
  664 0020 012A     		cmp	r2, #1
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  631:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** * The pointer to the SCB instance.
  632:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** *
  633:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** * \param level
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 64
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 64
 
 
  634:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_common.h **** * When there are more data elements in the FIFO than this level, the RX level
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  721              	.LFE653:
  722              		.size	loadGPSInput, .-loadGPSInput
  723              		.global	__aeabi_idiv
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 65
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 65
 
 
  724              		.global	__aeabi_idivmod
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  773              		.file 7 "minmea.h"
    1:minmea.h      **** /*
    2:minmea.h      ****  * Copyright © 2014 Kosma Moczek <kosma@cloudyourcar.com>
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 66
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 66
 
 
    3:minmea.h      ****  * This program is free software. It comes without any warranty, to the extent
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   57:minmea.h      ****     int minutes;
   58:minmea.h      ****     int seconds;
   59:minmea.h      ****     int microseconds;
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 67
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 67
 
 
   60:minmea.h      **** };
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  114:minmea.h      ****     struct minmea_float longitude;
  115:minmea.h      ****     struct minmea_time time;
  116:minmea.h      ****     char status;
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 68
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 68
 
 
  117:minmea.h      ****     char mode;
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  171:minmea.h      **** };
  172:minmea.h      **** 
  173:minmea.h      **** struct minmea_sentence_zda {
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 69
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 69
 
 
  174:minmea.h      ****     struct minmea_time time;
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  228:minmea.h      **** 
  229:minmea.h      **** /**
  230:minmea.h      ****  * Convert GPS UTC date/time representation to a UNIX calendar time.
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 70
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 70
 
 
  231:minmea.h      ****  */
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  783 002c 4E4B     		ldr	r3, .L66+8
  784 002e 9C42     		cmp	r4, r3
  785 0030 25DB     		blt	.L59
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 71
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 71
 
 
  276:minmea.h      ****         return NAN;
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  834              	.L59:
  276:minmea.h      ****     int_least32_t degrees = f->value / (f->scale * 100);
  835              		.loc 7 276 0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 72
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 72
 
 
  836 007e 3B4F     		ldr	r7, .L66+12
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  884 00be 011C     		adds	r1, r0, #0
  885 00c0 281C     		adds	r0, r5, #0
  886 00c2 FFF7FEFF 		bl	__aeabi_fdiv
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 73
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 73
 
 
  887              	.LVL81:
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  935 0108 0422     		movs	r2, #4
  936 010a 09A9     		add	r1, sp, #36
  937 010c 1720     		movs	r0, #23
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 74
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 74
 
 
  938 010e FFF7FEFF 		bl	updateCharacteristic
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  293:minmea.h      ****         return NAN;
  974              		.loc 7 293 0
  975 013e 0B48     		ldr	r0, .L66+12
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 75
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 75
 
 
  976              	.L56:
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1023              	.LFB655:
  185:main_cm0p.c   **** 
  186:main_cm0p.c   **** int main(void)
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 76
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 76
 
 
  187:main_cm0p.c   **** {
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   41:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __ASM                                  __asm
   42:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
   43:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __INLINE
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 77
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 77
 
 
   44:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __INLINE                               inline
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   98:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_WRITE { uint32_t v; };
   99:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
  100:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32_WRITE(addr, val)    (void)((((struct T_UINT32_WRITE *)(void *)(addr))-
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 78
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 78
 
 
  101:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
    5:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Provides an API declaration of the GPIO driver
    6:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
    7:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ********************************************************************************
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 79
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 79
 
 
    8:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \copyright
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   62:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *    TRM and the device datasheet.
   63:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
   64:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Multiple pins on a port can be updated using direct port register writes with an
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 80
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 80
 
 
   65:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * appropriate port mask. An example is shown below, highlighting the different ways of 
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  119:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     </td>
  120:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>Added a new functionality related to AMux bus.</td>
  121:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   </tr>
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 81
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 81
 
 
  122:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *   <tr>
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  176:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
  177:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** Driver major version */
  178:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DRV_VERSION_MAJOR       1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 82
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 82
 
 
  179:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  233:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
  234:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \addtogroup group_gpio_data_structures
  235:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 83
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 83
 
 
  236:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  290:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_STATUS_MASK               (0x01UL)   /**< Single pin mask for interrupt status
  291:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_EN_MASK                   (0x01UL)   /**< Single pin mask for interrupt status
  292:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_MASKED_MASK               (0x01UL)   /**< Single pin mask for masked interrupt
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 84
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 84
 
 
  293:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_INTR_SET_MASK                  (0x01UL)   /**< Single pin mask for setting the inte
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  347:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
  348:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_INT_EDGE_VALID(intEdge)     ((CY_GPIO_INTR_DISABLE  == (intEdge)) || \
  349:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_GPIO_INTR_RISING   == (intEdge)) || \
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 85
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 85
 
 
  350:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 (CY_GPIO_INTR_FALLING  == (intEdge)) || \
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  404:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
  405:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the drive mode of the pin.
  406:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 86
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 86
 
 
  407:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_DM_ANALOG                      (0x00UL) /**< Analog High-Z. Input buffer off */
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  461:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
  462:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
  463:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 87
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 87
 
 
  464:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_sioVreg SIO output buffer mode
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  518:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} group_gpio_macros */
  519:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
  520:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /***************************************
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 88
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 88
 
 
  521:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *        Function Prototypes
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  575:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetVregEn(GPIO_PRT_Type* base, uint32_t pinNum);
  576:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetIbufMode(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
  577:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetIbufMode(GPIO_PRT_Type* base, uint32_t pinNum);
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 89
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 89
 
 
  578:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetVtripSel(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  632:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * HSIOM input selection
  633:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
  634:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \note 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 90
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 90
 
 
  635:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * This function modifies a port register in a read-modify-write operation. It is
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  689:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t returnValue;
  690:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     uint32_t portNum;
  691:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     HSIOM_PRT_V1_Type* portAddrHSIOM;
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 91
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 91
 
 
  692:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  746:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** }
  747:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
  748:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} group_gpio_functions_init */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 92
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 92
 
 
  749:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  803:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
  804:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *******************************************************************************/
  805:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_Write(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value)
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 93
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 93
 
 
  806:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** {
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  860:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
  861:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \param pinNum
  862:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Position of the pin bit-field within the port register
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 94
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 94
 
 
  863:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  917:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Position of the pin bit-field within the port register
  918:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
  919:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \funcusage
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 95
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 95
 
 
  920:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \snippet gpio/gpio_v1_10_sut_01.cydsn/main_cm4.c snippet_Cy_GPIO_Inv
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1088 0032 C900     		lsls	r1, r1, #3
  1089 0034 8622     		movs	r2, #134
  1090 0036 5200     		lsls	r2, r2, #1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 96
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 96
 
 
  1091 0038 9950     		str	r1, [r3, r2]
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1130              	.LBB138:
  1131              		.file 10 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_uart.h"
    1:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** /***************************************************************************//**
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 97
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 97
 
 
    2:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * \file cy_scb_uart.h
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
   56:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * steps listed below:
   57:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * * \ref group_scb_uart_config
   58:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * * \ref group_scb_uart_pins
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 98
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 98
 
 
   59:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * * \ref group_scb_uart_clock
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  113:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * Clocking and Oversampling to get information about how to configure the UART to run with
  114:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * desired baud rate.</b>
  115:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 99
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 99
 
 
  116:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** ********************************************************************************
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  170:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *   \ref Cy_SCB_UART_GetNumInTxFifo.
  171:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *
  172:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * \snippet SCB_CompDatasheet_sut_01_revA.cydsn\uart_snippets.c UART_TRANSMIT_DATA_LL
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 100
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 100
 
 
  173:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  227:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * To route SCB TX or RX trigger signals to DMA controller use \ref group_trigmux
  228:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * driver API.
  229:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 101
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 101
 
 
  230:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * \note
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  284:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *     <td>A</td>
  285:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *     <td>A cast should not be performed between a pointer to object type and
  286:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *         a different pointer to object type.</td>
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 102
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 102
 
 
  287:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *     <td>
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  341:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *     <td></td>
  342:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *   </tr>
  343:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *   <tr>
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 103
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 103
 
 
  344:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *     <td>Replaced variables that have limited range of values with enumerated
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  398:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * \addtogroup group_scb_uart_enums
  399:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * \{
  400:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 104
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 104
 
 
  401:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** 
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  455:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** } cy_en_scb_uart_polarity_t;
  456:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** /** \} group_scb_uart_enums */
  457:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 105
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 105
 
 
  458:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** 
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  512:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h ****     * this parameter is ignored)
  513:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h ****     *
  514:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h ****     */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 106
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 106
 
 
  515:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h ****     bool        enableInputFilter;
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  569:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h ****     */
  570:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h ****     bool        smartCardRetryOnNack;
  571:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 107
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 107
 
 
  572:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h ****     /**
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  626:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * ensure that the defined instance of this structure remains in scope
  627:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * while the drive is in use.
  628:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** */
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 108
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 108
 
 
  629:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** typedef struct cy_stc_scb_uart_context
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  683:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** 
  684:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** /**
  685:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * \addtogroup group_scb_uart_high_level_functions
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 109
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 109
 
 
  686:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * \{
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  740:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** void Cy_SCB_UART_Interrupt(CySCB_Type *base, cy_stc_scb_uart_context_t *context);
  741:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** 
  742:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** __STATIC_INLINE void Cy_SCB_UART_RegisterCallback(CySCB_Type const *base, cy_cb_scb_uart_handle_eve
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 110
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 110
 
 
  743:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h ****                                                   cy_stc_scb_uart_context_t *context);
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  797:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** */
  798:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** #define CY_SCB_UART_RX_FULL            (SCB_INTR_RX_FULL_Msk)
  799:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 111
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 111
 
 
  800:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** /**
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  854:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** 
  855:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** /**
  856:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * \defgroup group_scb_uart_macros_receive_status UART Receive Statuses
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 112
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 112
 
 
  857:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * \{
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  911:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * \{
  912:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * Macros to check UART events passed by \ref cy_cb_scb_uart_handle_events_t callback.
  913:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** * Note that only single event is notified by the callback when it is called.
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 113
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 113
 
 
  914:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** */
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  968:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** 
  969:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** #define CY_SCB_UART_RX_INTR        (CY_SCB_RX_INTR_LEVEL | CY_SCB_RX_INTR_OVERFLOW | CY_SCB_RX_INTR
  970:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h ****                                     CY_SCB_RX_INTR_UART_PARITY_ERROR | CY_SCB_RX_INTR_UART_BREAK_DE
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 114
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 114
 
 
  971:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** 
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
 1025:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *                    In-line Function Implementation
 1026:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** *******************************************************************************/
 1027:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 115
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 115
 
 
 1028:Generated_Source\PSoC6\pdl\drivers/peripheral/scb/cy_scb_uart.h **** /**
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1160 0078 5B78     		ldrb	r3, [r3, #1]
  1161 007a 002B     		cmp	r3, #0
  1162 007c 09D1     		bne	.L70
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 116
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 116
 
 
  225:main_cm0p.c   ****             processControls(0);
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1202 00b4 002B     		cmp	r3, #0
  1203 00b6 13D0     		beq	.L73
  240:main_cm0p.c   ****             printf("Object ahead in: %d cm (width: %d)\n", pulseWidthUS / 58, pulseWidthUS);
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 117
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 117
 
 
  1204              		.loc 1 240 0
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1249              	.L75:
  1250 00fe C046     		.align	2
  1251              	.L74:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 118
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 118
 
 
  1252 0100 00000810 		.word	268959744
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1291      70747320 
  1292 0065 000000   		.space	3
  1293              	.LC27:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 119
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 119
 
 
  1294 0068 53657475 		.ascii	"Setup complete\000"
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1334 0008 00       		.space	1
  1335              		.type	readingLine, %object
  1336              		.size	readingLine, 1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 120
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 120
 
 
  1337              	readingLine:
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1391 0026 02       		.byte	0x2
  1392 0027 1C010000 		.4byte	0x11c
  1393 002b 0B       		.byte	0xb
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 121
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 121
 
 
  1394 002c 24       		.byte	0x24
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1448 0098 EB230000 		.4byte	.LASF17
  1449 009c 0B       		.byte	0xb
  1450 009d 04       		.uleb128 0x4
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 122
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 122
 
 
  1451 009e EA340000 		.4byte	.LASF18
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1505 010a 9D020000 		.4byte	.LASF36
  1506 010e 1E       		.byte	0x1e
  1507 010f 04       		.uleb128 0x4
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 123
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 123
 
 
  1508 0110 1D3E0000 		.4byte	.LASF37
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1562 017c 04       		.uleb128 0x4
  1563 017d EB1D0000 		.4byte	.LASF50
  1564 0181 0B       		.byte	0xb
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 124
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 124
 
 
  1565 0182 04       		.uleb128 0x4
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1619 01ee 04       		.uleb128 0x4
  1620 01ef 372A0000 		.4byte	.LASF69
  1621 01f3 1E       		.byte	0x1e
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 125
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 125
 
 
  1622 01f4 04       		.uleb128 0x4
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1676 0260 04       		.uleb128 0x4
  1677 0261 950C0000 		.4byte	.LASF88
  1678 0265 31       		.byte	0x31
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 126
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 126
 
 
  1679 0266 04       		.uleb128 0x4
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1733 02d2 04       		.uleb128 0x4
  1734 02d3 0F0C0000 		.4byte	.LASF107
  1735 02d7 44       		.byte	0x44
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 127
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 127
 
 
  1736 02d8 04       		.uleb128 0x4
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1790 0344 04       		.uleb128 0x4
  1791 0345 1B1B0000 		.4byte	.LASF126
  1792 0349 57       		.byte	0x57
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 128
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 128
 
 
  1793 034a 04       		.uleb128 0x4
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1847 03b6 04       		.uleb128 0x4
  1848 03b7 221A0000 		.4byte	.LASF145
  1849 03bb 6A       		.byte	0x6a
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 129
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 129
 
 
  1850 03bc 04       		.uleb128 0x4
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1904 0428 04       		.uleb128 0x4
  1905 0429 4D040000 		.4byte	.LASF164
  1906 042d 7D       		.byte	0x7d
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 130
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 130
 
 
  1907 042e 04       		.uleb128 0x4
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  1961 049a 04       		.uleb128 0x4
  1962 049b AF110000 		.4byte	.LASF183
  1963 049f 90       		.byte	0x90
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 131
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 131
 
 
  1964 04a0 04       		.uleb128 0x4
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2018 050d 41       		.byte	0x41
  2019 050e 12050000 		.4byte	0x512
  2020 0512 05       		.uleb128 0x5
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 132
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 132
 
 
  2021 0513 04       		.byte	0x4
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2075 0582 09       		.uleb128 0x9
  2076 0583 2003     		.2byte	0x320
  2077 0585 03       		.byte	0x3
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 133
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 133
 
 
  2078 0586 4801     		.2byte	0x148
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2132 0600 54060000 		.4byte	0x654
  2133 0604 0002     		.2byte	0x200
  2134 0606 0C       		.uleb128 0xc
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 134
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 134
 
 
  2135 0607 495000   		.ascii	"IP\000"
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2189 0681 82050000 		.4byte	0x582
  2190 0685 10       		.uleb128 0x10
  2191 0686 2B060000 		.4byte	0x62b
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 135
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 135
 
 
  2192 068a 0D       		.uleb128 0xd
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2246 0708 0B       		.byte	0xb
  2247 0709 00       		.byte	0
  2248 070a 11       		.uleb128 0x11
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 136
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 136
 
 
  2249 070b 80       		.byte	0x80
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2303 0776 0F       		.byte	0xf
  2304 0777 2B       		.byte	0x2b
  2305 0778 2B060000 		.4byte	0x62b
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 137
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 137
 
 
  2306 077c 20       		.byte	0x20
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2360 07e8 06       		.uleb128 0x6
  2361 07e9 DC2C0000 		.4byte	.LASF235
  2362 07ed 0F       		.byte	0xf
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 138
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 138
 
 
  2363 07ee 34       		.byte	0x34
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2417 0861 1840     		.2byte	0x4018
  2418 0863 15       		.uleb128 0x15
  2419 0864 721D0000 		.4byte	.LASF243
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 139
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 139
 
 
  2420 0868 0F       		.byte	0xf
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2474 08d9 13       		.uleb128 0x13
  2475 08da A4250000 		.4byte	.LASF248
  2476 08de 10       		.byte	0x10
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 140
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 140
 
 
  2477 08df 25       		.byte	0x25
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2531 094a 2E       		.byte	0x2e
  2532 094b 85060000 		.4byte	0x685
  2533 094f 2C       		.byte	0x2c
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 141
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 141
 
 
  2534 0950 13       		.uleb128 0x13
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2588 09ba DE250000 		.4byte	.LASF258
  2589 09be 10       		.byte	0x10
  2590 09bf 3C       		.byte	0x3c
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 142
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 142
 
 
  2591 09c0 2B060000 		.4byte	0x62b
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2645 0a33 24060000 		.4byte	0x624
  2646 0a37 1F       		.byte	0x1f
  2647 0a38 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 143
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 143
 
 
  2648 0a39 06       		.uleb128 0x6
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2702 0aad 0C       		.byte	0xc
  2703 0aae 13       		.uleb128 0x13
  2704 0aaf 05170000 		.4byte	.LASF232
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 144
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 144
 
 
  2705 0ab3 11       		.byte	0x11
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2759 0b1f 11       		.byte	0x11
  2760 0b20 2F       		.byte	0x2f
  2761 0b21 F80D0000 		.4byte	0xdf8
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 145
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 145
 
 
  2762 0b25 54       		.byte	0x54
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2816 0b93 0802     		.2byte	0x208
  2817 0b95 15       		.uleb128 0x15
  2818 0b96 390F0000 		.4byte	.LASF218
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 146
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 146
 
 
  2819 0b9a 11       		.byte	0x11
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2873 0c0f 11       		.byte	0x11
  2874 0c10 42       		.byte	0x42
  2875 0c11 85060000 		.4byte	0x685
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 147
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 147
 
 
  2876 0c15 4003     		.2byte	0x340
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2930 0c8a 880E     		.2byte	0xe88
  2931 0c8c 15       		.uleb128 0x15
  2932 0c8d FA300000 		.4byte	.LASF298
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 148
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 148
 
 
  2933 0c91 11       		.byte	0x11
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  2987 0d06 11       		.byte	0x11
  2988 0d07 55       		.byte	0x55
  2989 0d08 2B060000 		.4byte	0x62b
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 149
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 149
 
 
  2990 0d0c 080F     		.2byte	0xf08
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3044 0d81 840F     		.2byte	0xf84
  3045 0d83 15       		.uleb128 0x15
  3046 0d84 2C0F0000 		.4byte	.LASF317
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 150
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 150
 
 
  3047 0d88 11       		.byte	0x11
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3101 0dfe 650A0000 		.4byte	0xa65
  3102 0e02 10       		.uleb128 0x10
  3103 0e03 FD0D0000 		.4byte	0xdfd
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 151
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 151
 
 
  3104 0e07 0F       		.uleb128 0xf
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3158 0e8b 3106     		.2byte	0x631
  3159 0e8d E8070000 		.4byte	0x7e8
  3160 0e91 07       		.uleb128 0x7
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 152
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 152
 
 
  3161 0e92 E03D0000 		.4byte	.LASF326
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3215 0f01 4D020000 		.4byte	.LASF335
  3216 0f05 13       		.byte	0x13
  3217 0f06 3C       		.byte	0x3c
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 153
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 153
 
 
  3218 0f07 6C050000 		.4byte	0x56c
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3272 0f73 40050000 		.4byte	0x540
  3273 0f77 2C       		.byte	0x2c
  3274 0f78 13       		.uleb128 0x13
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 154
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 154
 
 
  3275 0f79 FE3E0000 		.4byte	.LASF345
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3329 0fe5 621B0000 		.4byte	.LASF354
  3330 0fe9 13       		.byte	0x13
  3331 0fea 53       		.byte	0x53
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 155
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 155
 
 
  3332 0feb 4B050000 		.4byte	0x54b
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3386 1057 40050000 		.4byte	0x540
  3387 105b 43       		.byte	0x43
  3388 105c 13       		.uleb128 0x13
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 156
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 156
 
 
  3389 105d DC310000 		.4byte	.LASF364
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3443 10c9 15350000 		.4byte	.LASF373
  3444 10cd 13       		.byte	0x13
  3445 10ce 66       		.byte	0x66
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 157
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 157
 
 
  3446 10cf 40050000 		.4byte	0x540
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3500 113b 6C050000 		.4byte	0x56c
  3501 113f 64       		.byte	0x64
  3502 1140 13       		.uleb128 0x13
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 158
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 158
 
 
  3503 1141 A9280000 		.4byte	.LASF383
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3557 11ad 081E0000 		.4byte	.LASF392
  3558 11b1 13       		.byte	0x13
  3559 11b2 81       		.byte	0x81
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 159
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 159
 
 
  3560 11b3 56050000 		.4byte	0x556
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3614 121f 6C050000 		.4byte	0x56c
  3615 1223 88       		.byte	0x88
  3616 1224 13       		.uleb128 0x13
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 160
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 160
 
 
  3617 1225 89140000 		.4byte	.LASF402
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3671 1291 552F0000 		.4byte	.LASF411
  3672 1295 13       		.byte	0x13
  3673 1296 98       		.byte	0x98
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 161
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 161
 
 
  3674 1297 56050000 		.4byte	0x556
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3728 1305 07       		.uleb128 0x7
  3729 1306 753E0000 		.4byte	.LASF422
  3730 130a 14       		.byte	0x14
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 162
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 162
 
 
  3731 130b EB03     		.2byte	0x3eb
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3785 137b 01       		.byte	0x1
  3786 137c B3040000 		.4byte	0x4b3
  3787 1380 0A       		.byte	0xa
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 163
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 163
 
 
  3788 1381 A801     		.2byte	0x1a8
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3842 13f1 BC01     		.2byte	0x1bc
  3843 13f3 0A140000 		.4byte	0x140a
  3844 13f7 04       		.uleb128 0x4
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 164
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 164
 
 
  3845 13f8 8E180000 		.4byte	.LASF441
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3899 146e 04       		.byte	0x4
  3900 146f 0A       		.uleb128 0xa
  3901 1470 581B0000 		.4byte	.LASF451
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 165
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 165
 
 
  3902 1474 0A       		.byte	0xa
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  3956 14e9 0A       		.byte	0xa
  3957 14ea 2402     		.2byte	0x224
  3958 14ec 6C050000 		.4byte	0x56c
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 166
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 166
 
 
  3959 14f0 18       		.byte	0x18
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4013 1565 2C       		.byte	0x2c
  4014 1566 0A       		.uleb128 0xa
  4015 1567 60050000 		.4byte	.LASF470
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 167
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 167
 
 
  4016 156b 0A       		.byte	0xa
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4070 15e0 0A       		.byte	0xa
  4071 15e1 7C02     		.2byte	0x27c
  4072 15e3 6C050000 		.4byte	0x56c
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 168
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 168
 
 
  4073 15e7 0C       		.byte	0xc
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4127 165c 30       		.byte	0x30
  4128 165d 0A       		.uleb128 0xa
  4129 165e 00340000 		.4byte	.LASF490
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 169
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 169
 
 
  4130 1662 0A       		.byte	0xa
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4184 16d0 04       		.byte	0x4
  4185 16d1 39       		.byte	0x39
  4186 16d2 6C050000 		.4byte	0x56c
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 170
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 170
 
 
  4187 16d6 18       		.byte	0x18
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4241 1742 3C       		.byte	0x3c
  4242 1743 13       		.uleb128 0x13
  4243 1744 A73A0000 		.4byte	.LASF509
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 171
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 171
 
 
  4244 1748 04       		.byte	0x4
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4298 17b4 05       		.byte	0x5
  4299 17b5 36       		.byte	0x36
  4300 17b6 6C050000 		.4byte	0x56c
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 172
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 172
 
 
  4301 17ba 10       		.byte	0x10
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4355 1826 34       		.byte	0x34
  4356 1827 13       		.uleb128 0x13
  4357 1828 4A180000 		.4byte	.LASF522
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 173
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 173
 
 
  4358 182c 05       		.byte	0x5
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4412 1898 05       		.byte	0x5
  4413 1899 4E       		.byte	0x4e
  4414 189a 6C050000 		.4byte	0x56c
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 174
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 174
 
 
  4415 189e 5C       		.byte	0x5c
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4469 1914 20       		.uleb128 0x20
  4470 1915 CB330000 		.4byte	.LASF538
  4471 1919 0320     		.2byte	0x2003
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 175
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 175
 
 
  4472 191b 20       		.uleb128 0x20
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4526 1999 20       		.uleb128 0x20
  4527 199a 19210000 		.4byte	.LASF557
  4528 199e 1620     		.2byte	0x2016
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 176
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 176
 
 
  4529 19a0 20       		.uleb128 0x20
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4583 1a1e 20       		.uleb128 0x20
  4584 1a1f 1B380000 		.4byte	.LASF576
  4585 1a23 1530     		.2byte	0x3015
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 177
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 177
 
 
  4586 1a25 20       		.uleb128 0x20
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4640 1aa3 20       		.uleb128 0x20
  4641 1aa4 BA240000 		.4byte	.LASF595
  4642 1aa8 0E40     		.2byte	0x400e
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 178
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 178
 
 
  4643 1aaa 20       		.uleb128 0x20
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4697 1b28 20       		.uleb128 0x20
  4698 1b29 37000000 		.4byte	.LASF614
  4699 1b2d 0650     		.2byte	0x5006
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 179
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 179
 
 
  4700 1b2f 20       		.uleb128 0x20
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4754 1bad 20       		.uleb128 0x20
  4755 1bae BD130000 		.4byte	.LASF633
  4756 1bb2 0060     		.2byte	0x6000
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 180
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 180
 
 
  4757 1bb4 20       		.uleb128 0x20
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4811 1c2b 17       		.byte	0x17
  4812 1c2c 7401     		.2byte	0x174
  4813 1c2e 021C0000 		.4byte	0x1c02
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 181
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 181
 
 
  4814 1c32 07       		.uleb128 0x7
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4868 1ca4 18       		.byte	0x18
  4869 1ca5 AE01     		.2byte	0x1ae
  4870 1ca7 7B1C0000 		.4byte	0x1c7b
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 182
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 182
 
 
  4871 1cab 18       		.uleb128 0x18
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4925 1d18 DD0B0000 		.4byte	.LASF662
  4926 1d1c 01       		.byte	0x1
  4927 1d1d 04       		.uleb128 0x4
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 183
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 183
 
 
  4928 1d1e E5390000 		.4byte	.LASF663
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  4982 1d8d 22       		.uleb128 0x22
  4983 1d8e 3A020000 		.4byte	.LASF791
  4984 1d92 01       		.byte	0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 184
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 184
 
 
  4985 1d93 C6040000 		.4byte	0x4c6
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5039 1dff 77050000 		.4byte	0x577
  5040 1e03 04       		.byte	0x4
  5041 1e04 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 185
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 185
 
 
  5042 1e05 1F       		.uleb128 0x1f
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5096 1e71 0C       		.byte	0xc
  5097 1e72 00       		.byte	0
  5098 1e73 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 186
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 186
 
 
  5099 1e74 EE3A0000 		.4byte	.LASF697
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5153 1ee0 23       		.uleb128 0x23
  5154 1ee1 A3350000 		.4byte	.LASF706
  5155 1ee5 06       		.byte	0x6
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 187
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 187
 
 
  5156 1ee6 6A02     		.2byte	0x26a
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5210 1f60 F0060000 		.4byte	.LASF711
  5211 1f64 03       		.byte	0x3
  5212 1f65 3603     		.2byte	0x336
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 188
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 188
 
 
  5213 1f67 03       		.byte	0x3
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5267 1fe1 4B130000 		.4byte	.LASF716
  5268 1fe5 04       		.byte	0x4
  5269 1fe6 0301     		.2byte	0x103
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 189
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 189
 
 
  5270 1fe8 6C050000 		.4byte	0x56c
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5324 205a 6C050000 		.4byte	0x56c
  5325 205e 03       		.byte	0x3
  5326 205f 70200000 		.4byte	0x2070
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 190
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 190
 
 
  5327 2063 24       		.uleb128 0x24
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5381 20dc 29       		.uleb128 0x29
  5382 20dd 03260000 		.4byte	.LASF694
  5383 20e1 07       		.byte	0x7
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 191
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 191
 
 
  5384 20e2 1601     		.2byte	0x116
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5438 2157 01       		.byte	0x1
  5439 2158 29       		.byte	0x29
  5440 2159 6C050000 		.4byte	0x56c
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 192
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 192
 
 
  5441 215d 00000000 		.4byte	.LLST0
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5495 21c9 7D1D0000 		.4byte	0x1d7d
  5496 21cd 33       		.uleb128 0x33
  5497 21ce C72B0000 		.4byte	.LASF730
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 193
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 193
 
 
  5498 21d2 01       		.byte	0x1
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5552 225c 0E000000 		.4byte	.LVL12
  5553 2260 0C2D0000 		.4byte	0x2d0c
  5554 2264 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 194
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 194
 
 
  5555 2265 33       		.uleb128 0x33
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5609 22dd 5F010000 		.4byte	.LLST9
  5610 22e1 2C       		.uleb128 0x2c
  5611 22e2 E72D0000 		.4byte	.LASF736
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 195
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 195
 
 
  5612 22e6 01       		.byte	0x1
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5666 2346 62       		.byte	0x62
  5667 2347 F9120000 		.4byte	0x12f9
  5668 234b 00000000 		.4byte	.LFB649
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 196
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 196
 
 
  5669 234f 10000000 		.4byte	.LFE649-.LFB649
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5723 23d9 36       		.uleb128 0x36
  5724 23da 921F0000 		.4byte	0x1f92
  5725 23de 03020000 		.4byte	.LLST15
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 197
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 197
 
 
  5726 23e2 36       		.uleb128 0x36
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5780 2466 34       		.uleb128 0x34
  5781 2467 8A320000 		.4byte	.LASF747
  5782 246b 01       		.byte	0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 198
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 198
 
 
  5783 246c 84       		.byte	0x84
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5837 24fa 36       		.uleb128 0x36
  5838 24fb 401F0000 		.4byte	0x1f40
  5839 24ff A9030000 		.4byte	.LLST29
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 199
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 199
 
 
  5840 2503 36       		.uleb128 0x36
@@ -11938,7 +11938,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5894 2593 36       		.uleb128 0x36
  5895 2594 341F0000 		.4byte	0x1f34
  5896 2598 41040000 		.4byte	.LLST38
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 200
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 200
 
 
  5897 259c 00       		.byte	0
@@ -11998,7 +11998,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  5951 260b 52200000 		.4byte	0x2052
  5952 260f 04000000 		.4byte	.LBB110
  5953 2613 08000000 		.4byte	.LBE110-.LBB110
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 201
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 201
 
 
  5954 2617 01       		.byte	0x1
@@ -12058,7 +12058,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6008 269d 2D280000 		.4byte	0x282d
  6009 26a1 38       		.uleb128 0x38
  6010 26a2 74270000 		.4byte	.LASF752
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 202
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 202
 
 
  6011 26a6 01       		.byte	0x1
@@ -12118,7 +12118,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6065 2722 00       		.byte	0
  6066 2723 35       		.uleb128 0x35
  6067 2724 B5200000 		.4byte	0x20b5
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 203
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 203
 
 
  6068 2728 82000000 		.4byte	.LBB120
@@ -12178,7 +12178,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6122 279d 00       		.byte	0
  6123 279e 30       		.uleb128 0x30
  6124 279f 12010000 		.4byte	.LVL89
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 204
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 204
 
 
  6125 27a3 AE220000 		.4byte	0x22ae
@@ -12238,7 +12238,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6179 27f6 5A010000 		.4byte	.LVL95
  6180 27fa AE220000 		.4byte	0x22ae
  6181 27fe 31       		.uleb128 0x31
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 205
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 205
 
 
  6182 27ff 01       		.uleb128 0x1
@@ -12298,7 +12298,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6236 284c BA       		.byte	0xba
  6237 284d 32050000 		.4byte	0x532
  6238 2851 00000000 		.4byte	.LFB655
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 206
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 206
 
 
  6239 2855 34010000 		.4byte	.LFE655-.LFB655
@@ -12358,7 +12358,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6293 28e5 B6050000 		.4byte	.LLST57
  6294 28e9 00       		.byte	0
  6295 28ea 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 207
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 207
 
 
  6296 28eb 35       		.uleb128 0x35
@@ -12418,7 +12418,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6350 297b 35       		.uleb128 0x35
  6351 297c 1D210000 		.4byte	0x211d
  6352 2980 5C000000 		.4byte	.LBB137
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 208
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 208
 
 
  6353 2984 0A000000 		.4byte	.LBE137-.LBB137
@@ -12478,7 +12478,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6407 2a05 26000000 		.4byte	.LVL102
  6408 2a09 942D0000 		.4byte	0x2d94
  6409 2a0d 2F       		.uleb128 0x2f
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 209
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 209
 
 
  6410 2a0e 2A000000 		.4byte	.LVL103
@@ -12538,7 +12538,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6464 2a83 50       		.byte	0x50
  6465 2a84 05       		.uleb128 0x5
  6466 2a85 03       		.byte	0x3
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 210
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 210
 
 
  6467 2a86 78000000 		.4byte	.LC30
@@ -12598,7 +12598,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6521 2aef 31       		.uleb128 0x31
  6522 2af0 01       		.uleb128 0x1
  6523 2af1 50       		.byte	0x50
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 211
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 211
 
 
  6524 2af2 05       		.uleb128 0x5
@@ -12658,7 +12658,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6578 2b5b 721D0000 		.4byte	0x1d72
  6579 2b5f 6A2B0000 		.4byte	0x2b6a
  6580 2b63 0E       		.uleb128 0xe
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 212
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 212
 
 
  6581 2b64 24060000 		.4byte	0x624
@@ -12718,7 +12718,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6635 2bde 22       		.byte	0x22
  6636 2bdf 86       		.byte	0x86
  6637 2be0 E42B0000 		.4byte	0x2be4
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 213
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 213
 
 
  6638 2be4 10       		.uleb128 0x10
@@ -12778,7 +12778,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6692 2c59 1E       		.byte	0x1e
  6693 2c5a 162C0000 		.4byte	0x2c16
  6694 2c5e 05       		.uleb128 0x5
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 214
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 214
 
 
  6695 2c5f 03       		.byte	0x3
@@ -12838,7 +12838,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6749 2cd4 05       		.uleb128 0x5
  6750 2cd5 03       		.byte	0x3
  6751 2cd6 00000000 		.4byte	gpsLineProcessed
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 215
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 215
 
 
  6752 2cda 48       		.uleb128 0x48
@@ -12898,7 +12898,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6806 2d5a 27       		.byte	0x27
  6807 2d5b BB       		.byte	0xbb
  6808 2d5c 4B       		.uleb128 0x4b
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 216
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 216
 
 
  6809 2d5d 0B3F0000 		.4byte	.LASF790
@@ -12958,7 +12958,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6863 0001 11       		.uleb128 0x11
  6864 0002 01       		.byte	0x1
  6865 0003 25       		.uleb128 0x25
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 217
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 217
 
 
  6866 0004 0E       		.uleb128 0xe
@@ -13018,7 +13018,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6920 003a 0B       		.uleb128 0xb
  6921 003b 03       		.uleb128 0x3
  6922 003c 0E       		.uleb128 0xe
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 218
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 218
 
 
  6923 003d 00       		.byte	0
@@ -13078,7 +13078,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  6977 0073 00       		.byte	0
  6978 0074 03       		.uleb128 0x3
  6979 0075 0E       		.uleb128 0xe
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 219
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 219
 
 
  6980 0076 3A       		.uleb128 0x3a
@@ -13138,7 +13138,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7034 00ac 2F       		.uleb128 0x2f
  7035 00ad 0B       		.uleb128 0xb
  7036 00ae 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 220
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 220
 
 
  7037 00af 00       		.byte	0
@@ -13198,7 +13198,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7091 00e5 38       		.uleb128 0x38
  7092 00e6 0B       		.uleb128 0xb
  7093 00e7 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 221
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 221
 
 
  7094 00e8 00       		.byte	0
@@ -13258,7 +13258,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7148 011e 13       		.uleb128 0x13
  7149 011f 01       		.byte	0x1
  7150 0120 0B       		.uleb128 0xb
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 222
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 222
 
 
  7151 0121 0B       		.uleb128 0xb
@@ -13318,7 +13318,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7205 0157 00       		.byte	0
  7206 0158 00       		.byte	0
  7207 0159 1E       		.uleb128 0x1e
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 223
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 223
 
 
  7208 015a 13       		.uleb128 0x13
@@ -13378,7 +13378,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7262 0190 04       		.uleb128 0x4
  7263 0191 01       		.byte	0x1
  7264 0192 03       		.uleb128 0x3
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 224
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 224
 
 
  7265 0193 0E       		.uleb128 0xe
@@ -13438,7 +13438,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7319 01c9 27       		.uleb128 0x27
  7320 01ca 19       		.uleb128 0x19
  7321 01cb 20       		.uleb128 0x20
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 225
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 225
 
 
  7322 01cc 0B       		.uleb128 0xb
@@ -13498,7 +13498,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7376 0202 0B       		.uleb128 0xb
  7377 0203 3B       		.uleb128 0x3b
  7378 0204 05       		.uleb128 0x5
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 226
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 226
 
 
  7379 0205 49       		.uleb128 0x49
@@ -13558,7 +13558,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7433 023c 13       		.uleb128 0x13
  7434 023d 02       		.uleb128 0x2
  7435 023e 17       		.uleb128 0x17
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 227
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 227
 
 
  7436 023f 00       		.byte	0
@@ -13618,7 +13618,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7490 027c 18       		.uleb128 0x18
  7491 027d 00       		.byte	0
  7492 027e 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 228
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 228
 
 
  7493 027f 32       		.uleb128 0x32
@@ -13678,7 +13678,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7547 02b8 58       		.uleb128 0x58
  7548 02b9 0B       		.uleb128 0xb
  7549 02ba 59       		.uleb128 0x59
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 229
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 229
 
 
  7550 02bb 0B       		.uleb128 0xb
@@ -13738,7 +13738,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7604 02f1 06       		.uleb128 0x6
  7605 02f2 40       		.uleb128 0x40
  7606 02f3 18       		.uleb128 0x18
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 230
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 230
 
 
  7607 02f4 9742     		.uleb128 0x2117
@@ -13798,7 +13798,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7661 032b 02       		.uleb128 0x2
  7662 032c 18       		.uleb128 0x18
  7663 032d 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 231
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 231
 
 
  7664 032e 00       		.byte	0
@@ -13858,7 +13858,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7718 0365 41       		.uleb128 0x41
  7719 0366 34       		.uleb128 0x34
  7720 0367 00       		.byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 232
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 232
 
 
  7721 0368 31       		.uleb128 0x31
@@ -13918,7 +13918,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7775 03a0 13       		.uleb128 0x13
  7776 03a1 1C       		.uleb128 0x1c
  7777 03a2 0B       		.uleb128 0xb
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 233
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 233
 
 
  7778 03a3 00       		.byte	0
@@ -13978,7 +13978,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7832 03d9 49       		.uleb128 0x49
  7833 03da 13       		.uleb128 0x13
  7834 03db 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 234
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 234
 
 
  7835 03dc 19       		.uleb128 0x19
@@ -14038,7 +14038,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7889 0412 00       		.byte	0
  7890 0413 3F       		.uleb128 0x3f
  7891 0414 19       		.uleb128 0x19
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 235
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 235
 
 
  7892 0415 3C       		.uleb128 0x3c
@@ -14098,7 +14098,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  7946 0053 00000000 		.4byte	.LVL0
  7947 0057 2A000000 		.4byte	.LVL1
  7948 005b 0100     		.2byte	0x1
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 236
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 236
 
 
  7949 005d 51       		.byte	0x51
@@ -14158,7 +14158,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8003              	.LLST4:
  8004 00db 02000000 		.4byte	.LVL10
  8005 00df 0A000000 		.4byte	.LVL11
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 237
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 237
 
 
  8006 00e3 0600     		.2byte	0x6
@@ -14218,7 +14218,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8060 016a 14000000 		.4byte	.LVL22
  8061 016e 19000000 		.4byte	.LVL23-1
  8062 0172 0200     		.2byte	0x2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 238
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 238
 
 
  8063 0174 73       		.byte	0x73
@@ -14278,7 +14278,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8117 01fa 9F       		.byte	0x9f
  8118 01fb 00000000 		.4byte	0
  8119 01ff 00000000 		.4byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 239
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 239
 
 
  8120              	.LLST15:
@@ -14338,7 +14338,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8174 0286 0100     		.2byte	0x1
  8175 0288 51       		.byte	0x51
  8176 0289 2A000000 		.4byte	.LVL38
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 240
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 240
 
 
  8177 028d 2C000000 		.4byte	.LVL39
@@ -14398,7 +14398,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8231 02fd 31       		.byte	0x31
  8232 02fe 25       		.byte	0x25
  8233 02ff 72       		.byte	0x72
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 241
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 241
 
 
  8234 0300 00       		.sleb128 0
@@ -14458,7 +14458,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8288 0377 00000000 		.4byte	0
  8289              	.LLST26:
  8290 037b 34000000 		.4byte	.LVL42
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 242
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 242
 
 
  8291 037f 3C000000 		.4byte	.LVL45
@@ -14518,7 +14518,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8345 0409 0C       		.byte	0xc
  8346 040a 00003840 		.4byte	0x40380000
  8347 040e 9F       		.byte	0x9f
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 243
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 243
 
 
  8348 040f 00000000 		.4byte	0
@@ -14578,7 +14578,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8402 049c 20000000 		.4byte	.LVL62
  8403 04a0 80000000 		.4byte	.LVL73
  8404 04a4 0400     		.2byte	0x4
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 244
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 244
 
 
  8405 04a6 91       		.byte	0x91
@@ -14638,7 +14638,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8459 0534 0300     		.2byte	0x3
  8460 0536 91       		.byte	0x91
  8461 0537 4C       		.sleb128 -52
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 245
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 245
 
 
  8462 0538 9F       		.byte	0x9f
@@ -14698,7 +14698,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8516 05c1 00003840 		.4byte	0x40380000
  8517 05c5 9F       		.byte	0x9f
  8518 05c6 00000000 		.4byte	0
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 246
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 246
 
 
  8519 05ca 00000000 		.4byte	0
@@ -14758,7 +14758,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8573 0652 5C000000 		.4byte	.LVL109
  8574 0656 66000000 		.4byte	.LVL110
  8575 065a 0600     		.2byte	0x6
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 247
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 247
 
 
  8576 065c 0C       		.byte	0xc
@@ -14818,7 +14818,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8630 003c 1C000000 		.4byte	.LFE652
  8631 0040 00000000 		.4byte	.LFB653
  8632 0044 64000000 		.4byte	.LFE653
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 248
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 248
 
 
  8633 0048 00000000 		.4byte	.LFB654
@@ -14878,7 +14878,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8659      4C455F45 
  8659      56545F47 
  8659      41545453 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 249
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 249
 
 
  8659      5F444154 
@@ -14938,7 +14938,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8681      41545453 
  8681      5F577269 
  8681      74655273 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 250
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 250
 
 
  8682              	.LASF52:
@@ -14998,7 +14998,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8703      4C4B5F43 
  8704              	.LASF791:
  8705 023a 6D696E6D 		.ascii	"minmea_sentence_id\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 251
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 251
 
 
  8705      65615F73 
@@ -15058,7 +15058,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8725      5F697063 
  8726              	.LASF136:
  8727 031d 74637077 		.ascii	"tcpwm_0_interrupts_7_IRQn\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 252
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 252
 
 
  8727      6D5F305F 
@@ -15118,7 +15118,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8747 03e6 7564625F 		.ascii	"udb_interrupts_13_IRQn\000"
  8747      696E7465 
  8747      72727570 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 253
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 253
 
 
  8747      74735F31 
@@ -15178,7 +15178,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8770              	.LASF305:
  8771 04b4 494E5452 		.ascii	"INTR_M\000"
  8771      5F4D00
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 254
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 254
 
 
  8772              	.LASF471:
@@ -15238,7 +15238,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8792              	.LASF186:
  8793 0573 64697363 		.ascii	"disconnected_IRQn\000"
  8793      6F6E6E65 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 255
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 255
 
 
  8793      63746564 
@@ -15298,7 +15298,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8813      78506F73 
  8813      00
  8814              	.LASF277:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 256
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 256
 
 
  8815 0655 4932435F 		.ascii	"I2C_CFG\000"
@@ -15358,7 +15358,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8833      5F697063 
  8834              	.LASF135:
  8835 0763 74637077 		.ascii	"tcpwm_0_interrupts_6_IRQn\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 257
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 257
 
 
  8835      6D5F305F 
@@ -15418,7 +15418,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8855      4C455F45 
  8855      56545F47 
  8855      41505F41 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 258
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 258
 
 
  8855      5554485F 
@@ -15478,7 +15478,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8877      45415F53 
  8877      454E5445 
  8877      4E43455F 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 259
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 259
 
 
  8877      47534100 
@@ -15538,7 +15538,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8899      72727570 
  8899      74735F31 
  8900              	.LASF620:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 260
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 260
 
 
  8901 0a13 43595F42 		.ascii	"CY_BLE_EVT_GATTS_WRITE_REQ\000"
@@ -15598,7 +15598,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8923      454400
  8924              	.LASF712:
  8925 0abf 4952516E 		.ascii	"IRQn\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 261
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 261
 
 
  8925      00
@@ -15658,7 +15658,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8945      4F53545F 
  8946              	.LASF270:
  8947 0bab 55415254 		.ascii	"UART_RX_CTRL\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 262
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 262
 
 
  8947      5F52585F 
@@ -15718,7 +15718,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8967      455F4445 
  8968              	.LASF275:
  8969 0c8b 4932435F 		.ascii	"I2C_M_CMD\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 263
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 263
 
 
  8969      4D5F434D 
@@ -15778,7 +15778,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  8993      6F643100 
  8994              	.LASF532:
  8995 0d57 43595F42 		.ascii	"CY_BLE_EVT_MEMORY_REQUEST\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 264
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 264
 
 
  8995      4C455F45 
@@ -15838,7 +15838,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9013 0e7f 43595F42 		.ascii	"CY_BLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
  9013      4C455F45 
  9013      56545F4C 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 265
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 265
 
 
  9013      32434150 
@@ -15898,7 +15898,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9036              	.LASF286:
  9037 0f4d 52455345 		.ascii	"RESERVED6\000"
  9037      52564544 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 266
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 266
 
 
  9037      3600
@@ -15958,7 +15958,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9060              	.LASF184:
  9061 1025 7573625F 		.ascii	"usb_interrupt_lo_IRQn\000"
  9061      696E7465 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 267
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 267
 
 
  9061      72727570 
@@ -16018,7 +16018,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9081 111c 70617373 		.ascii	"passBase\000"
  9081      42617365 
  9081      00
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 268
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 268
 
 
  9082              	.LASF406:
@@ -16078,7 +16078,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9103 11f6 494E5452 		.ascii	"INTR_S\000"
  9103      5F5300
  9104              	.LASF96:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 269
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 269
 
 
  9105 11fd 63707573 		.ascii	"cpuss_interrupts_dw0_7_IRQn\000"
@@ -16138,7 +16138,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9125      5F696E74 
  9125      65727275 
  9125      7074735F 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 270
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 270
 
 
  9125      6770696F 
@@ -16198,7 +16198,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9145      5F434F4E 
  9146              	.LASF658:
  9147 13e4 43595F42 		.ascii	"CY_BLE_STATE_INITIALIZING\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 271
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 271
 
 
  9147      4C455F53 
@@ -16258,7 +16258,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9167      75707473 
  9167      5F647730 
  9168              	.LASF242:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 272
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 272
 
 
  9169 14d5 5644445F 		.ascii	"VDD_INTR_MASK\000"
@@ -16318,7 +16318,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9189      00
  9190              	.LASF415:
  9191 1599 6970634C 		.ascii	"ipcLockStatusOffset\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 273
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 273
 
 
  9191      6F636B53 
@@ -16378,7 +16378,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9209      7973696E 
  9209      745F7400 
  9210              	.LASF401:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 274
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 274
 
 
  9211 16ac 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
@@ -16438,7 +16438,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9233      65737343 
  9233      6F6E7472 
  9233      6F6C7300 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 275
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 275
 
 
  9234              	.LASF376:
@@ -16498,7 +16498,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9254              	.LASF522:
  9255 184a 6B696C6C 		.ascii	"killMode\000"
  9255      4D6F6465 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 276
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 276
 
 
  9255      00
@@ -16558,7 +16558,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9275 1918 696E7665 		.ascii	"invertPWMOut\000"
  9275      72745057 
  9275      4D4F7574 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 277
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 277
 
 
  9275      00
@@ -16618,7 +16618,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9294      7400
  9295              	.LASF145:
  9296 1a22 74637077 		.ascii	"tcpwm_1_interrupts_8_IRQn\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 278
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 278
 
 
  9296      6D5F315F 
@@ -16678,7 +16678,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9318      6C6C00
  9319              	.LASF340:
  9320 1b01 63707573 		.ascii	"cpussVersion\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 279
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 279
 
 
  9320      73566572 
@@ -16738,7 +16738,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9340      5F636F6E 
  9340      66696700 
  9341              	.LASF718:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 280
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 280
 
 
  9342 1bcc 50574D5F 		.ascii	"PWM_trashgate_SetCompare0\000"
@@ -16798,7 +16798,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9360      6E746572 
  9361              	.LASF617:
  9362 1cce 43595F42 		.ascii	"CY_BLE_EVT_GATTC_READ_RSP\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 281
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 281
 
 
  9362      4C455F45 
@@ -16858,7 +16858,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9380      455F434C 
  9381              	.LASF568:
  9382 1dc8 43595F42 		.ascii	"CY_BLE_EVT_RANDOM_NUM_GEN_COMPLETE\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 282
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 282
 
 
  9382      4C455F45 
@@ -16918,7 +16918,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9400      735F696E 
  9400      74657272 
  9400      75707473 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 283
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 283
 
 
  9400      5F647731 
@@ -16978,7 +16978,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9424 1f6d 70617373 		.ascii	"passSarChannels\000"
  9424      53617243 
  9424      68616E6E 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 284
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 284
 
 
  9424      656C7300 
@@ -17038,7 +17038,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9444      4D757832 
  9444      395F4952 
  9444      516E00
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 285
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 285
 
 
  9445              	.LASF416:
@@ -17098,7 +17098,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9466 2152 63727970 		.ascii	"cryptoVersion\000"
  9466      746F5665 
  9466      7273696F 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 286
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 286
 
 
  9466      6E00
@@ -17158,7 +17158,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9486      00
  9487              	.LASF393:
  9488 222d 70657269 		.ascii	"periDiv16_5CtlOffset\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 287
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 287
 
 
  9488      44697631 
@@ -17218,7 +17218,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9509              	.LASF267:
  9510 2300 5350495F 		.ascii	"SPI_STATUS\000"
  9510      53544154 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 288
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 288
 
 
  9510      555300
@@ -17278,7 +17278,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9532      74735F35 
  9532      5F495251 
  9533              	.LASF203:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 289
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 289
 
 
  9534 23cd 756E7369 		.ascii	"unsigned int\000"
@@ -17338,7 +17338,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9554      7000
  9555              	.LASF526:
  9556 24b0 6B696C6C 		.ascii	"killInput\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 290
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 290
 
 
  9556      496E7075 
@@ -17398,7 +17398,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9577              	.LASF248:
  9578 25a4 434F554E 		.ascii	"COUNTER\000"
  9578      54455200 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 291
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 291
 
 
  9579              	.LASF609:
@@ -17458,7 +17458,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9600      765F7374 
  9600      6174655F 
  9601              	.LASF54:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 292
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 292
 
 
  9602 2671 696F7373 		.ascii	"ioss_interrupt_gpio_IRQn\000"
@@ -17518,7 +17518,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9622 2747 63707573 		.ascii	"cpussIpcIrqNr\000"
  9622      73497063 
  9622      4972714E 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 293
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 293
 
 
  9622      7200
@@ -17578,7 +17578,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9643              	.LASF328:
  9644 282b 43795343 		.ascii	"CySCB_Type\000"
  9644      425F5479 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 294
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 294
 
 
  9644      706500
@@ -17638,7 +17638,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9665              	.LASF140:
  9666 28f3 74637077 		.ascii	"tcpwm_1_interrupts_3_IRQn\000"
  9666      6D5F315F 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 295
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 295
 
 
  9666      696E7465 
@@ -17698,7 +17698,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9686      555300
  9687              	.LASF300:
  9688 29d8 494E5452 		.ascii	"INTR_SPI_EC\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 296
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 296
 
 
  9688      5F535049 
@@ -17758,7 +17758,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9708 2abc 736D6172 		.ascii	"smartCardRetryOnNack\000"
  9708      74436172 
  9708      64526574 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 297
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 297
 
 
  9708      72794F6E 
@@ -17818,7 +17818,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9730      345F4952 
  9731              	.LASF144:
  9732 2b83 74637077 		.ascii	"tcpwm_1_interrupts_7_IRQn\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 298
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 298
 
 
  9732      6D5F315F 
@@ -17878,7 +17878,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9752 2c87 43595F53 		.ascii	"CY_SCB_UART_PARITY_ODD\000"
  9752      43425F55 
  9752      4152545F 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 299
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 299
 
 
  9752      50415249 
@@ -17938,7 +17938,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9772 2d5b 52455345 		.ascii	"RESERVED10\000"
  9772      52564544 
  9772      313000
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 300
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 300
 
 
  9773              	.LASF0:
@@ -17998,7 +17998,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9798 2e0b 7363625F 		.ascii	"scb_1_interrupt_IRQn\000"
  9798      315F696E 
  9798      74657272 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 301
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 301
 
 
  9798      7570745F 
@@ -18058,7 +18058,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9818      56545F4C 
  9818      32434150 
  9818      5F434246 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 302
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 302
 
 
  9819              	.LASF77:
@@ -18118,7 +18118,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9842      6C6500
  9843              	.LASF679:
  9844 2faf 4D494E4D 		.ascii	"MINMEA_SENTENCE_GGA\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 303
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 303
 
 
  9844      45415F53 
@@ -18178,7 +18178,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9864      52455350 
  9864      5F435452 
  9864      4C00
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 304
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 304
 
 
  9865              	.LASF247:
@@ -18238,7 +18238,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9888      696E7465 
  9888      72727570 
  9888      745F6932 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 305
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 305
 
 
  9889              	.LASF336:
@@ -18298,7 +18298,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9910      4D41534B 
  9910      454400
  9911              	.LASF30:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 306
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 306
 
 
  9912 323b 4E766963 		.ascii	"NvicMux24_IRQn\000"
@@ -18358,7 +18358,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9932      5F697063 
  9933              	.LASF668:
  9934 330e 43595F42 		.ascii	"CY_BLE_CONN_STATE_CONNECTED\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 307
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 307
 
 
  9934      4C455F43 
@@ -18418,7 +18418,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9956      56545F47 
  9956      45545F43 
  9956      48414E4E 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 308
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 308
 
 
  9957              	.LASF780:
@@ -18478,7 +18478,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  9978      6172496E 
  9978      74657272 
  9979              	.LASF295:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 309
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 309
 
 
  9980 34c1 494E5452 		.ascii	"INTR_I2C_EC\000"
@@ -18538,7 +18538,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10000      74657272 
  10000      75707473 
  10000      5F636D34 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 310
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 310
 
 
  10001              	.LASF687:
@@ -18598,7 +18598,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10020      65727275 
  10020      70745F49 
  10020      52516E00 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 311
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 311
 
 
  10021              	.LASF445:
@@ -18658,7 +18658,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10042      6E00
  10043              	.LASF774:
  10044 372b 64697363 		.ascii	"disconnected\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 312
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 312
 
 
  10044      6F6E6E65 
@@ -18718,7 +18718,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10064      6F64655F 
  10065              	.LASF525:
  10066 3800 6B696C6C 		.ascii	"killInputMode\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 313
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 313
 
 
  10066      496E7075 
@@ -18778,7 +18778,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10084      74654174 
  10085              	.LASF274:
  10086 38e5 4932435F 		.ascii	"I2C_STATUS\000"
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 314
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 314
 
 
  10086      53544154 
@@ -18838,7 +18838,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10108      74657874 
  10108      00
  10109              	.LASF515:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 315
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 315
 
 
  10110 39a6 70776D41 		.ascii	"pwmAlignment\000"
@@ -18898,7 +18898,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10130      6F6C6172 
  10130      69747900 
  10131              	.LASF117:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 316
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 316
 
 
  10132 3a6b 63707573 		.ascii	"cpuss_interrupts_dw1_12_IRQn\000"
@@ -18958,7 +18958,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10151              	.LASF439:
  10152 3b53 43595F53 		.ascii	"CY_SCB_UART_STOP_BITS_4\000"
  10152      43425F55 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 317
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 317
 
 
  10152      4152545F 
@@ -19018,7 +19018,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10172      52564544 
  10172      313600
  10173              	.LASF797:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 318
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 318
 
 
  10174 3c22 50574D5F 		.ascii	"PWM_ultrasonic_Start\000"
@@ -19078,7 +19078,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10193              	.LASF646:
  10194 3cea 61747449 		.ascii	"attId\000"
  10194      6400
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 319
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 319
 
 
  10195              	.LASF505:
@@ -19138,7 +19138,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10218 3da5 43595F42 		.ascii	"CY_BLE_EVT_SET_TX_PWR_COMPLETE\000"
  10218      4C455F45 
  10218      56545F53 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 320
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 320
 
 
  10218      45545F54 
@@ -19198,7 +19198,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 1
  10240 3eaa 6C656674 		.ascii	"left_bit\000"
  10240      5F626974 
  10240      00
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccSSC5vL.s 			page 321
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccElxvmR.s 			page 321
 
 
  10241              	.LASF273:
