@@ -3,11 +3,11 @@
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
 <CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="betawble-000" persistent="betawble-000.cywrk" platform="NOT_USED">
-<current_project name=".\betawble.cyprj" />
+<current_project name=".\ocean-cleanup-rov-controls.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
-<v>.\betawble.cyprj</v>
+<v>.\ocean-cleanup-rov-controls.cyprj</v>
 </projects>
 <workspace_id v="0e22abc4-d0f0-45c2-9905-421c2d17c28f" />
 <WriteAppVersionLastSavedWith v="4.4.0.80" />
