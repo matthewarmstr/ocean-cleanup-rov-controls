@@ -3,7 +3,7 @@
 
 Allows a PSoC™ 6 microcontroller to operate the motors, collect data from ultrasonic and GPS sensors, and facilitate data transfer over Bluetooth® Low Energy (LE). Check out our compatible iOS application [here](https://github.com/matthewarmstr/ocean-cleanup-app). 
 
-This project was developed as part of our 2024 UC Davis ECS 193 Senior Design Project in coordination with an EEC 136 design team.
+This project was developed as part of our UC Davis ECS 193 Senior Design Project in coordination with an EEC 136 design team. Special thanks to Professor Christopher Nitta and Teaching Assistant Ajay Suresh for their guidance and support throughout the project.
 
 ## Firmware Overview
 The microcontroller operates the thrust and servo motors using pulse width modulation (PWM), allowing them to be operated at specific speeds/positions as desired. The connected ultrasonic reads the distance between itself and an oncoming object. The microcontroller sends a 15µS pulse every 300ms to the ultrasonic's TRIG input, enabling the sensor to send an ultrasonic frequency that bounces off an object and returns to the sensor. This time between when the ultrasonic sends and receives the pulse is measured as the pulse width, which is then read by a counter on the microcontroller. Finally, the GPS module sends its latitude and longitude data to the microcontroller every second over a dedicated UART connection. The data from the ultrasonic and GPS modules are then stored in the Bluetooth® Low Energy (LE) stack for access by a wirelessly connected device.
