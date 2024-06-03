@@ -1,4 +1,4 @@
-C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\TopDesign\TopDesign.cysch
+C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\ocean-cleanup-rov-controls.cydsn\TopDesign\TopDesign.cysch
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\BLE_PDL_v2_20\BLE_PDL_v2_20.pdf
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\BLE_PDL_v2_20\BLE_PDL_v2_20.dll
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\BLE_PDL_v2_20\BLE_PDL_v2_20.cystate
@@ -170,4 +170,4 @@ C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComp
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\TCPWM_Counter_PDL_v1_0\Custom\Controls\cyimagepagecontrol.cs
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\TCPWM_Counter_PDL_v1_0\Custom\Resources.resx
 C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\TCPWM_Counter_PDL_v1_0\Custom\Controls\cydynamicdatacontrol.resx
-C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cydwr
+C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\ocean-cleanup-rov-controls.cydsn\ocean-cleanup-rov-controls.cydwr

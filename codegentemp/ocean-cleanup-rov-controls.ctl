@@ -1,6 +1,6 @@
 -- ======================================================================
--- betawble.ctl generated from betawble
--- 06/02/2024 at 18:24
+-- ocean-cleanup-rov-controls.ctl generated from ocean-cleanup-rov-controls
+-- 06/03/2024 at 12:37
 -- This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 -- ======================================================================
 

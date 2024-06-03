@@ -6,7 +6,7 @@
 
 #Build Date:         Sep  9 2019 11:47:43
 
-#File Generated:     Jun 2 2024 18:24:57
+#File Generated:     Jun 3 2024 12:37:21
 
 #Purpose:            
 
@@ -14,7 +14,7 @@
 
 #***************************************************************************
 
-Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjplacer.exe --proj-name betawble --netlist-vh2 betawble_p.vh2 --arch p6_udb2x6 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi2_2x6_12.cydata --ip-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/ip_blocks.cydata --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/irqconn.cydata --drq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/triggerconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/dsiconn.cydata --pins-file pins_43-SMT.xml --lib-file betawble_p.lib --sdc-file betawble.sdc --io-pcf betawble.pci --outdir .
+Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjplacer.exe --proj-name ocean-cleanup-rov-controls --netlist-vh2 ocean-cleanup-rov-controls_p.vh2 --arch p6_udb2x6 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi2_2x6_12.cydata --ip-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/ip_blocks.cydata --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/irqconn.cydata --drq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/triggerconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc6/0/dsiconn.cydata --pins-file pins_43-SMT.xml --lib-file ocean-cleanup-rov-controls_p.lib --sdc-file ocean-cleanup-rov-controls.sdc --io-pcf ocean-cleanup-rov-controls.pci --outdir .
 
 		Softjin Techologies Placer, Version 1.1
 
@@ -22,18 +22,18 @@ Build Date : Sep  9 2019	11:45:12
 
 D2004: Option and Settings Summary
 =============================================================
-Netlist vh2 file          - betawble_p.vh2
+Netlist vh2 file          - ocean-cleanup-rov-controls_p.vh2
 Architecture file         - C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi2_2x6_12.cydata
 Package                   - 
 Defparam file             - 
-SDC file                  - betawble.sdc
+SDC file                  - ocean-cleanup-rov-controls.sdc
 Output directory          - .
-Timing library            - betawble_p.lib
-IO Placement file         - betawble.pci
+Timing library            - ocean-cleanup-rov-controls_p.lib
+IO Placement file         - ocean-cleanup-rov-controls.pci
 
 D2050: Starting reading inputs for placer
 =============================================================
-D2065: Reading netlist file : "betawble_p.vh2"
+D2065: Reading netlist file : "ocean-cleanup-rov-controls_p.vh2"
 D2065: Reading arch file : "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi2_2x6_12.cydata"
 D2051: Reading of inputs for placer completed successfully
 
@@ -69,5 +69,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 0.4 sec.
+I2076: Total run-time: 0.5 sec.
 

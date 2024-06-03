@@ -1,6 +1,6 @@
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|0e2c7e96-8092-4380-a4f2-a20b5fc7642e
-C:\Users\armst\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|5460d063-3bd5-4f69-8f53-5dd2e1d13131
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|d3c24b1d-bd0b-4bd3-a822-1e0cacc6610c
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ba2500a5-bdba-455e-994d-eef62a394d91
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|affc209b-96ed-47f0-ad1f-6841ecb0bc18
-C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cyprj|0e893538-66b1-41df-bc07-6bf23dc90090
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|02c530ed-63d1-4126-9f0b-a798f0a232d5
+C:\Users\armst\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|a0b87893-3c0f-4129-bbc5-07c9f25a6fb4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|a24d2006-545f-4b0e-a53c-06c6df9932e3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|6a0379d9-46ae-49d9-b189-5e55a01087f0
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3fb337aa-f54a-4d52-a8e8-12ca2df39bd0
+C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\ocean-cleanup-rov-controls.cydsn\ocean-cleanup-rov-controls.cyprj|89f0256a-a4df-491a-9595-3e160908d126

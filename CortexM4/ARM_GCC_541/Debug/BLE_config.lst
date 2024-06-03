@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 1
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccTIbTlt.s 			page 1
 
 
    1              		.syntax unified
@@ -33,37 +33,37 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 1
   30 000b 01       		.uleb128 0x1
   31 000c 0E000000 		.4byte	.LASF16
   32 0010 0C       		.byte	0xc
-  33 0011 10010000 		.4byte	.LASF17
-  34 0015 90010000 		.4byte	.LASF18
+  33 0011 7B010000 		.4byte	.LASF17
+  34 0015 D3000000 		.4byte	.LASF18
   35 0019 00000000 		.4byte	.Ldebug_line0
   36 001d 02       		.uleb128 0x2
   37 001e 02       		.byte	0x2
   38 001f 05       		.byte	0x5
-  39 0020 34010000 		.4byte	.LASF0
+  39 0020 F1010000 		.4byte	.LASF0
   40 0024 02       		.uleb128 0x2
   41 0025 01       		.byte	0x1
   42 0026 06       		.byte	0x6
-  43 0027 61010000 		.4byte	.LASF1
+  43 0027 C2010000 		.4byte	.LASF1
   44 002b 02       		.uleb128 0x2
   45 002c 01       		.byte	0x1
   46 002d 08       		.byte	0x8
-  47 002e F0000000 		.4byte	.LASF2
+  47 002e 5B010000 		.4byte	.LASF2
   48 0032 02       		.uleb128 0x2
   49 0033 02       		.byte	0x2
   50 0034 07       		.byte	0x7
-  51 0035 4E010000 		.4byte	.LASF3
+  51 0035 AF010000 		.4byte	.LASF3
   52 0039 03       		.uleb128 0x3
-  53 003a 7A010000 		.4byte	.LASF9
+  53 003a DB010000 		.4byte	.LASF9
   54 003e 01       		.byte	0x1
   55 003f 3F       		.byte	0x3f
   56 0040 44000000 		.4byte	0x44
   57 0044 02       		.uleb128 0x2
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 2
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccTIbTlt.s 			page 2
 
 
   58 0045 04       		.byte	0x4
   59 0046 05       		.byte	0x5
-  60 0047 45010000 		.4byte	.LASF4
+  60 0047 A6010000 		.4byte	.LASF4
   61 004b 02       		.uleb128 0x2
   62 004c 04       		.byte	0x4
   63 004d 07       		.byte	0x7
@@ -75,7 +75,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 1
   69 0059 02       		.uleb128 0x2
   70 005a 08       		.byte	0x8
   71 005b 07       		.byte	0x7
-  72 005c D3000000 		.4byte	.LASF7
+  72 005c 3E010000 		.4byte	.LASF7
   73 0060 04       		.uleb128 0x4
   74 0061 04       		.byte	0x4
   75 0062 05       		.byte	0x5
@@ -83,34 +83,34 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 1
   77 0067 02       		.uleb128 0x2
   78 0068 04       		.byte	0x4
   79 0069 07       		.byte	0x7
-  80 006a 6D010000 		.4byte	.LASF8
+  80 006a CE010000 		.4byte	.LASF8
   81 006e 03       		.uleb128 0x3
-  82 006f E9010000 		.4byte	.LASF10
+  82 006f FB010000 		.4byte	.LASF10
   83 0073 02       		.byte	0x2
   84 0074 2C       		.byte	0x2c
   85 0075 39000000 		.4byte	0x39
   86 0079 02       		.uleb128 0x2
   87 007a 04       		.byte	0x4
   88 007b 07       		.byte	0x7
-  89 007c F1010000 		.4byte	.LASF11
+  89 007c 03020000 		.4byte	.LASF11
   90 0080 02       		.uleb128 0x2
   91 0081 08       		.byte	0x8
   92 0082 04       		.byte	0x4
-  93 0083 84010000 		.4byte	.LASF12
+  93 0083 E5010000 		.4byte	.LASF12
   94 0087 02       		.uleb128 0x2
   95 0088 01       		.byte	0x1
   96 0089 08       		.byte	0x8
-  97 008a FE000000 		.4byte	.LASF13
+  97 008a 69010000 		.4byte	.LASF13
   98 008e 02       		.uleb128 0x2
   99 008f 04       		.byte	0x4
  100 0090 04       		.byte	0x4
- 101 0091 EA000000 		.4byte	.LASF14
+ 101 0091 55010000 		.4byte	.LASF14
  102 0095 02       		.uleb128 0x2
  103 0096 08       		.byte	0x8
  104 0097 04       		.byte	0x4
- 105 0098 3E010000 		.4byte	.LASF15
+ 105 0098 9F010000 		.4byte	.LASF15
  106 009c 05       		.uleb128 0x5
- 107 009d 03010000 		.4byte	.LASF19
+ 107 009d 6E010000 		.4byte	.LASF19
  108 00a1 03       		.byte	0x3
  109 00a2 F907     		.2byte	0x7f9
  110 00a4 A8000000 		.4byte	0xa8
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 1
  112 00a9 6E000000 		.4byte	0x6e
  113 00ad 00       		.byte	0
  114              		.section	.debug_abbrev,"",%progbits
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 3
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccTIbTlt.s 			page 3
 
 
  115              	.Ldebug_abbrev0:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 1
  169 0035 03       		.uleb128 0x3
  170 0036 0E       		.uleb128 0xe
  171 0037 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 4
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccTIbTlt.s 			page 4
 
 
  172 0038 0B       		.uleb128 0xb
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 1
  209      6670753D 
  209      66707634 
  209      2D73702D 
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 5
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccTIbTlt.s 			page 5
 
 
  210 00a7 65637469 		.ascii	"ections -ffat-lto-objects\000"
@@ -252,87 +252,90 @@ ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 1
  212      69676E65 
  212      6420696E 
  212      7400
- 213              	.LASF7:
- 214 00d3 6C6F6E67 		.ascii	"long long unsigned int\000"
- 214      206C6F6E 
- 214      6720756E 
- 214      7369676E 
- 214      65642069 
- 215              	.LASF14:
- 216 00ea 666C6F61 		.ascii	"float\000"
- 216      7400
- 217              	.LASF2:
- 218 00f0 756E7369 		.ascii	"unsigned char\000"
- 218      676E6564 
- 218      20636861 
- 218      7200
- 219              	.LASF13:
- 220 00fe 63686172 		.ascii	"char\000"
- 220      00
- 221              	.LASF19:
- 222 0103 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 222      52784275 
- 222      66666572 
- 222      00
- 223              	.LASF17:
- 224 0110 47656E65 		.ascii	"Generated_Source\\PSoC6\\BLE_config.c\000"
- 224      72617465 
- 224      645F536F 
- 224      75726365 
- 224      5C50536F 
- 225              	.LASF0:
- 226 0134 73686F72 		.ascii	"short int\000"
- 226      7420696E 
- 226      7400
- 227              	.LASF15:
- 228 013e 646F7562 		.ascii	"double\000"
- 228      6C6500
- 229              	.LASF4:
- 230 0145 6C6F6E67 		.ascii	"long int\000"
- 230      20696E74 
- 230      00
- 231              	.LASF3:
- 232 014e 73686F72 		.ascii	"short unsigned int\000"
- 232      7420756E 
- 232      7369676E 
- 232      65642069 
- 232      6E7400
- 233              	.LASF1:
-ARM GAS  C:\Users\armst\AppData\Local\Temp\ccg10HoI.s 			page 6
+ 213              	.LASF18:
+ 214 00d3 433A5C55 		.ascii	"C:\\Users\\armst\\Documents\\PSoC Creator\\Ocean Cl"
+ 214      73657273 
+ 214      5C61726D 
+ 214      73745C44 
+ 214      6F63756D 
+ 215 0101 65616E75 		.ascii	"eanup ROV Controls Firmware\\ocean-cleanup-rov-cont"
+ 215      7020524F 
+ 215      5620436F 
+ 215      6E74726F 
+ 215      6C732046 
+ 216 0133 726F6C73 		.ascii	"rols.cydsn\000"
+ 216      2E637964 
+ 216      736E00
+ 217              	.LASF7:
+ 218 013e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 218      206C6F6E 
+ 218      6720756E 
+ 218      7369676E 
+ 218      65642069 
+ 219              	.LASF14:
+ 220 0155 666C6F61 		.ascii	"float\000"
+ 220      7400
+ 221              	.LASF2:
+ 222 015b 756E7369 		.ascii	"unsigned char\000"
+ 222      676E6564 
+ 222      20636861 
+ 222      7200
+ 223              	.LASF13:
+ 224 0169 63686172 		.ascii	"char\000"
+ 224      00
+ 225              	.LASF19:
+ 226 016e 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 226      52784275 
+ 226      66666572 
+ 226      00
+ 227              	.LASF17:
+ 228 017b 47656E65 		.ascii	"Generated_Source\\PSoC6\\BLE_config.c\000"
+ 228      72617465 
+ 228      645F536F 
+ 228      75726365 
+ 228      5C50536F 
+ 229              	.LASF15:
+ 230 019f 646F7562 		.ascii	"double\000"
+ 230      6C6500
+ 231              	.LASF4:
+ARM GAS  C:\Users\armst\AppData\Local\Temp\ccTIbTlt.s 			page 6
 
 
- 234 0161 7369676E 		.ascii	"signed char\000"
- 234      65642063 
- 234      68617200 
- 235              	.LASF8:
- 236 016d 756E7369 		.ascii	"unsigned int\000"
- 236      676E6564 
- 236      20696E74 
- 236      00
- 237              	.LASF9:
- 238 017a 5F5F696E 		.ascii	"__int32_t\000"
- 238      7433325F 
- 238      7400
- 239              	.LASF12:
- 240 0184 6C6F6E67 		.ascii	"long double\000"
- 240      20646F75 
- 240      626C6500 
- 241              	.LASF18:
- 242 0190 433A5C55 		.ascii	"C:\\Users\\armst\\Documents\\PSoC Creator\\Ocean Cl"
- 242      73657273 
- 242      5C61726D 
- 242      73745C44 
- 242      6F63756D 
- 243 01be 65616E75 		.ascii	"eanup ROV Controls Firmware\\betawble.cydsn\000"
- 243      7020524F 
- 243      5620436F 
- 243      6E74726F 
- 243      6C732046 
- 244              	.LASF10:
- 245 01e9 696E7433 		.ascii	"int32_t\000"
- 245      325F7400 
- 246              	.LASF11:
- 247 01f1 73697A65 		.ascii	"sizetype\000"
- 247      74797065 
- 247      00
- 248              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 232 01a6 6C6F6E67 		.ascii	"long int\000"
+ 232      20696E74 
+ 232      00
+ 233              	.LASF3:
+ 234 01af 73686F72 		.ascii	"short unsigned int\000"
+ 234      7420756E 
+ 234      7369676E 
+ 234      65642069 
+ 234      6E7400
+ 235              	.LASF1:
+ 236 01c2 7369676E 		.ascii	"signed char\000"
+ 236      65642063 
+ 236      68617200 
+ 237              	.LASF8:
+ 238 01ce 756E7369 		.ascii	"unsigned int\000"
+ 238      676E6564 
+ 238      20696E74 
+ 238      00
+ 239              	.LASF9:
+ 240 01db 5F5F696E 		.ascii	"__int32_t\000"
+ 240      7433325F 
+ 240      7400
+ 241              	.LASF12:
+ 242 01e5 6C6F6E67 		.ascii	"long double\000"
+ 242      20646F75 
+ 242      626C6500 
+ 243              	.LASF0:
+ 244 01f1 73686F72 		.ascii	"short int\000"
+ 244      7420696E 
+ 244      7400
+ 245              	.LASF10:
+ 246 01fb 696E7433 		.ascii	"int32_t\000"
+ 246      325F7400 
+ 247              	.LASF11:
+ 248 0203 73697A65 		.ascii	"sizetype\000"
+ 248      74797065 
+ 248      00
+ 249              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

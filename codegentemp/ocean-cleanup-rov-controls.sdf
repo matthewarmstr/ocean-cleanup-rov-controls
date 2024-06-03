@@ -1,14 +1,14 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2024-06-03T01:25:06Z")
- (DESIGN "betawble")
+ (DATE "2024-06-03T19:37:48Z")
+ (DESIGN "ocean-cleanup-rov-controls")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
  (VERSION " 4.4")
  (DIVIDER .)
  (TIMESCALE 1 ns)
  (CELL
-  (CELLTYPE "betawble")
+  (CELLTYPE "ocean-cleanup-rov-controls")
   (INSTANCE *)
   (DELAY
    (ABSOLUTE

@@ -1,8 +1,8 @@
--- Project:   betawble
--- Generated: 06/02/2024 18:24:57
+-- Project:   ocean-cleanup-rov-controls
+-- Generated: 06/03/2024 12:37:20
 -- PSoC Creator  4.4
 
-ENTITY betawble IS
+ENTITY \ocean-cleanup-rov-controls\ IS
     PORT(
         \UART:tx(0)_PAD\ : OUT std_ulogic;
         \UART:rx(0)_PAD\ : IN std_ulogic;
@@ -23,9 +23,9 @@ ENTITY betawble IS
     ATTRIBUTE voltage_VDDIO_0_RCV OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDD_NS OF __DEFAULT__ : ENTITY IS 3.3e0;
-END betawble;
+END \ocean-cleanup-rov-controls\;
 
-ARCHITECTURE __DEFAULT__ OF betawble IS
+ARCHITECTURE __DEFAULT__ OF \ocean-cleanup-rov-controls\ IS
     SIGNAL CPUSS_swj_swclk_tclk : bit;
     SIGNAL CPUSS_swj_swdio_tms : bit;
     SIGNAL CY_CPUSS_SWJ_SWCLK_TCLK(0)__PA : bit;
@@ -133,11 +133,9 @@ ARCHITECTURE __DEFAULT__ OF betawble IS
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     SIGNAL periclk_App : bit;
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
-    ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
     ATTRIBUTE Location OF SRSS : LABEL IS "F(SRSS,0)";
     ATTRIBUTE lib_model OF CY_SRSS_PMIC_WAKEUP_OUT(0) : LABEL IS "iocell1";
     ATTRIBUTE Location OF CY_SRSS_PMIC_WAKEUP_OUT(0) : LABEL IS "P0[5]";
-    ATTRIBUTE Location OF CPUSS : LABEL IS "F(CPUSS,0)";
     ATTRIBUTE lib_model OF CY_CPUSS_SWJ_SWCLK_TCLK(0) : LABEL IS "iocell2";
     ATTRIBUTE Location OF CY_CPUSS_SWJ_SWCLK_TCLK(0) : LABEL IS "P6[7]";
     ATTRIBUTE lib_model OF CY_CPUSS_SWJ_SWDIO_TMS(0) : LABEL IS "iocell3";
@@ -164,18 +162,6 @@ ARCHITECTURE __DEFAULT__ OF betawble IS
     ATTRIBUTE Location OF UltrasonicEcho(0) : LABEL IS "P12[7]";
     ATTRIBUTE lib_model OF \UART_GPS:rx(0)\ : LABEL IS "iocell14";
     ATTRIBUTE Location OF \UART_GPS:rx(0)\ : LABEL IS "P10[0]";
-    ATTRIBUTE Location OF \BLE:cy_mxs40_ble\ : LABEL IS "F(BLE,0)";
-    ATTRIBUTE Location OF \BLE:bless_isr\ : LABEL IS "[IntrContainer=(0)][IntrId=(24)]";
-    ATTRIBUTE Location OF \UART:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(46)]";
-    ATTRIBUTE Location OF \UART:SCB\ : LABEL IS "F(SCB,5)";
-    ATTRIBUTE Location OF \PWM_fin:TCPWM\ : LABEL IS "F(TCPWM,0)";
-    ATTRIBUTE Location OF \PWM_trashgate:TCPWM\ : LABEL IS "F(TCPWM,5)";
-    ATTRIBUTE Location OF \PWM_thrustmotor:TCPWM\ : LABEL IS "F(TCPWM,1)";
-    ATTRIBUTE Location OF \PWM_ultrasonic:TCPWM\ : LABEL IS "F(TCPWM,7)";
-    ATTRIBUTE Location OF \Echo_Counter:TCPWM\ : LABEL IS "F(TCPWM,2)";
-    ATTRIBUTE Location OF Echo_IRQ : LABEL IS "[IntrContainer=(0)][IntrId=(92)]";
-    ATTRIBUTE Location OF \UART_GPS:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(42)]";
-    ATTRIBUTE Location OF \UART_GPS:SCB\ : LABEL IS "F(SCB,1)";
     COMPONENT BLE
         PORT (
             ext_pa_lna_chip_en_out : OUT std_ulogic;
@@ -587,16 +573,13 @@ BEGIN
             ilo => ClockBlock_ILO,
             wco => ClockBlock_WCO,
             lfclk => ClockBlock_LFClk,
-            ff_div_0 => open,
+            ff_div_0 => \UART:Net_847_ff0\,
             ff_div_11 => Net_51_ff11,
-            ff_div_12 => Net_133_ff13,
-            ff_div_13 => Net_433_ff12,
-            ff_div_14 => open,
-            ff_div_15 => open,
+            ff_div_12 => Net_433_ff12,
+            ff_div_13 => Net_133_ff13,
+            ff_div_14 => Net_274_ff14,
+            ff_div_15 => Net_35_ff15,
             ff_div_1 => \UART_GPS:Net_847_ff1\,
-            ff_div_5 => \UART:Net_847_ff0\,
-            ff_div_16 => Net_35_ff15,
-            ff_div_18 => Net_274_ff14,
             periclk_App => periclk_App);
 
     SRSS:SRSS;

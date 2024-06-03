@@ -1,8 +1,8 @@
--- Project:   C:\Users\armst\Documents\PSoC Creator\Ocean Cleanup ROV Controls Firmware\betawble.cydsn\betawble.cyprj
--- Generated: 06/02/2024 18:25:06
+-- Project:   ocean-cleanup-rov-controls
+-- Generated: 06/03/2024 12:37:21
 -- PSoC Creator  4.4
 
-ENTITY betawble IS
+ENTITY \ocean-cleanup-rov-controls\ IS
     PORT(
         \UART:tx(0)_PAD\ : OUT std_ulogic;
         \UART:rx(0)_PAD\ : IN std_ulogic;
@@ -23,9 +23,9 @@ ENTITY betawble IS
     ATTRIBUTE voltage_VDDIO_0_RCV OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDIO_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDD_NS OF __DEFAULT__ : ENTITY IS 3.3e0;
-END betawble;
+END \ocean-cleanup-rov-controls\;
 
-ARCHITECTURE __DEFAULT__ OF betawble IS
+ARCHITECTURE __DEFAULT__ OF \ocean-cleanup-rov-controls\ IS
     SIGNAL CPUSS_swj_swclk_tclk : bit;
     SIGNAL CPUSS_swj_swdio_tms : bit;
     SIGNAL CY_CPUSS_SWJ_SWCLK_TCLK(0)__PA : bit;
