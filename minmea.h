@@ -280,21 +280,6 @@ static inline float minmea_tocoord(const struct minmea_float *f)
 }
 
 /**
- * Return the heading (labeled as 'course').
- * Returns NaN for "unknown" values.
- */
-static inline float minmea_getheading(const struct minmea_float *f)
-{
-    if (f->scale == 0)
-        return NAN;
-    if (f->scale  > (INT_LEAST32_MAX / 100))
-        return NAN;
-    if (f->scale < (INT_LEAST32_MIN / 100))
-        return NAN;
-    return (float) f->value;
-}
-
-/**
  * Check whether a character belongs to the set of characters allowed in a
  * sentence data field.
  */

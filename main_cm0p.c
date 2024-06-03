@@ -15,12 +15,12 @@
 
 #define US_IN_SEC 1000000
 
-#define RUDDER_RIGHT_VAL 1650
-#define RUDDER_STRAIGHT_VAL 2000
-#define RUDDER_LEFT_VAL 2350
+#define RUDDER_RIGHT_VAL 1550
+#define RUDDER_STRAIGHT_VAL 1800
+#define RUDDER_LEFT_VAL 2050
 #define TRASHGATE_OPEN_VAL 2000
 #define TRASHGATE_CLOSED_VAL 1000
-#define THRUSTMOTOR_ON_VAL 1500
+#define THRUSTMOTOR_ON_VAL 1300
 #define THRUSTMOTOR_OFF_VAL 1000
 
 volatile uint8* inputControlsPtr;
@@ -35,6 +35,8 @@ uint8 gpsLineBuffSize = 0;
 uint8 gpsBufferIndex = 0;
 uint8 readingLine = 0;
 uint8 gpsLineProcessed = 0;
+
+uint8 trash_gate_opened = 0;
 
 cy_stc_ble_conn_handle_t connHandle;
 
@@ -124,17 +126,23 @@ void processControls(uint8 inputControls) {
             
     uint8 trash_bit = (inputControls >> 2) & 0x01;
     if (trash_bit == 1){
-        PWM_trashgate_SetCompare0(TRASHGATE_OPEN_VAL); // open trash gate
-        CyDelay(5000); //open for 5 seconds
-        PWM_trashgate_SetCompare0(TRASHGATE_CLOSED_VAL); // close trash gate
+        if (trash_gate_opened == 0) {
+            PWM_trashgate_SetCompare0(TRASHGATE_OPEN_VAL); // open trash gate
+            printf("OPENING TRASH GATE\n");
+            trash_gate_opened = 1;
+        } else {
+            PWM_trashgate_SetCompare0(TRASHGATE_CLOSED_VAL); // close trash gate
+            printf("CLOSING TRASH GATE\n");
+            trash_gate_opened = 0;
+        }
     }
             
     uint8 forward_bit = (inputControls >> 3) & 0x01;
-    uint16 compare_val_thrustmotor = 0;
+    int compare_val_thrustmotor = 0;
     if (forward_bit == 1){
         compare_val_thrustmotor = THRUSTMOTOR_ON_VAL; // thrust on
     } else {
-        compare_val_thrustmotor = THRUSTMOTOR_ON_VAL; // thrust off 
+        compare_val_thrustmotor = THRUSTMOTOR_OFF_VAL; // thrust off 
     }
     PWM_thrustmotor_SetCompare0(compare_val_thrustmotor);
 }
@@ -175,10 +183,6 @@ void extractAndUpdateGPSData() {
             printf("Coordinates: %f (%d), %f (%d)\n", latitude, sizeof(latitude), longitude, sizeof(longitude));
             updateCharacteristic(CY_BLE_DEVICE_INTERFACE_LATITUDE_CHAR_HANDLE, (uint8*)&latitude, sizeof(latitude));
             updateCharacteristic(CY_BLE_DEVICE_INTERFACE_LONGITUDE_CHAR_HANDLE, (uint8*)&longitude, sizeof(longitude));
-            
-            float heading = minmea_getheading(&frame.course);
-            printf("Heading: %f\n", heading);
-            updateCharacteristic(CY_BLE_DEVICE_INTERFACE_HEADING_CHAR_HANDLE, (uint8*)&heading, sizeof(heading));
         }
     }
 }
@@ -202,16 +206,16 @@ int main(void)
     
     PWM_fin_SetCompare0(RUDDER_STRAIGHT_VAL); // straighten rudder
     PWM_trashgate_SetCompare0(TRASHGATE_CLOSED_VAL); // close trash gate
-    PWM_thrustmotor_SetCompare0(THRUSTMOTOR_OFF_VAL); // thrust motor off
+    PWM_thrustmotor_SetCompare0(THRUSTMOTOR_OFF_VAL); // thrust motor off 
     
     uint8 inputControls = 0;
     
     printf("Enabling interrupts ... ");
     
-    /*Cy_TCPWM_Counter_Init(Echo_Counter_HW, Echo_Counter_CNT_NUM, &Echo_Counter_config);
+    Cy_TCPWM_Counter_Init(Echo_Counter_HW, Echo_Counter_CNT_NUM, &Echo_Counter_config);
     Cy_TCPWM_Counter_Enable(Echo_Counter_HW, Echo_Counter_CNT_NUM);
     Cy_SysInt_Init(&Echo_IRQ_cfg, echoHandler);
-    NVIC_EnableIRQ(Echo_IRQ_cfg.intrSrc);*/
+    NVIC_EnableIRQ(Echo_IRQ_cfg.intrSrc);
     
     Cy_SCB_UART_Init(UART_GPS_HW, &UART_GPS_config, &UART_GPS_context);
     Cy_SCB_UART_Enable(UART_GPS_HW);

@@ -69,16 +69,6 @@ static const cy_stc_ble_customs_t cy_ble_customs[0x01u] = {
                     0x001Bu, /* Handle of the Client Characteristic Configuration descriptor */ 
                 }, 
             },
-
-            /* Heading characteristic */
-            {
-                0x001Du, /* Handle of the Heading characteristic */ 
-                
-                /* Array of Descriptors handles */
-                {
-                    0x001Eu, /* Handle of the Client Characteristic Configuration descriptor */ 
-                }, 
-            },
         }, 
     },
 };
