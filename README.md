@@ -6,9 +6,14 @@ Allows a PSoC™ 6 microcontroller to operate the motors, collect data from ultr
 This project was developed as part of our 2024 UC Davis ECS 193 Senior Design Project in coordination with an EEC 136 design team.
 
 ## Firmware Overview
-The microcontroller operates the thrust and servo motors using PWMs, allowing them to be operated at specific speeds/positions as desired. The connected ultrasonic reads the distance between itself and an oncoming object by outputting a pulse width, which is then received by the microcontroller with a software counter. Finally, the GPS module sends its latitude and longitude data to the microcontroller every second over a dedicated UART connection.
+The microcontroller operates the thrust and servo motors using pulse width modulation (PWM), allowing them to be operated at specific speeds/positions as desired. The connected ultrasonic reads the distance between itself and an oncoming object. The microcontroller sends a 15µS pulse every 300ms to the ultrasonic's TRIG input, enabling the sensor to send an ultrasonic frequency that bounces off an object and returns to the sensor. This time between when the ultrasonic sends and receives the pulse is measured as the pulse width, which is then read by a counter on the microcontroller. Finally, the GPS module sends its latitude and longitude data to the microcontroller every second over a dedicated UART connection. The data from the ultrasonic and GPS modules are then stored in the Bluetooth® Low Energy (LE) stack for access by a wirelessly connected device.
 
-[describe encoding scheme, Bluetooth...]
+To give the user precise control over the vehicle's movement, an encoding scheme was developed for one of the Bluetooth® characteristics. The encoding structure is as follows (going from least significant to most significant bits):
+- Left (0: do nothing; 1: move servo for rudder to allow vehicle to move left when going forward)
+- Right (0: do nothing; 1: move servo for rudder to allow vehicle to move right when going forward)
+- Trash (0: do nothing; 1: invert servo position of trash gate to be open/closed)
+- Forward (0: do nothing; 1: activate thrust motor)
+- [Bits 4-7 are unused / available for additional functionality]
 
 ## Prerequisites
 1. Download and install [PSoC™ Creator](https://www.infineon.com/cms/en/design-support/tools/sdk/psoc-software/psoc-creator/) *(developed using PSoC™ Creator 4.4)*.
