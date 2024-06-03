@@ -1,10 +1,14 @@
 # Ocean Cleanup Remotely Operated Vehicle Firmware
 *Team Members: Matthew Armstrong, William Fitzgerald, Jake Gustafson, and Amy Law*
 
-This repository contains the necessary firmware allowing our PSoC™ 6 microcontroller to operate the motors, collect data from sensors, and facilitate data transfer over Bluetooth® Low Energy (LE). Check out our compatible iOS application [here](https://github.com/matthewarmstr/ocean-cleanup-app).
+Allows a PSoC™ 6 microcontroller to operate the motors, collect data from ultrasonic and GPS sensors, and facilitate data transfer over Bluetooth® Low Energy (LE). Check out our compatible iOS application [here](https://github.com/matthewarmstr/ocean-cleanup-app). 
+
+This project was developed as part of our 2024 UC Davis ECS 193 Senior Design Project in coordination with an EEC 136 design team.
 
 ## Firmware Overview
 The microcontroller operates the thrust and servo motors using PWMs, allowing them to be operated at specific speeds/positions as desired. The connected ultrasonic reads the distance between itself and an oncoming object by outputting a pulse width, which is then received by the microcontroller with a software counter. Finally, the GPS module sends its latitude and longitude data to the microcontroller every second over a dedicated UART connection.
+
+[describe encoding scheme, Bluetooth...]
 
 ## Prerequisites
 1. Download and install [PSoC™ Creator](https://www.infineon.com/cms/en/design-support/tools/sdk/psoc-software/psoc-creator/) *(developed using PSoC™ Creator 4.4)*.
