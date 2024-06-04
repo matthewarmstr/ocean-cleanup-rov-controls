@@ -15,6 +15,8 @@ To give the user precise control over the vehicle's movement, an encoding scheme
 - Forward (0: do nothing; 1: activate thrust motor)
 - [Bits 4-7 are unused / available for additional functionality]
 
+When new controls are reieved, the microcontroller updates the PWM values according to the predefined motor poisitions that the user desires to control. Each time the microcontroller's Bluetooth® stack goes into a disconnected state (whether its an intentional disconnect by the user, an out-ot-range error, or dropped connection), the controls are automatically reset to their default positions (thrust off, rudder straight, etc.). This ensures that the vehicle's controls remain stable during instances where an unexpected error occurs.
+
 ## Prerequisites
 1. Download and install [PSoC™ Creator](https://www.infineon.com/cms/en/design-support/tools/sdk/psoc-software/psoc-creator/) *(developed using PSoC™ Creator 4.4)*.
 
@@ -41,4 +43,4 @@ In the workspace explorer, click on `Pins` under `Design Wide Resources`. Connec
 
 ***Note: all power entering the microcontroller, along with any logic entering/leaving the GPIO pins, must be 3.3V. Sending 5V to a GPIO pin may result in damage to the PSoC™ 6 microcontroller.***
 
-To give individual vehicles uniquely identifiable Bluetooth® names, open `TopDesign.cysch`. Double-click on the BLE module, and click on the `GAP Settings` tab. Change the `Device Name` field as desired. Click `Apply` and `OK`, then reprogram the microcontroller. Once the firmware has been flashed, repeat the process for as many boats that each have their own PSoC™ 6 microcontroller. 
+To give individual vehicles uniquely identifiable Bluetooth® names, open `TopDesign.cysch`. Double-click on the BLE module, and click on the `GAP Settings` tab. Change the `Device Name` field as desired. Click `Apply` and `OK`, then reprogram the microcontroller. Once the firmware has been flashed, repeat the process for each verhicle that has its own PSoC™ 6 microcontroller. 
