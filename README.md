@@ -1,7 +1,7 @@
 # Ocean Cleanup Remotely Operated Vehicle Firmware
 *Team Members: Matthew Armstrong, William Fitzgerald, Jake Gustafson, and Amy Law*
 
-Allows a PSoC™ 6 microcontroller to operate the motors, collect data from ultrasonic and GPS sensors, and facilitate data transfer over Bluetooth® Low Energy (LE). Check out our compatible iOS application [here](https://github.com/matthewarmstr/ocean-cleanup-app). 
+Allows a PSoC™ 6 microcontroller to operate thrust and servo motors, collect data from ultrasonic and GPS sensors, and facilitate data transfer over Bluetooth® Low Energy (LE) to control a vehicle for ocean cleanup. Check out our iOS application [here](https://github.com/matthewarmstr/ocean-cleanup-app). 
 
 This project was developed as part of our UC Davis ECS 193 Senior Design Project in coordination with an EEC 136 design team. Special thanks to Professor Christopher Nitta and Teaching Assistant Ajay Suresh for their guidance and support throughout the project.
 
@@ -9,10 +9,10 @@ This project was developed as part of our UC Davis ECS 193 Senior Design Project
 The microcontroller operates the thrust and servo motors using pulse width modulation (PWM), allowing them to be operated at specific speeds/positions as desired. The connected ultrasonic reads the distance between itself and an oncoming object. The microcontroller sends a 15µS pulse every 300ms to the ultrasonic's TRIG input, enabling the sensor to send an ultrasonic frequency that bounces off an object and returns to the sensor. This time between when the ultrasonic sends and receives the pulse sent to the ECHO pin on the ultrasonic sensor as a pulse width, which is then read by a counter on the microcontroller. Finally, the GPS module sends its latitude and longitude data in NMEA format (see documentation for this format [here](https://w3.cs.jmu.edu/bernstdh/web/common/help/nmea-sentences.php)) to the microcontroller every second over a dedicated UART connection. The data from the ultrasonic and GPS modules are then stored in the Bluetooth® Low Energy (LE) stack for access by a wirelessly connected device.
 
 To give the user precise control over the vehicle's movement, an encoding scheme was developed for one of the Bluetooth® characteristics. The encoding structure is as follows (going from least significant to most significant bits):
-- Left (0: do nothing; 1: move servo for rudder to allow vehicle to move left when going forward)
-- Right (0: do nothing; 1: move servo for rudder to allow vehicle to move right when going forward)
-- Trash (0: do nothing; 1: invert servo position of trash gate to be open/closed)
-- Forward (0: do nothing; 1: activate thrust motor)
+- Left (when high, move servo for rudder to allow vehicle to move left when going forward)
+- Right (when high, move servo for rudder to allow vehicle to move right when going forward)
+- Trash (when high, invert servo position of trash gate to be open/closed)
+- Forward (when high, activate thrust motor)
 - [Bits 4-7 are unused / available for additional functionality]
 
 When new controls are reieved, the microcontroller updates the PWM values according to the predefined motor poisitions that the user desires to control. Each time the microcontroller's Bluetooth® stack goes into a disconnected state (whether its an intentional disconnect by the user, an out-ot-range error, or dropped connection), the controls are automatically reset to their default positions (thrust off, rudder straight, etc.). This ensures that the vehicle's controls remain stable during instances where an unexpected error occurs.
