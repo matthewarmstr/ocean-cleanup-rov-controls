@@ -5,6 +5,8 @@ Allows a PSOC 6 microcontroller to operate thrust and servo motors, collect data
 
 This project was developed as part of our UC Davis ECS 193 Senior Design Project in coordination with an EEC 136 design team. Special thanks to Professor Christopher Nitta and Teaching Assistant Ajay Suresh for their guidance and support throughout the project.
 
+For a video demo of the vehicle's movement and app functionality in the water, click [here](https://youtu.be/D7lKjhqHaHg).
+
 ## Firmware Overview
 The microcontroller operates the thrust and servo motors using pulse width modulation (PWM), allowing them to be operated at specific speeds/positions as desired.
 
